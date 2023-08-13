@@ -1,7 +1,11 @@
 body {
     line-height: 1.5;
     font-family: "Noto Sans TC", sans-serif;
-    padding-top: 76px;
+    padding-top: 56px;
+    @include medium{
+      padding-top: 76px;
+    }
+    
 }
 
 img {
