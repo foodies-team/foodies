@@ -4,58 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>index</title>
-    <script type="module" crossorigin src="/foodies/assets/main-5dc47ff5.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-9886f7d1.css">
+    <script type="module" crossorigin src="/foodies/assets/main-e8bdc7e8.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-67933b34.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
+    <nav class="navbar main-nav navbar-expand-md bg-secondary position-fixed w-100">
+    <div class="container">
+        <h1 class="navbar-brand"><a href="#"></a></h1>
+        <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 ">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center gap-2" href="#">
+                        <i class="bi bi-search search-icon text-primary fs-7"></i>
+                        <p class="nav-link mb-0 text-primary p-0" href="#">搜尋</p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary p-0 nav-link" href="#">美食類別</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-primary p-0 nav-link" href="#">部落格</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-primary p-0 nav-link" href="#">探索新店</a>
+                </li>
+
+                <li class="nav-item member-item">
+                    <a class="text-primary position-relative p-0 fs-4" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                    <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3">
+                        <li>
+                            <a href="#" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                                <i class="bi bi-person-fill"></i>
+                                <span>我的資料</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                                <i class="bi bi-heart-fill"></i>
+                            <span>收藏夾</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                                <i class="bi bi-pen-fill"></i>
+                                <span>發表文章</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                                <i class="bi bi-folder-fill"></i>
+                                <span>管理文章</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                                <i class="bi bi-box-arrow-left"></i>
+                                <span>登入</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+    <h1 class="index-title fs-7">我是首頁 <i class="bi bi-search"></i></h1>
     <h2 class="index-title">測試-Vivian</h2>
     <h1 class="index-title">我是分支dev的分支dev-vian-5</h1>
     <h1 class="index-title">我是分支dev的分支dev-vian-6</h1>
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+   
     <footer class="footer">我是 footer</footer>
     
   </body>
