@@ -1,8 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables'; //自訂變數
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss'; //引入bootstrap icons
 @import "../../node_modules/bootstrap";
 
 
+@import './_breakpoints'; //斷點設定
+@import './base'; //全站設定
+@import './util'; //工具類(margin padding 元件顏色等)
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
