@@ -1,7 +1,9 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables'; //自訂變數
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss'; //引入bootstrap icons
+@import './utils/utilities';
 @import "../../node_modules/bootstrap";
+
 
 
 @import './_breakpoints'; //斷點設定
