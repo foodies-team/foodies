@@ -10,18 +10,67 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="container">
-        <nav aria-label="breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-              <li class="breadcrumb-item"><a href="#">會員中心</a></li>
-              <li class="breadcrumb-item active" aria-current="page">收藏夾</li>
+    <div class="container collection-header mt-lg-10 mb-lg-13 my-5">
+        
+          <nav aria-label="breadcrumb text-secondary">
+            <ol class="breadcrumb mb-3">
+              <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+              <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+              <li class="breadcrumb-item active text-primary" aria-current="page">收藏夾</li>
             </ol>
           </nav>
-        <div class="row">
+        <h2 class="fw-bolder fs-lg-3 fs-5 mb-lg-6 mb-5">收藏夾</h2>
+        <div class="select-group d-flex justify-content-between align-items-center border-bottom border-1 border-secondary pb-lg-4 pb-3">
+          <div class="select-width">
+            <select class="form-select border border-1 border-secondary border-radius-lg px-3 py-lg-3 py-2 fs-lg-9 fs-11" aria-label="collected-restaurants">
+              <option selected>依收藏餐廳數排序</option>
+              <option value="1">由高至低</option>
+            </select>
+          </div>
+         
+
+          <button type="button" class="btn btn-primary border-radius-lg py-lg-3 py-2 fs-lg-9 fs-11 select-width">新增收藏類別</button>
 
         </div>
     </div>
+
+    <div class="container collection-content mb-lg-13 mb-14">
+      <ul class="row gy-lg-6 gy-8 mb-0">
+        <li class="col-lg-3 item text-center ">
+          <div class="position-relative">
+            <img src="../assets/images/index-food-7.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-7"></i>
+              <span class="fs-7">8</span>
+            </div>
+          </div>
+          
+          <p class="fs-lg-7 fs-8 mb-0">早午餐</p>
+
+          
+        </li>
+        <li class="col-lg-3 item text-center">
+          <img src="../assets/images/index-food-9.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
+          <p class="fs-lg-7 fs-8 mb-0">鍋物</p>
+        </li>
+        <li class="col-lg-3 item text-center">
+          <img src="../assets/images/index-food-14.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
+          <p class="fs-lg-7 fs-8 mb-0">小吃</p>
+        </li>
+        <li class="col-lg-3 item text-center">
+          <img src="../assets/images/index-food-8.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
+          <p class="fs-lg-7 fs-8 mb-0">下午茶</p>
+        </li>
+        <li class="col-lg-3 item text-center">
+          <img src="../assets/images/index-food-18.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
+          <p class="fs-lg-7 fs-8 mb-0">燒烤</p>
+        </li>
+        <li class="col-lg-3 item text-center">
+          <img src="../assets/images/collection-food-6.jpg" alt="餐酒館" class="mb-lg-3 mb-4 item-img">
+          <p class="fs-lg-7 fs-8 mb-0">餐酒館</p>
+        </li>
+      </div>
+    </ul>
    
     <%- include('./layout/footer'); -%>
 
