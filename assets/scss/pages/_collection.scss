@@ -1,0 +1,23 @@
+.collection-header{
+    .select-width{
+        width: 196px;
+    }
+
+
+}
+
+.collection-content{
+    .item-img{
+        width: 100%;
+        height: 226px;
+        object-fit: cover;
+        @include large{
+            height: 264px;
+        }
+    }
+
+    .num{
+        background: rgba(217, 217, 217, 0.80);
+        border-radius: 20px;
+    }
+}

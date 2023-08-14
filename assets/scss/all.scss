@@ -1,6 +1,6 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables'; //自訂變數
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss'; //引入bootstrap icons
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css'; //引入bootstrap icons
 @import './utils/utilities';
 @import "../../node_modules/bootstrap";
 
@@ -14,4 +14,5 @@
 
 
 @import './pages/index.scss';
+@import './pages/collection.scss';
 
