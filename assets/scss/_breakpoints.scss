@@ -26,3 +26,9 @@
         @content;
     }
 }
+
+@mixin xsmall{
+    @media(min-width:375px){
+        @content;
+    }
+}

@@ -10,7 +10,7 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="container collection-header mt-lg-10 mb-lg-13 my-5">
+    <section class="container collection-header mt-lg-10 mb-lg-13 my-5">
         
           <nav aria-label="breadcrumb text-secondary">
             <ol class="breadcrumb mb-3">
@@ -29,48 +29,155 @@
           </div>
          
 
-          <button type="button" class="btn btn-primary border-radius-lg py-lg-3 py-2 fs-lg-9 fs-11 select-width">新增收藏類別</button>
+          <button type="button" class="btn btn-primary border-radius-lg py-lg-3 py-2 fs-lg-9 fs-11 select-width" data-bs-toggle="modal" data-bs-target="#new-collection-modal">新增收藏類別</button>
 
         </div>
-    </div>
+    </section>
 
-    <div class="container collection-content mb-lg-13 mb-14">
-      <ul class="row gy-lg-6 gy-8 mb-0">
+    <section class="container collection-content mb-lg-13 mb-14">
+      <ul class="row gy-lg-6 gy-8 mb-0 gx-lg-6 gx-0">
         <li class="col-lg-3 item text-center ">
-          <div class="position-relative">
-            <img src="../assets/images/index-food-7.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
-            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
-              <i class="bi bi-heart-fill text-primary fs-7"></i>
-              <span class="fs-7">8</span>
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/index-food-7.jpg" alt="早午餐" class="item-img">
             </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">8</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">早午餐</p>
           </div>
           
-          <p class="fs-lg-7 fs-8 mb-0">早午餐</p>
 
           
         </li>
-        <li class="col-lg-3 item text-center">
-          <img src="../assets/images/index-food-9.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
-          <p class="fs-lg-7 fs-8 mb-0">鍋物</p>
+
+        <li class="col-lg-3 item text-center ">
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/index-food-9.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
+            </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">6</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">鍋物</p>
+          </div>
+
+          
         </li>
-        <li class="col-lg-3 item text-center">
-          <img src="../assets/images/index-food-14.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
-          <p class="fs-lg-7 fs-8 mb-0">小吃</p>
+        <li class="col-lg-3 item text-center ">
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/index-food-14.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
+            </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">5</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">小吃</p>
+          </div>
+
+          
         </li>
-        <li class="col-lg-3 item text-center">
-          <img src="../assets/images/index-food-8.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
-          <p class="fs-lg-7 fs-8 mb-0">下午茶</p>
+        <li class="col-lg-3 item text-center ">
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/index-food-8.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
+            </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">4</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">下午茶</p>
+          </div>
+
+          
         </li>
-        <li class="col-lg-3 item text-center">
-          <img src="../assets/images/index-food-18.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
-          <p class="fs-lg-7 fs-8 mb-0">燒烤</p>
+        <li class="col-lg-3 item text-center ">
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/index-food-18.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
+            </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">4</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">燒烤</p>
+          </div>
+
+          
         </li>
-        <li class="col-lg-3 item text-center">
-          <img src="../assets/images/collection-food-6.jpg" alt="餐酒館" class="mb-lg-3 mb-4 item-img">
-          <p class="fs-lg-7 fs-8 mb-0">餐酒館</p>
+        <li class="col-lg-3 item text-center ">
+          <a class="position-relative" href="#">
+            <div class="overflow-hidden item-wrap">
+              <img src="../assets/images/collection-food-6.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
+            </div>
+            
+            <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
+              <i class="bi bi-heart-fill text-primary fs-9"></i>
+              <span class="fs-9 text-secondary">2</span>
+            </div>
+          </a>
+          
+          <div class="subtitle py-lg-3 py-4  text-center border border-light-gray border-1 border-top-0">
+            <p class="fs-lg-7 fs-8 mb-0">餐酒館</p>
+          </div>
+
+          
         </li>
+
+        
+        
+      </ul>
+    </section>
+
+    <section class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11">
+      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">為收藏夾添加更多美食</h2>
+      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看網友推薦熱門美食</h3>
+      <a href="#" class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4" role="button">探索美食</a>
+    </section>
+
+    <!-- 點擊新增收藏類別彈跳視窗 -->
+    <div class="modal fade" id="new-collection-modal" tabindex="-1" aria-labelledby="new-collection-modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="exampleModalLabel">新增收藏類別</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="new-collection-name" class="form-label fs-lg-8 fs-9">類別名稱</label>
+            <input type="text" class="form-control" id="new-collection-name" aria-describedby="new-collection-name">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
       </div>
-    </ul>
+    </div>
    
     <%- include('./layout/footer'); -%>
 

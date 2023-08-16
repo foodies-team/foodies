@@ -1,6 +1,8 @@
 .logoImg{
-  width: 85px;
-  height: 85px;
+  height: 32px;
+  @include small{
+    height: 60px;
+  }
 }
 
 .nav-link {
