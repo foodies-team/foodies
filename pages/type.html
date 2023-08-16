@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>type</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="type-banner-bg">
+      <div class="container type-banner d-flex align-items-center">
+        <div class="banner-select d-flex px-2 py-3">
+          <select
+            class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4 me-2"
+            aria-label="type-city"
+          >
+            <option selected>不分區</option>
+            <option value="1">台北市</option>
+            <option value="2">新北市</option>
+            <option value="3">基隆市</option>
+            <option value="4">新竹市</option>
+            <option value="5">桃園市</option>
+            <option value="6">新竹縣</option>
+            <option value="7">宜蘭縣</option>
+            <option value="8">臺中市</option>
+            <option value="9">苗栗縣</option>
+            <option value="10">彰化縣</option>
+            <option value="11">南投縣</option>
+            <option value="12">雲林縣</option>
+            <option value="13">高雄市</option>
+            <option value="14">臺南市</option>
+            <option value="15">嘉義市</option>
+            <option value="16">嘉義縣</option>
+            <option value="17">屏東縣</option>
+            <option value="18">花蓮縣</option>
+            <option value="19">臺東縣</option>
+          </select>
+          <select
+            class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
+            aria-label="type-city"
+          >
+            <option selected>下午茶</option>
+            <option value="1">早午餐、輕食</option>
+            <option value="2">精選湯底鍋</option>
+            <option value="3">國民小吃</option>
+            <option value="4">燒烤、炸物</option>
+            <option value="5">氣氛餐酒館</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container type-main my-5">
+      <div class="search d-flex justify-content-between mb-4">
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-secondary">首頁</a>
+            </li>
+            <li class="breadcrumb-item breadCrumn-width">
+              <a href="#" class="text-secondary">美食類別</a>
+            </li>
+
+            <li class="breadcrumb-item active text-primary" aria-current="page">
+              下午茶
+            </li>
+          </ol>
+        </nav>
+
+        <select
+          class="search-select-width form-select border border-1 border-radius-lg p-3"
+          aria-label="type-city"
+        >
+          <option selected>依評價排序</option>
+        </select>
+      </div>
+
+      <div class="stores">
+        <ul class="store-list">
+          <li class="store-items">
+            <img
+              src="../assets/images/index-food-1.jpg"
+              alt="平安京茶室"
+              class="store-img"
+            />
+            <div class="store">
+              <div class="store-inform">
+                <h2>平安京茶室</h2>
+                <div class="rank">
+                  <p>4</p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <p>123則評價</p>
+                </div>
+                <div class="phone">
+                  <i class="bi bi-telephone-fill"></i>
+                  <p>電話 : 02 2368 2277</p>
+                </div>
+                <div class="site">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <p>地址 : 100台北市中正區師大路165號</p>
+                </div>
+              </div>
+              <div class="store-collect">
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </li>
+          <li class="store-items">
+            <img
+              src="../assets/images/index-food-2.jpg"
+              alt="井上豆花"
+              class="store-img"
+            />
+            <div class="store">
+              <div class="store-inform">
+                <h2>井上豆花</h2>
+                <div class="rank">
+                  <p>4</p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <p>100則評價</p>
+                </div>
+                <div class="phone">
+                  <i class="bi bi-telephone-fill"></i>
+                  <p>電話 : 03 333 0183</p>
+                </div>
+                <div class="site">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <p>地址 : 330桃園市桃園區成功路三段200號</p>
+                </div>
+              </div>
+              <div class="store-collect">
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </li>
+          <li class="store-items">
+            <img
+              src="../assets/images/index-food-3.jpg"
+              alt="敲我ciaoo烘焙工作室"
+              class="store-img"
+            />
+            <div class="store">
+              <div class="store-inform">
+                <h2>敲我ciaoo烘焙工作室</h2>
+                <div class="rank">
+                  <p>4</p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <p>89則評價</p>
+                </div>
+                <div class="phone">
+                  <i class="bi bi-telephone-fill"></i>
+                  <p>電話 : 02 2277 3203</p>
+                </div>
+                <div class="site">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <p>地址 : 242新北市新莊區明中街36號</p>
+                </div>
+              </div>
+              <div class="store-collect">
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </li>
+          <li class="store-items">
+            <img
+              src="../assets/images/index-food-4.jpg"
+              alt="林椐"
+              class="store-img"
+            />
+            <div class="store-inform">
+              <h2>林椐</h2>
+              <div class="rank">
+                <p>4</p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <p>45則評價</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-telephone-fill"></i>
+                <p>電話 : 暫不提供</p>
+              </div>
+              <div class="site">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p>地址 : 242新北市新莊區中正路新生巷55號</p>
+              </div>
+            </div>
+            <div class="store">
+              <div class="store-collect">
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </li>
+          <li class="store-items">
+            <img
+              src="../assets/images/food-type-food-6.png"
+              alt="Piepai Cafe’"
+              class="store-img"
+            />
+            <div class="store">
+              <div class="store-inform">
+                <h2>Piepai Cafe’</h2>
+                <div class="rank">
+                  <p>4</p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <p>35則評價</p>
+                </div>
+                <div class="phone">
+                  <i class="bi bi-telephone-fill"></i>
+                  <p>電話 : 03 416 2546</p>
+                </div>
+                <div class="site">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <p>地址 : 320桃園市中壢區莒光路89號</p>
+                </div>
+              </div>
+              <div class="store-collect">
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
