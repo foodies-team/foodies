@@ -1,5 +1,5 @@
 .search-banner-bg {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/food-search-banner.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/search-paging-banner.jpg?raw=true");
   background-size: cover;
 }
 
@@ -25,10 +25,23 @@
   .store-img {
     max-height: 276px;
   }
+
+  .store-inform {
+    width: 80%;
+  }
+
+  .store-collect {
+    width: 20%;
+  }
 }
 
-.search-footer-banner {
-  .footer-banner-slogan {
-    max-width: 769px;
+.footer-banner {
+  .footer-more-btn {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      transform: scale(1.2);
+    }
   }
 }
