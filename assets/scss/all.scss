@@ -10,6 +10,9 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
-@import "./pages/type.scss";
 @import "./pages/index.scss";
 @import "./pages/collection.scss";
+@import "./pages/type";
+@import "./pages/search";
+@import "./pages/collectionPage";
+@import "./pages/explore";
