@@ -1,9 +1,9 @@
-.type-banner-bg {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/food-type-banner.jpg?raw=true");
+.search-banner-bg {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/food-search-banner.jpg?raw=true");
   background-size: cover;
 }
 
-.type-banner {
+.search-banner {
   height: 322px;
 
   .banner-select-width {
@@ -11,7 +11,7 @@
   }
 }
 
-.type-main {
+.search-main {
   .search-select-width {
     width: 194px;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-.type-footer-banner {
+.search-footer-banner {
   .footer-banner-slogan {
     max-width: 769px;
   }
