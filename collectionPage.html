@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>type</title>
-    <script type="module" crossorigin src="/foodies/assets/main-cd4b12a6.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-6afc47b2.css">
+    <title>collectpage</title>
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -83,37 +81,36 @@
         </div>
     </nav>
 
-    <section class="type-banner-bg">
-      <div class="container type-banner d-flex align-items-center">
+    <section class="collectpage-banner-bg">
+      <div class="container collectpage-banner d-flex align-items-center">
         <div class="banner-select d-flex px-2 py-3">
           <select
             class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4 me-2"
-            aria-label="type-city"
+            aria-label="collectpage-city"
           >
-            <option selected>不分區</option>
-            <option value="1">台北市</option>
-            <option value="2">新北市</option>
-            <option value="3">基隆市</option>
-            <option value="4">新竹市</option>
-            <option value="5">桃園市</option>
-            <option value="6">新竹縣</option>
-            <option value="7">宜蘭縣</option>
-            <option value="8">臺中市</option>
-            <option value="9">苗栗縣</option>
-            <option value="10">彰化縣</option>
-            <option value="11">南投縣</option>
-            <option value="12">雲林縣</option>
-            <option value="13">高雄市</option>
-            <option value="14">臺南市</option>
-            <option value="15">嘉義市</option>
-            <option value="16">嘉義縣</option>
-            <option value="17">屏東縣</option>
-            <option value="18">花蓮縣</option>
-            <option value="19">臺東縣</option>
+            <option selected>台北市</option>
+            <option value="1">新北市</option>
+            <option value="2">基隆市</option>
+            <option value="3">新竹市</option>
+            <option value="4">桃園市</option>
+            <option value="5">新竹縣</option>
+            <option value="6">宜蘭縣</option>
+            <option value="7">臺中市</option>
+            <option value="8">苗栗縣</option>
+            <option value="9">彰化縣</option>
+            <option value="10">南投縣</option>
+            <option value="11">雲林縣</option>
+            <option value="12">高雄市</option>
+            <option value="13">臺南市</option>
+            <option value="14">嘉義市</option>
+            <option value="15">嘉義縣</option>
+            <option value="16">屏東縣</option>
+            <option value="17">花蓮縣</option>
+            <option value="18">臺東縣</option>
           </select>
           <select
             class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
-            aria-label="type-city"
+            aria-label="collectpage-city"
           >
             <option selected>下午茶</option>
             <option value="1">早午餐、輕食</option>
@@ -126,9 +123,9 @@
       </div>
     </section>
 
-    <main class="container type-main my-5">
+    <main class="container collectpage-main my-5">
       <div
-        class="search d-flex justify-content-between pb-4 border-bottom border-secondary"
+        class="collectpage d-flex justify-content-between pb-4 border-bottom border-secondary"
       >
         <nav aria-label="breadcrumb ">
           <ol class="breadcrumb">
@@ -136,9 +133,11 @@
               <a href="index.html" class="text-secondary">首頁</a>
             </li>
             <li class="breadcrumb-item breadCrumn-width">
-              <a href="#" class="text-secondary">美食類別</a>
+              <a href="#" class="text-secondary">檢索</a>
             </li>
-
+            <li class="breadcrumb-item active text-primary" aria-current="page">
+              台北市
+            </li>
             <li class="breadcrumb-item active text-primary" aria-current="page">
               下午茶
             </li>
@@ -146,8 +145,8 @@
         </nav>
 
         <select
-          class="search-select-width form-select border border-1 border-radius-lg p-3"
-          aria-label="type-city"
+          class="collectpage-select-width form-select border border-1 border-radius-lg p-3"
+          aria-label="collectpage-city"
         >
           <option selected>依評價排序</option>
         </select>
@@ -302,7 +301,7 @@
 
           <li class="store-items d-flex justify-content-between mb-10">
             <img
-              src="/foodies/assets/food-type-food-6-4dfdb13c.png"
+              src="../assets/images/food-collectpage-food-6.png"
               alt="Piepai Cafe’"
               class="store-img col-5 d-block img-fluid"
             />
@@ -368,7 +367,7 @@
     </main>
 
     <section class="bg-primary">
-      <div class="container type-footer-banner py-16">
+      <div class="container collectpage-footer-banner py-16">
         <div
           class="footer-banner-slogan mx-auto d-flex flex-column align-items-center"
         >
@@ -378,7 +377,7 @@
           </h3>
           <button
             class="btn btn-secondary text-primary col-2 d-block"
-            type="submit"
+            collectpage="submit"
           >
             探索美食
           </button>
@@ -392,6 +391,6 @@
   </footer>
 
   
-    
+    <script collectpage="module" src="../main.js"></script>
   </body>
 </html>
