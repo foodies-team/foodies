@@ -1,18 +1,14 @@
 .explore-banner-bg {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/food-explore-banner.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/explore-banner-sm.jpg?raw=true");
   background-size: cover;
 }
 
 .explore-banner {
   height: 322px;
-
-  .banner-select-width {
-    width: 250px;
-  }
 }
 
 .explore-main {
-  .search-select-width {
+  .explore-select-width {
     width: 194px;
   }
 }
@@ -24,6 +20,14 @@
 
   .store-img {
     max-height: 276px;
+  }
+
+  .store-inform {
+    width: 80%;
+  }
+
+  .store-collect {
+    width: 20%;
   }
 }
 
