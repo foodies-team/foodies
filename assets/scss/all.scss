@@ -1,8 +1,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./utils/variables"; //自訂變數
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"; //引入bootstrap icons
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import '../../node_modules/bootstrap/scss/utilities';//引入bootstrap 原始的utilities
 @import "./utils/utilities";
+
 @import "../../node_modules/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"; //引入bootstrap icons
 
 @import "./_breakpoints"; //斷點設定
 @import "./base"; //全站設定
