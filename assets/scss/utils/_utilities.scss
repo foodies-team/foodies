@@ -2,7 +2,10 @@
 
 $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
+//下方的map-merge裡，一定要加上$utilities，表引入bootstrap utilites，不然會不然會沒辦法使用原本的通用類別
 $utilities: map-merge(
+  
+  $utilities, 
   (
     
     "font-size": (
@@ -14,6 +17,6 @@ $utilities: map-merge(
     ),
     
     
-  ),
-  $utilities
+  ), 
+  
 );
