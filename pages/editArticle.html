@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <title>index</title>
 </head>
@@ -12,10 +13,10 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <section class="container collection-header mt-lg-10 mb-lg-13 my-5">
+    <section class="container article-area mt-lg-10 mb-10 mt-5">
 
       <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-lg-10">
           <nav aria-label="breadcrumb text-secondary">
             <ol class="breadcrumb mb-3">
               <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
@@ -26,12 +27,64 @@
           <h2 class="fw-bolder fs-lg-3 fs-5 mb-lg-10">發表文章</h2>
         </div>
       </div>
-      
-      <div class="row justify-content-center">
-        <div class="col-10">
 
-          <input type="text" class="form-control fs-lg-7 fs-8 text-light-gray fw-semibold border-1 border-top-0 border-start-0 border-end-0 border-radius-0 border-bottom border-secondary pb-3 input-text" id="article-title"
-            placeholder="請輸入標題">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <input type="text"
+            class="form-control fs-lg-7 fs-8 text-light-gray fw-semibold border-1 border-top-0 border-start-0 border-end-0 border-radius-0 border-bottom border-secondary pb-3 input-text mb-4 ps-0"
+            id="article-title" placeholder="請輸入標題">
+
+          <div class="tags pb-3 border-radius-0 border-bottom border-secondary d-flex align-items-center mb-4">
+            <h3 class="fs-lg-7 fs-8 text-secondary mb-0 text-nowrap">Tags : </h3>
+            <div class="swiper tag-swiper ms-6 d-flex justify-content-start">
+              <ul class="tag-list d-flex swiper-wrapper mb-0 ">
+                <li class="item swiper-slide"><a href="#"
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">火鍋</a>
+                </li>
+                <li class="item swiper-slide"><a href="#"
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">聚餐</a>
+                </li>
+                <li class="item swiper-slide"><a href="#"
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">台北火鍋店</a>
+                </li>
+                <li class="item swiper-slide"><a href="#"
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">青花驕</a>
+                </li>
+                <li class="item swiper-slide"><a href="#"
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm-m text-secondary item-link"><i
+                      class="bi bi-plus-lg"></i></a></li>
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="rank pb-3 border-radius-0 border-bottom border-secondary d-flex align-items-center mb-10">
+            <h3 class="fs-lg-7 fs-8 text-secondary mb-0 text-nowrap">評價 : </h3>
+            <ul class="rank-list mb-0 d-flex gap-lg-3 gap-2 align-items-center ms-6">
+              <li class="item"><a href="#"><i class="bi bi-star-fill text-primary fs-lg-5 fs-6"></i></a></li>
+              <li class="item"><a href="#"><i class="bi bi-star-fill text-primary fs-lg-5 fs-6"></i></a></li>
+              <li class="item"><a href="#"><i class="bi bi-star-fill text-primary fs-lg-5 fs-6"></i></a></li>
+              <li class="item"><a href="#"><i class="bi bi-star-fill text-primary fs-lg-5 fs-6"></i></a></li>
+              <li class="item"><a href="#"><i class="bi bi-star-fill text-light-gray fs-lg-5 fs-6"></i></a></li>
+            </ul>
+          </div>
+
+          <div id="editor" class="editor"></div>
+
+          <ul class="btn-list mb-0 d-flex gap-6 align-items-center justify-content-end mt-lg-10 mt-9">
+            <li class="item">
+              <a href="#" class="btn btn-outline-secondary py-2 px-4 border-radius-xs" role="button">
+                儲存成草稿
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="btn btn-primary py-2 px-4 border-radius-xs" role="button">
+                發表文章
+              </a>
+            </li>
+          </ul>
 
 
         </div>
@@ -46,6 +99,45 @@
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+      <script>
+        //swiper
+        const swiper = new Swiper('.tag-swiper', {
+          //避免使用者移動到
+          allowTouchMove: true,
+          spaceBetween: 16,
+          //一次呈現幾個.swiper-slide
+          slidesPerView: "auto",
+
+          grabCursor: true,
+
+          breakpoints: { // 斷點顯示設定
+            320: {  // 當裝置寬大於 320 
+              slidesPerView: 3, // 要看見幾頁內容 (可用小數點讓使用者知道可滑動)
+              spaceBetween: 16
+            },
+            768: {  // 當裝置寬大於 768
+              slidesPerView: 5,
+              spaceBetween: 16
+            },
+
+          },
+
+
+        });
+
+        //ckeditor
+        ClassicEditor
+          .create(document.querySelector('#editor'))
+          .then(editor => {
+            console.log(editor);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+
+      </script>
 </body>
 
 </html>
