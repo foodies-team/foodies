@@ -1,6 +1,7 @@
 .collectionpage-banner-bg {
   background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/collection-banner.jpg?raw=trueh");
   background-size: cover;
+  background-position: center;
 }
 
 .collectionpage-banner {
@@ -26,10 +27,22 @@
     width: 80%;
   }
 
-  .store-collect {
-    width: 20%;
-  }
 }
+
+.page-link {
+
+  &.active{
+    border-radius: 5px;
+    background: #FFE400;
+  }
+  &:hover{
+    border-radius: 5px;
+    background: #FFE400;
+  }
+ 
+}
+
+
 
 .collectionpage-footer-banner {
   .footer-banner-slogan {

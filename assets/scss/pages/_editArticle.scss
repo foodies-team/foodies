@@ -1,3 +1,53 @@
 .input-text::placeholder{
 color:$light-gray;
 }
+
+.article-area{
+    //height:calc(100vh - 124px);
+
+    .rank-list{
+        margin-top: -8px;
+    }
+
+    .ck.ck-toolbar{
+        border: 1px solid $secondary;
+    }
+
+    .ck-editor__editable[role="textbox"] {
+        /* editing area */
+        min-height: 500px;
+        
+        background-color: rgba(255, 228, 0, 0.05);
+        @include large{
+            min-height: 400px;
+        }
+    }
+
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+        border: 1px solid $secondary;
+        box-shadow: none;
+    }
+
+    .ck.ck-editor__main>.ck-editor__editable{
+       box-shadow: 0 0 0 0.25rem rgba(255, 228, 0, 0.25);
+       border:1px solid transparent;
+    }
+
+ 
+}
+
+
+.tag-swiper{
+   
+    .swiper-slide {
+      width: auto!important;
+      
+    }
+
+    .item-link:hover{
+        background-color: $primary;
+        border:1px solid transparent !important;
+    }
+
+
+}
