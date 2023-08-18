@@ -1,0 +1,123 @@
+.blog-breadcrumb {
+  margin-top: 50px;
+}
+
+.blog-banner {
+  margin-top: 10px;
+  max-height: 240px;
+
+  @include medium {
+    max-height: 320px;
+  }
+}
+
+.mb-border {
+  border-bottom: 1px solid rgb(222, 226, 230);
+  @include large {
+    border: none;
+  }
+}
+.blog-news {
+  img {
+    @include medium {
+      min-height: 480px;
+    }
+    @include large {
+      min-height: 520px;
+    }
+  }
+  a:not(:last-child):hover,
+  a:first-child:hover {
+    color: $dark-gray !important;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.explore-more:hover {
+  animation: readMore 3s infinite;
+}
+
+@keyframes readMore {
+  0% {
+    transform: translateX(10px);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.edit-icon {
+  font-size: 40px;
+  color: $secondary;
+  @include large {
+    font-size: 80px;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+.single {
+  img {
+    height: 240px;
+
+    @include medium {
+      height: 300px;
+    }
+    @include large {
+      height: 350px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .card {
+    overflow: hidden;
+  }
+}
+
+.page-nav {
+  a:hover {
+    background-color: $primary;
+  }
+}
+
+.group {
+  img {
+    height: 240px;
+
+    @include medium {
+      height: 280px;
+    }
+    @include large {
+      height: 320px;
+    }
+  }
+  .item {
+    border: 1px solid rgb(222, 226, 230);
+    &:hover {
+      color: $dark-gray !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    @include medium {
+      border: none;
+    }
+  }
+  .img {
+    object-position: bottom;
+  }
+}
