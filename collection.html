@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>index</title>
-    <script type="module" crossorigin src="/foodies/assets/main-5531d1a8.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-3c9751de.css">
+    <script type="module" crossorigin src="/foodies/assets/main-567a2e68.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-6235148b.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -96,7 +96,7 @@
         <h2 class="fw-bolder fs-lg-3 fs-5 mb-lg-6 mb-5">收藏夾</h2>
         <div class="select-group d-flex justify-content-between align-items-center border-bottom border-1 border-secondary pb-lg-4 pb-3">
           <div class="select-width">
-            <select class="form-select border border-1 border-secondary border-radius-lg px-3 py-lg-3 py-2 fs-lg-9 fs-11" aria-label="collected-restaurants">
+            <select class="form-select border border-1 border-radius-lg px-3 py-lg-3 py-2 fs-lg-9 fs-11" aria-label="collected-restaurants">
               <option selected>依收藏餐廳數排序</option>
               <option value="1">由高至低</option>
             </select>
@@ -111,7 +111,7 @@
     <section class="container collection-content mb-lg-13 mb-14">
       <ul class="row gy-lg-6 gy-8 mb-0 gx-lg-6 gx-0">
         <li class="col-lg-3 item text-center ">
-          <a class="position-relative" href="collectionPage.html">
+          <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="/foodies/assets/index-food-7-c2e58502.jpg" alt="早午餐" class="item-img">
             </div>
@@ -167,14 +167,14 @@
           
         </li>
         <li class="col-lg-3 item text-center ">
-          <a class="position-relative" href="#">
+          <a class="position-relative" href="collectionPage.html">
             <div class="overflow-hidden item-wrap">
               <img src="/foodies/assets/index-food-8-8fb520b0.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
               <i class="bi bi-heart-fill text-primary fs-9"></i>
-              <span class="fs-9 text-secondary">4</span>
+              <span class="fs-9 text-secondary">5</span>
             </div>
           </a>
           
@@ -233,7 +233,7 @@
     </section>
 
     <!-- 點擊新增收藏類別彈跳視窗 -->
-    <div class="modal fade" id="new-collection-modal" tabindex="-1" aria-labelledby="new-collection-modal" aria-hidden="true">
+    <div class="modal fade" id="new-collection-modal" tabindex="-1" aria-labelledby="new-collection-modal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -242,12 +242,12 @@
           </div>
           <div class="modal-body">
             <label for="new-collection-name" class="form-label fs-lg-8 fs-9">類別名稱</label>
-            <input type="text" class="form-control" id="new-collection-name" aria-describedby="new-collection-name">
+            <input type="text" class="form-control" id="new-collection-name" placeholder="請輸入類別名稱" aria-describedby="new-collection-name">
             
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
-            <button type="button" class="btn btn-primary">確定</button>
+            <button type="button" class="btn btn-outline-secondary border-radius-xss" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary border-radius-xss">確定</button>
           </div>
         </div>
       </div>
