@@ -17,7 +17,7 @@ color:$light-gray;
         /* editing area */
         min-height: 500px;
         
-        background-color: rgba(255, 228, 0, 0.05);
+        background-color: rgba(255, 228, 0, 0.05)!important;
         @include large{
             min-height: 400px;
         }

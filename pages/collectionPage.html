@@ -13,17 +13,17 @@
     <section class="collectionpage-banner-bg">
       <div class="container collectionpage-banner d-flex align-items-center gap-lg-6 gap-3">
 
-        <h2 class="fs-3 text-white fw-bolder">下午茶</h2>
-        <a href="#"><i class="bi bi-pencil-fill fs-7 text-white"></i></a>
+        <h2 class="fs-md-3 fs-5 text-white fw-bolder">下午茶</h2>
+        <a href="#"><i class="bi bi-pencil-fill fs-7 text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop-edit-collectionName"></i></a>
 
 
       </div>
     </section>
 
-    <main class="container collectionpage-main my-5">
+    <main class="container collectionpage-main my-lg-5 my-4">
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mt-6">
+      <nav aria-label="breadcrumb" class="mb-lg-6 mb-4">
+        <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
             <a href="index.html" class="text-secondary">首頁</a>
           </li>
@@ -31,7 +31,7 @@
             <a href="#" class="text-secondary">會員中心</a>
           </li>
           <li class="breadcrumb-item breadCrumn-width-s">
-            <a href="#" class="text-secondary">收藏夾</a>
+            <a href="#" class="text-secondary text-nowrap">收藏夾</a>
           </li>
           <li class="breadcrumb-item active text-primary" aria-current="page">
             類別 - 下午茶
@@ -40,7 +40,7 @@
         </ol>
       </nav>
 
-      <div class="collectionpage d-flex justify-content-between pb-4 border-bottom border-secondary">
+      <div class="collectionpage d-flex justify-content-between pb-lg-6 pb-4 border-bottom border-secondary">
         <select class="collectionpage-select-width form-select border border-1 border-radius-lg  py-lg-3 py-2"
           aria-label="collectionpage-city">
           <option selected>依評價排序</option>
@@ -49,14 +49,17 @@
           <option value="3">依添加時間排序</option>
         </select>
 
-        <button type="button" class="btn btn-primary text-secondary fw-bolder py-lg-3 py-2 border-radius-lg collectionpage-select-width">
+        <button type="button"
+          class="btn btn-primary text-secondary fw-bolder py-lg-3 py-2 border-radius-lg collectionpage-select-width"
+          data-bs-toggle="modal" data-bs-target="#delete-collectionName">
           刪除收藏類別
         </button>
       </div>
 
-      <div class="stores col-10 d-flex flex-column py-13 mx-auto">
+      <div class="stores col-lg-10 col-12 d-flex flex-column py-lg-13 py-10 mx-auto">
         <ul class="store-list d-flex flex-column mb-6">
-          <li class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
 
             <img src="../assets/images/index-food-1.jpg" alt="平安京茶室"
               class="store-img col-lg-5 col-12 d-block img-fluid" />
@@ -89,12 +92,15 @@
               <div
                 class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto">
                 <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">添加時間 : 2023/07/02</p>
-                <a href="#" class="text-secondary"><i class="bi bi-heart-fill text-primary fs-lg-4 fs-6"></i></a>
+                <a href="#" class="text-secondary"><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-collection" data-bs-toggle="modal" data-bs-target="#cancle-collectionItem"></i></a>
               </div>
             </div>
+            
           </li>
 
-          <li class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
 
             <img src="../assets/images/search-paging-food-2.png" alt="Cun Siou Jia 村秀家"
               class="store-img col-lg-5 col-12 d-block img-fluid" />
@@ -127,12 +133,14 @@
               <div
                 class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto">
                 <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">添加時間 : 2023/06/28</p>
-                <a href="#" class="text-secondary"><i class="bi bi-heart-fill text-primary fs-lg-4 fs-6"></i></a>
+                <a href="#" class="text-secondary"><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-collection" data-bs-toggle="modal" data-bs-target="#cancle-collectionItem"></i></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
 
             <img src="../assets/images/search-paging-food-3.png" alt="沙丘"
               class="store-img col-lg-5 col-12 d-block img-fluid" />
@@ -165,12 +173,14 @@
               <div
                 class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto">
                 <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">添加時間 : 2023/06/20</p>
-                <a href="#" class="text-secondary"><i class="bi bi-heart-fill text-primary fs-lg-4 fs-6"></i></a>
+                <a href="#" class="text-secondary"><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-collection" data-bs-toggle="modal" data-bs-target="#cancle-collectionItem"></i></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
 
             <img src="../assets/images/search-paging-food-4.jpg" alt="角公園咖啡"
               class="store-img col-lg-5 col-12 d-block img-fluid" />
@@ -203,12 +213,14 @@
               <div
                 class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto">
                 <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">添加時間 : 2023/06/15</p>
-                <a href="#" class="text-secondary"><i class="bi bi-heart-fill text-primary fs-lg-4 fs-6"></i></a>
+                <a href="#" class="text-secondary"><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-collection" data-bs-toggle="modal" data-bs-target="#cancle-collectionItem"></i></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
 
             <img src="../assets/images/food-type-food-6.png" alt="Piepai Cafe’"
               class="store-img col-lg-5 col-12 d-block img-fluid" />
@@ -241,7 +253,8 @@
               <div
                 class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto">
                 <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">添加時間 : 2023/06/05</p>
-                <a href="#" class="text-secondary"><i class="bi bi-heart-fill text-primary fs-lg-4 fs-6"></i></a>
+                <a href="#" class="text-secondary"><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-collection" data-bs-toggle="modal" data-bs-target="#cancle-collectionItem"></i></a>
               </div>
             </div>
           </li>
@@ -258,7 +271,8 @@
                 </a>
               </li>
               <li class="page-item">
-                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active" href="#">1</a>
+                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
+                  href="#">1</a>
               </li>
               <li class="page-item">
                 <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">2</a>
@@ -269,7 +283,7 @@
               <li class="page-item">
                 <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">4</a>
               </li>
-              <li class="page-item" >
+              <li class="page-item">
                 <a class="page-link border-0  py-lg-2 py-1 px-lg-3 px-2" href="#" aria-label="Previous">
                   <i class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"></i>
                 </a>
@@ -282,12 +296,78 @@
 
     <section
       class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11">
-      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">發現更多美食寶藏</h2>
-      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看更多類似店家</h3>
+      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">為收藏夾添加更多美食</h2>
+      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看網友推薦熱門美食</h3>
       <a href="#"
         class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4"
         role="button">探索美食</a>
     </section>
+
+    <!-- 刪除收藏類別彈跳視窗  -->
+    <div class="modal fade" id="delete-collectionName"
+      tabindex="-1" aria-labelledby="delete-collectionName" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-delete-collectionName">確認訊息</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">確定刪除此收藏類別?</p>
+            <p class="mb-0 fs-lg-8 fs-9"><i
+                class="bi bi-exclamation-triangle-fill text-primary"></i>一旦刪除該類別，原收藏的餐廳將一併移出收藏夾</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary border-radius-xss">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 修改收藏類別名稱 -->
+    <div class="modal fade" id="staticBackdrop-edit-collectionName" tabindex="-1" aria-labelledby="new-collection-modal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="staticBackdropLabel-edit-collectionName">修改收藏類別名稱</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="new-collection-name" class="form-label fs-lg-8 fs-9">類別名稱</label>
+            <input type="text" class="form-control" id="new-collection-name" placeholder="請輸入類別名稱" aria-describedby="new-collection-name">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary border-radius-xss" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary border-radius-xss">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 取消收藏類別彈跳視窗  -->
+    <div class="modal fade" id="cancle-collectionItem"
+      tabindex="-1" aria-labelledby="cancle-collectionItem" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-cancle-collectionItem">確認訊息</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">確定取消收藏此餐廳?</p>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary border-radius-xss">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
