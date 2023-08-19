@@ -40,7 +40,10 @@
   }
 
   .store-inform {
-    width: 80%;
+    width: 100% !important;
+    @include large{
+      width: 80% !important;
+    }
   }
 
 }
