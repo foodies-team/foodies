@@ -15,8 +15,9 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
-@import "./pages/index.scss";
-@import "./pages/collection.scss";
+@import './pages/general'; //各頁共用內容(footer banner/頁碼等)
+@import "./pages/index";
+@import "./pages/collection";
 @import "./pages/type";
 @import "./pages/search";
 @import "./pages/collectionPage";
