@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>search</title>
-    <script type="module" crossorigin src="/foodies/assets/main-a9045c4c.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-09a7a991.css">
+    <script type="module" crossorigin src="/foodies/assets/main-d979f7e4.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-3328b236.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -84,9 +84,11 @@
 
     <section class="search-banner-bg">
       <div class="container search-banner d-flex align-items-center">
-        <div class="banner-select d-flex px-2 py-3">
+        <div
+          class="banner-select d-flex col-lg-5 col-12 justify-content-between px-lg-2 py-lg-3 px-1 py-2"
+        >
           <select
-            class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4 me-2"
+            class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
             aria-label="search-city"
           >
             <option selected>台北市</option>
@@ -130,10 +132,10 @@
           <li class="breadcrumb-item">
             <a href="index.html" class="text-secondary">首頁</a>
           </li>
-          <li class="breadcrumb-item breadCrumn-width2">
+          <li class="breadcrumb-item breadCrumn-width-xs">
             <a href="#" class="text-secondary">檢索</a>
           </li>
-          <li class="breadcrumb-item breadCrumn-width1">
+          <li class="breadcrumb-item breadCrumn-width-s">
             <a href="#" class="text-secondary">台北市</a>
           </li>
           <li class="breadcrumb-item active text-primary" aria-current="page">
@@ -143,63 +145,69 @@
       </nav>
 
       <div
-        class="search d-flex justify-content-between pb-4 border-bottom border-secondary"
+        class="search d-flex justify-content-between pb-4 border-bottom border-secondary flex-lg-row flex-column"
       >
         <select
-          class="search-select-width form-select border border-1 border-radius-lg p-3"
+          class="search-select-width form-select border border-1 border-radius-lg p-lg-3 p-2 mb-lg-0 mb-4"
           aria-label="search-city"
         >
           <option selected>依評價排序</option>
         </select>
 
-        <div class="btns">
-          <button
-            type="button"
-            class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5"
-          >
-            木柵動物園
-          </button>
+        <div
+          class="scrollable-btns d-flex justify-content-lg-end justify-content-start"
+        >
+          <div class="btns">
+            <button
+              type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
+            >
+              木柵動物園
+            </button>
 
-          <button
-            type="button"
-            class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5"
-          >
-            國父紀念館
-          </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
+            >
+              國父紀念館
+            </button>
 
-          <button
-            type="button"
-            class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5"
-          >
-            台北貓空
-          </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
+            >
+              台北貓空
+            </button>
 
-          <button
-            type="button"
-            class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5"
-          >
-            松山文創園區
-          </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
+            >
+              松山文創園區
+            </button>
 
-          <button
-            type="button"
-            class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary"
-          >
-            四四南村
-          </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1"
+            >
+              四四南村
+            </button>
+          </div>
         </div>
       </div>
 
       <div class="stores col-10 d-flex flex-column py-13 mx-auto">
         <ul class="store-list d-flex flex-column mb-6">
-          <li class="store-items d-flex justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
+          >
             <img
               src="/foodies/assets/index-food-1-6e062d44.jpg"
               alt="平安京茶室"
-              class="store-img col-5 d-block img-fluid"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
-              class="store px-6 py-13 d-flex align-items-center justify-content-between col-5"
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">平安京茶室</h2>
@@ -225,20 +233,22 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-3"></i
+                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
                 ></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
+          >
             <img
               src="/foodies/assets/search-paging-food-2-b9dbfe86.png"
               alt="Cun Siou Jia 村秀家"
-              class="store-img col-5 d-block img-fluid"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
-              class="store px-6 py-13 d-flex align-items-center justify-content-between col-5"
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">
@@ -267,20 +277,22 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-3"></i
+                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
                 ></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
+          >
             <img
               src="/foodies/assets/search-paging-food-3-58b5b243.png"
               alt="沙丘"
-              class="store-img col-5 d-block img-fluid"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
-              class="store px-6 py-13 d-flex align-items-center justify-content-between col-5"
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">沙丘</h2>
@@ -308,20 +320,22 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-3"></i
+                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
                 ></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
+          >
             <img
               src="/foodies/assets/search-paging-food-4-0ccc97ee.jpg"
               alt="角公園咖啡’"
-              class="store-img col-5 d-block img-fluid"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
-              class="store px-6 py-13 d-flex align-items-center justify-content-between col-5"
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">角公園咖啡</h2>
@@ -347,20 +361,22 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-3"></i
+                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
                 ></a>
               </div>
             </div>
           </li>
 
-          <li class="store-items d-flex justify-content-between mb-10">
+          <li
+            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
+          >
             <img
               src="/foodies/assets/search-paging-food-5-a3fcafab.png"
               alt="金雞母-東門店’"
-              class="store-img col-5 d-block img-fluid"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
-              class="store px-6 py-13 d-flex align-items-center justify-content-between col-5"
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">金雞母-東門店</h2>
@@ -388,36 +404,64 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-3"></i
+                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
                 ></a>
               </div>
             </div>
           </li>
         </ul>
 
-        <div class="pagination-container d-flex justify-content-end">
+        <div
+          class="pagination-container d-flex justify-content-lg-end justify-content-center"
+        >
           <nav>
             <ul class="pagination mb-0">
               <li class="page-item">
-                <a class="page-link border-0" href="#" aria-label="Previous">
-                  <i class="bi bi-chevron-left fs-8 text-secondary"></i>
+                <a
+                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <i class="bi bi-chevron-left fs-lg-8 fs-9 text-secondary"></i>
                 </a>
               </li>
               <li class="page-item">
-                <a class="page-link fs-8 text-secondary border-0" href="#">1</a>
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
+                  href="#"
+                  >1</a
+                >
               </li>
               <li class="page-item">
-                <a class="page-link fs-8 text-secondary border-0" href="#">2</a>
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >2</a
+                >
               </li>
               <li class="page-item">
-                <a class="page-link fs-8 text-secondary border-0" href="#">3</a>
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >3</a
+                >
               </li>
               <li class="page-item">
-                <a class="page-link fs-8 text-secondary border-0" href="#">4</a>
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >4</a
+                >
               </li>
               <li class="page-item">
-                <a class="page-link border-0" href="#" aria-label="Next">
-                  <i class="bi bi-chevron-right fs-8 text-secondary"></i>
+                <a
+                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <i
+                    class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"
+                  ></i>
                 </a>
               </li>
             </ul>
