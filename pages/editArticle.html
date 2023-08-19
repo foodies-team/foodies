@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <title>index</title>
 </head>
@@ -99,34 +98,9 @@
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
       <script>
-        //swiper
-        const swiper = new Swiper('.tag-swiper', {
-          //避免使用者移動到
-          allowTouchMove: true,
-          spaceBetween: 16,
-          //一次呈現幾個.swiper-slide
-          slidesPerView: "auto",
-
-          grabCursor: true,
-
-          breakpoints: { // 斷點顯示設定
-            320: {  // 當裝置寬大於 320 
-              slidesPerView: 3, // 要看見幾頁內容 (可用小數點讓使用者知道可滑動)
-              spaceBetween: 16
-            },
-            768: {  // 當裝置寬大於 768
-              slidesPerView: 5,
-              spaceBetween: 16
-            },
-
-          },
-
-
-        });
-
+       
         //ckeditor
         ClassicEditor
           .create(document.querySelector('#editor'))
