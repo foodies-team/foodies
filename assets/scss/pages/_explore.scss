@@ -1,6 +1,13 @@
 .explore-banner-bg {
   background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/explore-banner-sm.jpg?raw=true");
   background-size: cover;
+  background-position: center;
+
+  @include large {
+    background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/explore-banner.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .explore-banner {
@@ -35,4 +42,17 @@
   .footer-banner-slogan {
     max-width: 769px;
   }
+}
+
+.scrollable-btns {
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  @include large {
+    width: 79.6%;
+  }
+}
+
+.btns {
+  display: inline-block;
 }
