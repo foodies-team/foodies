@@ -58,8 +58,11 @@
 
 .scrollable-btns {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
   white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @include large {
     width: 79.6%;
   }
