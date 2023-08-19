@@ -3,7 +3,7 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-@import '../../node_modules/bootstrap/scss/utilities';//引入bootstrap 原始的utilities
+@import "../../node_modules/bootstrap/scss/utilities"; //引入bootstrap 原始的utilities
 @import "./utils/utilities";
 
 @import "../../node_modules/bootstrap";
@@ -22,5 +22,6 @@
 @import "./pages/collectionPage";
 @import "./pages/explore";
 @import "./pages/blogPost";
-@import './pages/editArticle';
+@import "./pages/editArticle";
 @import "./pages/blog";
+@import "./pages/restaurant";

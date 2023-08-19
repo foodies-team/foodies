@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restaurant</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <nav aria-label="breadcrumb" class="container restaurant-breadcrumb">
+      <ol class="breadcrumb mt-5 mb-10">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="text-secondary">首頁</a>
+        </li>
+        <li class="breadcrumb-item breadCrumn-width2">
+          <a href="#" class="text-secondary">檢索</a>
+        </li>
+        <li class="breadcrumb-item breadCrumn-width1">
+          <a href="#" class="text-secondary">桃園市</a>
+        </li>
+        <li class="breadcrumb-item breadCrumn-width2">
+          <a href="#" class="text-secondary">燒烤</a>
+        </li>
+        <li class="breadcrumb-item active text-primary" aria-current="page">
+          餐廳資訊
+        </li>
+      </ol>
+    </nav>
+
+    <section class="restaurant-banner container d-flex mb-14">
+      <div class="banner-left col-1 d-flex flex-column justify-content-between">
+        <div class="banner-sm-imgs">
+          <img
+            src="../assets/images/restaurant-food-2.jpg"
+            alt="相演烤肉2"
+            class="img-sm img-fluid col-10 mb-2"
+          />
+          <img
+            src="../assets/images/restaurant-food-3.jpg"
+            alt="相演烤肉3"
+            class="img-sm img-fluid col-10 mb-3"
+          />
+          <img
+            src="../assets/images/restaurant-food-4.jpg"
+            alt="相演烤肉4"
+            class="img-sm img-fluid col-10 mb-3"
+          />
+          <img
+            src="../assets/images/restaurant-food-5.jpg"
+            alt="相演烤肉5"
+            class="img-sm img-fluid col-10"
+          />
+        </div>
+
+        <button type="button" class="btn btn-dark-gray border-radius-0 col-10">
+          <i class="bi bi-caret-down"></i>
+        </button>
+      </div>
+
+      <div class="banner-center col-5">
+        <img
+          src="../assets/images/restaurant-food-2.jpg"
+          alt="相演烤肉2"
+          class="img-lg img-fluid"
+        />
+      </div>
+
+      <div
+        class="banner-right col-6 ps-6 d-flex flex-column justify-content-between"
+      >
+        <h2 class="fs-3 fw-bolder text-secondary">相演無煙燒肉</h2>
+        <div class="rank d-flex align-items-center">
+          <p class="fs-7 me-1 mb-0">4</p>
+          <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+          <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+          <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+          <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+          <i class="bi bi-star-half text-primary fs-7"></i>
+          <p class="fs-7 ms-6 mb-0">2616則評價</p>
+        </div>
+        <div class="phone d-flex align-items-center">
+          <i class="bi bi-telephone-fill fs-7 me-1"></i>
+          <p class="fs-7 mb-0">電話：03 331 6617</p>
+        </div>
+        <div class="site d-flex align-items-center">
+          <i class="bi bi-geo-alt-fill fs-7 me-1"></i>
+          <p class="fs-7 mb-0">地址： 330桃園市桃園區中正路317號</p>
+        </div>
+
+        <div class="layout d-flex align-items-center">
+          <i class="bi bi-layout-text-sidebar-reverse fs-7 me-1"></i>
+          <p class="fs-7 mb-0">類型：燒烤</p>
+        </div>
+        <div class="link d-flex align-items-center">
+          <i class="bi bi-link-45deg fs-7 me-1"></i>
+          <p class="fs-7 mb-0">
+            連結：https://www.facebook.com/hsiangyen168/?locale=zh_TW
+          </p>
+        </div>
+        <div class="btns">
+          <a
+            class="btn btn-dark-gray col-2 border-radius-lg me-6"
+            href="#"
+            role="button"
+            ><i class="bi bi-heart-fill me-2"></i>收藏</a
+          >
+          <a
+            class="btn btn-dark-gray col-2 border-radius-lg me-6"
+            href="#"
+            role="button"
+            ><i class="bi bi-pencil-square me-2"></i>評論</a
+          >
+          <a
+            class="btn btn-dark-gray col-2 border-radius-lg"
+            href="#"
+            role="button"
+            ><i class="bi bi-share-fill me-2"></i>分享</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="restaurant-inform container d-flex justify-content-between">
+      <div class="inform-left"></div>
+      <div class="inform-right"></div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
