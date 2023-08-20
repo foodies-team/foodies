@@ -44,7 +44,13 @@
     width: 20%;
   }
 }
-
+.store{
+  border: solid 1px $light-gray;
+  border-top:0px;
+  @include large{
+    border-color:transparent;
+  }
+}
 .footer-banner {
   .footer-more-btn {
     transition: all 0.2s ease-in-out;
