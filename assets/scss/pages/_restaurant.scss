@@ -21,3 +21,68 @@
 .google-map {
   width: 100%;
 }
+
+.bottom,
+.upper {
+  height: 42px;
+}
+
+.bi-person-circle {
+  font-size: 72px;
+}
+
+.messenge-list,
+.messenge-imgs {
+  gap: 1.5rem;
+}
+
+.user-img {
+  width: 86px;
+  height: 86px;
+}
+
+.messenge-imgs {
+  height: 216px;
+}
+
+.messenge-img {
+  height: auto;
+}
+
+.article-item,
+.like-item {
+  width: 23.6%;
+}
+
+.article-img {
+  width: 100%;
+  height: 180px;
+}
+
+.like-item {
+  height: 353px;
+}
+
+.like-shop1 {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-13.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+.like-shop2 {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-14.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+.like-shop3 {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-15.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+.like-shop4 {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-16.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
