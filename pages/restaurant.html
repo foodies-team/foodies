@@ -8,25 +8,27 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <nav aria-label="breadcrumb" class="container restaurant-breadcrumb">
-      <ol class="breadcrumb mt-5 mb-10">
-        <li class="breadcrumb-item">
-          <a href="index.html" class="text-secondary">首頁</a>
-        </li>
-        <li class="breadcrumb-item breadCrumn-width2">
-          <a href="#" class="text-secondary">檢索</a>
-        </li>
-        <li class="breadcrumb-item breadCrumn-width1">
-          <a href="#" class="text-secondary">桃園市</a>
-        </li>
-        <li class="breadcrumb-item breadCrumn-width2">
-          <a href="#" class="text-secondary">燒烤</a>
-        </li>
-        <li class="breadcrumb-item active text-primary" aria-current="page">
-          餐廳資訊
-        </li>
-      </ol>
-    </nav>
+    <section class="mt-15 mb-10">
+      <nav aria-label="breadcrumb" class="container restaurant-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-secondary">首頁</a>
+          </li>
+          <li class="breadcrumb-item breadCrumn-width-xs">
+            <a href="#" class="text-secondary">檢索</a>
+          </li>
+          <li class="breadcrumb-item breadCrumn-width-s">
+            <a href="#" class="text-secondary">桃園市</a>
+          </li>
+          <li class="breadcrumb-item breadCrumn-width-xs">
+            <a href="#" class="text-secondary">燒烤</a>
+          </li>
+          <li class="breadcrumb-item active text-primary" aria-current="page">
+            餐廳資訊
+          </li>
+        </ol>
+      </nav>
+    </section>
 
     <section class="restaurant-banner container d-flex mb-14">
       <div class="banner-left col-1 d-flex flex-column justify-content-between">
@@ -255,16 +257,377 @@
     <section class="commet container mb-6">
       <h2 class="fs-4 mb-6">餐廳評價</h2>
       <div class="d-flex justify-content-between">
-        <div class="comment-left col-5"></div>
+        <div class="comment-left col-5">
+          <ul class="score-list">
+            <li
+              class="score-item d-flex justify-content-between align-items-center mb-5"
+            >
+              <p class="fs-6 mb-0">5</p>
+              <div class="score-color col-11">
+                <div class="bottom bg-dark-gray">
+                  <div class="upper bg-primary col-11"></div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="score-item d-flex justify-content-between align-items-center mb-5"
+            >
+              <p class="fs-6 mb-0">4</p>
+              <div class="score-color col-11">
+                <div class="bottom bg-dark-gray">
+                  <div class="upper bg-primary col-6"></div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="score-item d-flex justify-content-between align-items-center mb-5"
+            >
+              <p class="fs-6 mb-0">3</p>
+              <div class="score-color col-11">
+                <div class="bottom bg-dark-gray">
+                  <div class="upper bg-primary col-3"></div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="score-item d-flex justify-content-between align-items-center mb-5"
+            >
+              <p class="fs-6 mb-0">2</p>
+              <div class="score-color col-11">
+                <div class="bottom bg-dark-gray">
+                  <div class="upper bg-primary col-1"></div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="score-item d-flex justify-content-between align-items-center"
+            >
+              <p class="fs-6 mb-0">1</p>
+              <div class="score-color col-11">
+                <div class="bottom bg-dark-gray">
+                  <div class="upper bg-primary col-1"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="comment-center col-2 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="fs-4">4.5</h2>
+          <h3 class="fs-5">(2616)</h3>
+        </div>
+
+        <div class="comment-right col-5">
+          <h3 class="fs-5 mb-12">為這間餐廳評價</h3>
+          <div
+            class="user-comment d-flex justify-content-between align-items-center"
+          >
+            <div class="user d-flex align-items-center">
+              <i class="bi bi-person-circle me-4"></i>
+
+              <div class="user-inform d-flex flex-column">
+                <p class="fs-7 mb-0">user</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary px-6 py-3 fx-6 border-radius-lg"
+            >
+              撰寫評價
+            </button>
+          </div>
+        </div>
       </div>
-      <div
-        class="comment-center col-2 d-flex justify-content-center align-items-center flex-column"
-      >
-        <h2 class="fs-4">4.5</h2>
-        <h3 class="fs-5">(2616)</h3>
-      </div>
-      <div class="comment-right col-5"></div>
     </section>
+
+    <section class="sort container mb-6">
+      <div class="col-7 d-flex justify-content-between">
+        <div class="col-3">
+          <select
+            class="form-select border border-1 border-radius-lg py-3 pe-3 ps-4 fs-7"
+            aria-label="type-city"
+          >
+            <option selected>相關性最高</option>
+          </select>
+        </div>
+
+        <div class="btns">
+          <button
+            type="button"
+            class="btn btn-outline-primary text-secondary border-radius-lg border-secondary py-3 px-6 fs-7 me-3"
+          >
+            全部
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-primary text-secondary border-radius-lg border-secondary py-3 px-6 fs-7 me-3"
+          >
+            好評
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-primary text-secondary border-radius-lg border-secondary py-3 px-6 fs-7"
+          >
+            壞評
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="messenge container d-flex flex-column align-items-center mb-16"
+    >
+      <ul class="messenge-list d-flex flex-column mb-6">
+        <li class="messenge-item">
+          <div
+            class="user d-flex align-items-center justify-content-between mb-4"
+          >
+            <div class="d-flex">
+              <div class="user-img rounded-circle bg-dark-gray me-4"></div>
+              <div class="user-inform d-flex flex-column">
+                <p class="fs-7 mb-0">nick236</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                </div>
+              </div>
+            </div>
+
+            <i class="bi bi-three-dots-vertical fs-2"></i>
+          </div>
+
+          <div class="user-messenge">
+            <p class="fs-7 mb-4">
+              我昨天在這家烤肉店用餐，但是整體體驗非常失望。首先，服務員態度冷淡，一直在匆忙地走來走去，沒有給予足夠的關注。其次，肉品質量並不如我預期的那麼好，有些部位的肉顯得有點老舊，味道也不是很鮮美。另外，烤肉的燒烤火爐似乎不太調整得當，肉經常烤得不均勻，有些地方過於焦黑。整體來說，這次的用餐經驗並不令人滿意，對於價格來說，我希望能得到更好的服務和品質。
+            </p>
+
+            <div class="messenge-imgs d-flex">
+              <img
+                src="../assets/images/restaurant-food-6.jpg"
+                alt="評論圖片"
+                class="messenge-img col-2"
+              />
+              <img
+                src="../assets/images/restaurant-food-7.jpg"
+                alt="評論圖片"
+                class="messenge-img col-2"
+              />
+              <img
+                src="../assets/images/restaurant-food-8.jpg"
+                alt="評論圖片"
+                class="messenge-img col-2"
+              />
+            </div>
+          </div>
+        </li>
+
+        <li class="messenge-item">
+          <div
+            class="user d-flex align-items-center justify-content-between mb-4"
+          >
+            <div class="d-flex">
+              <div class="user-img rounded-circle bg-dark-gray me-4"></div>
+
+              <div class="user-inform d-flex flex-column">
+                <p class="fs-7 mb-0">alisalee99</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-dark-gray fs-6"></i>
+                </div>
+              </div>
+            </div>
+            <i class="bi bi-three-dots-vertical fs-2"></i>
+          </div>
+
+          <div class="user-messenge">
+            <p class="fs-7 mb-0">
+              來這家烤肉店真是個驚喜！他們的價格相比其他烤肉店來說非常合理，但是品質絕對不馬虎。肉品鮮美，經過烤制後保持了所有的原汁原味。他們的烤肉調味料也很特別，讓肉的味道更為獨特。此外，店內的環境舒適，很適合和家人朋友一起享受用餐時光。最重要的是，他們的服務非常出色，總是保持微笑且樂於助人。我非常滿意這次的用餐體驗，強烈推薦給所有喜愛烤肉的人！
+            </p>
+          </div>
+        </li>
+
+        <li class="messenge-item">
+          <div
+            class="user d-flex align-items-center justify-content-between mb-4"
+          >
+            <div class="d-flex">
+              <div class="user-img rounded-circle bg-dark-gray me-4"></div>
+              <div class="user-inform d-flex flex-column">
+                <p class="fs-7 mb-0">brucegreat</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                  <i class="bi bi-star-fill text-primary fs-6"></i>
+                </div>
+              </div>
+            </div>
+            <i class="bi bi-three-dots-vertical fs-2"></i>
+          </div>
+
+          <div class="user-messenge">
+            <p class="fs-7 mb-0">
+              這家烤肉店真是太棒了！我和朋友來這裡用餐，我們都非常喜歡它的肉品質。肉類非常嫩滑多汁，尤其是牛排和豬肉，經過烤制後保持了所有的鮮味。此外，他們提供的配菜也很豐富，新鮮的沙拉和美味的小吃讓整個用餐過程更加美好。服務方面也很出色，服務員態度友好，及時為我們提供所需，增添了用餐的愉快氛圍。總體而言，我們度過了一個美好的晚餐時光，下次還會再來的！
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <a
+        href="#"
+        class="btn btn-secondary text-primary border-radius-lg text-decoration-none col-4 py-3"
+        role="button"
+        >查看更多評論</a
+      >
+    </section>
+
+    <section class="article container mb-16">
+      <h2 class="fs-3 text-secondary mb-6">相演無煙燒肉的文章</h2>
+      <div class="d-flex flex-column align-items-center">
+        <ul class="article-list d-flex justify-content-between">
+          <li class="article-item border my-2">
+            <h4 class="fs-7 mb-4 text-center">CP值極高的燒烤</h4>
+            <div class="author d-flex justify-content-between mb-6 px-3">
+              <p class="fs-9 mb-0">Violentaf</p>
+              <p class="fs-9 mb-0">2023/06/13</p>
+            </div>
+            <img
+              src="../assets/images/restaurant-food-9.jpg"
+              alt="文章照片"
+              class="article-img"
+            />
+            <p class="fs-9 px-3">
+              相演是一家盛名的烤肉餐廳，以其肉品和服務而聞名...
+            </p>
+            <a href="#" class="fs-9 text-end text-secondary">READ MORE </a>
+          </li>
+
+          <li class="article-item border my-2">
+            <h4 class="fs-7 mb-4 text-center">火烤兩吃食材好</h4>
+            <div class="author d-flex justify-content-between mb-6 px-3">
+              <p class="fs-9 mb-0">foismaken</p>
+              <p class="fs-9 mb-0">2023/06/25</p>
+            </div>
+            <img
+              src="../assets/images/restaurant-food-10.jpg"
+              alt="文章照片"
+              class="article-img"
+            />
+            <p class="fs-9 px-3">
+              第一次來這裡用餐，體驗相當不錯。首先，環境十分舒適...
+            </p>
+            <a href="#" class="fs-9 text-end text-secondary">READ MORE </a>
+          </li>
+
+          <li class="article-item border my-2">
+            <h4 class="fs-7 mb-4 text-center">相演烤肉</h4>
+            <div class="author d-flex justify-content-between mb-6 px-3">
+              <p class="fs-9 mb-0">tessacuddly</p>
+              <p class="fs-9 mb-0">2023/07/30</p>
+            </div>
+            <img
+              src="../assets/images/restaurant-food-11.jpg"
+              alt="文章照片"
+              class="article-img"
+            />
+            <p class="fs-9 px-3">
+              相演是一家盛名的烤肉餐廳，以其肉品和服務而聞名...
+            </p>
+            <a href="#" class="fs-9 text-end text-secondary">READ MORE </a>
+          </li>
+
+          <li class="article-item border my-2">
+            <h4 class="fs-7 mb-4 text-center">相演大興店</h4>
+            <div class="author d-flex justify-content-between mb-6 px-3">
+              <p class="fs-9 mb-0">mCollins</p>
+              <p class="fs-9 mb-0">2023/06/13</p>
+            </div>
+            <img
+              src="../assets/images/restaurant-food-12.jpg"
+              alt="文章照片"
+              class="article-img"
+            />
+            <p class="fs-9 px-3">
+              服務人員很親切，也很風趣，當然食材也不馬虎，肉質好...
+            </p>
+            <a href="#" class="fs-9 text-end text-secondary">READ MORE </a>
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          class="btn btn-secondary text-primary border-radius-lg text-decoration-none col-4 py-3"
+          role="button"
+          >查看更多文章</a
+        >
+      </div>
+    </section>
+
+    <section class="like container mb-13">
+      <h2 class="fs-3 text-secondary mb-6">你可能也會喜歡</h2>
+
+      <ul class="like-img d-flex justify-content-between">
+        <li class="like-item like-shop1 d-flex align-items-end">
+          <div class="like-shop bg-secondary opecity-75 px-4 col-12 py-3">
+            <h4 class="fs-7 mb-2 text-white">肉次方</h4>
+            <div class="like-shop-score d-flex align-items-center">
+              <i class="bi bi-star-fill fs-9 text-primary me-2"></i>
+              <p class="fs-9 text-white mb-0">4.5</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="like-item like-shop2 d-flex align-items-end">
+          <div class="like-shop bg-secondary opecity-75 px-4 col-12 py-3">
+            <h4 class="fs-7 mb-2 text-white">阿豬媽韓式燒肉</h4>
+            <div class="like-shop-score d-flex align-items-center">
+              <i class="bi bi-star-fill fs-9 text-primary me-2"></i>
+              <p class="fs-9 text-white mb-0">4.0</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="like-item like-shop3 d-flex align-items-end">
+          <div class="like-shop bg-secondary opecity-75 px-4 col-12 py-3">
+            <h4 class="fs-7 mb-2 text-white">茶六燒肉堂</h4>
+            <div class="like-shop-score d-flex align-items-center">
+              <i class="bi bi-star-fill fs-9 text-primary me-2"></i>
+              <p class="fs-9 text-white mb-0">5.0</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="like-item like-shop4 d-flex align-items-end">
+          <div class="like-shop bg-secondary opecity-75 px-4 col-12 py-3">
+            <h4 class="fs-7 mb-2 text-white">田季發爺</h4>
+            <div class="like-shop-score d-flex align-items-center">
+              <i class="bi bi-star-fill fs-9 text-primary me-2"></i>
+              <p class="fs-9 text-white mb-0">4.5</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
