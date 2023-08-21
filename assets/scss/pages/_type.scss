@@ -42,13 +42,17 @@
 
   .store-collect {
     width: 20%;
+
+    .store-collect-icon:hover {
+      color: #ffe400;
+    }
   }
 }
-.store{
+.store {
   border: solid 1px $light-gray;
-  border-top:0px;
-  @include large{
-    border-color:transparent;
+  border-top: 0px;
+  @include large {
+    border-color: transparent;
   }
 }
 .footer-banner {
