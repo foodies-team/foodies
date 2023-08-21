@@ -445,6 +445,8 @@
             <button
               type="button"
               class="btn btn-outline-secondary px-6 py-3 fx-6 border-radius-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#cancel-comment"
             >
               撰寫評價
             </button>
@@ -483,7 +485,7 @@
             type="button"
             class="btn btn-outline-primary text-secondary border-radius-lg border-secondary py-3 px-6 fs-7"
           >
-            壞評
+            負評
           </button>
         </div>
       </div>
@@ -743,6 +745,47 @@
         </li>
       </ul>
     </section>
+
+    <div
+      class="modal fade"
+      id="cancel-comment"
+      tabindex="-1"
+      aria-labelledby="cancel-comment"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-cancel-comment">
+              確認訊息
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">
+              需登入後才能收藏此餐廳~是否立即跳轉至登入頁面?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary border-radius-xss">
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
     <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
