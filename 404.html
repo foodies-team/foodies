@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/foodies/assets/main-827760d5.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-198289ea.css">
+    <title>Not Found</title>
+    <script type="module" crossorigin src="/foodies/assets/main-eb77cefb.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-07c17e0c.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -111,13 +110,55 @@
     </div>
   </div>
 </nav>
-    <h1>我是about</h1>
+
+    <section class="member-bg vh-100 vw-100">
+        <div class="main">
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-10 mt-8">
+                    <nav aria-label="breadcrumb text-secondary">
+                        <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+                        <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">404</li>
+                        </ol>
+                    </nav>    
+                </div>
+            </div>
+            
+            <div class="container mt-lg-10 mb-10 mt-50">
+                <div class="row bg-box mx-auto">
+                    <ul class="col text-center">
+                        <li><h2 class="fs-lg-3 fs-5 pt-187">Uh ohhh！</h2></li>
+                        <li><h3 class="fs-lg-7 fs-8 pt-3">很抱歉，您搜尋的頁面</br>
+                          已經超出吃貨糾察隊的巡邏範圍唷~</h3></li>
+                        <li class="pt-6 pb-187"><a href="http://localhost:5173/foodies/pages/index.html" class="btn btn-primary py-2 px-4 border-radius-xs" role="button">回首頁</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
     <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
     <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
   </footer>
 
-      <p>mm_ieat於20230803測試PR</p>
+  
+    <script>
+      const icons = document.querySelectorAll(".store-collect-icon");
+
+      icons.forEach((icon) => {
+        icon.addEventListener("mouseenter", function () {
+          icon.classList.remove("bi-heart");
+          icon.classList.add("bi-heart-fill");
+        });
+
+        icon.addEventListener("mouseleave", function () {
+          icon.classList.remove("bi-heart-fill");
+          icon.classList.add("bi-heart");
+        });
+      });
+    </script>
 
     
   </body>
