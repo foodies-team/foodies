@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊成功</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="member-bg vh-100 vw-100">
+        <div class="main">
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-10 mt-8">
+                    <nav aria-label="breadcrumb text-secondary">
+                        <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+                        <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+                        <li class="breadcrumb-item active text-primary" aria-current="page">註冊完成</li>
+                        </ol>
+                    </nav>    
+                </div>
+            </div>
+            
+            <div class="container mt-lg-10 mb-10 mt-50">
+                <div class="row bg-box mx-auto">
+                    <ul class="col text-center">
+                        <li><h2 class="fs-lg-3 fs-5 pt-187">註冊成功！</h2></li>
+                        <li><h3 class="fs-lg-7 fs-8 pt-3">歡迎加入吃貨糾察隊！</h3></li>
+                        <li class="pt-6 pb-187"><a href="http://localhost:5173/foodies/pages/type.html" class="btn btn-primary py-2 px-4 border-radius-xs" role="button">開始探索美食</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script>
+      const icons = document.querySelectorAll(".store-collect-icon");
+
+      icons.forEach((icon) => {
+        icon.addEventListener("mouseenter", function () {
+          icon.classList.remove("bi-heart");
+          icon.classList.add("bi-heart-fill");
+        });
+
+        icon.addEventListener("mouseleave", function () {
+          icon.classList.remove("bi-heart-fill");
+          icon.classList.add("bi-heart");
+        });
+      });
+    </script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
