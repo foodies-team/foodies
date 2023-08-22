@@ -4,113 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>restaurant</title>
-    <script type="module" crossorigin src="/foodies/assets/main-eb77cefb.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-07c17e0c.css">
+    <script type="module" crossorigin src="/foodies/assets/main-b85d513a.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-09a9238f.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
-  <div class="container">
-    <h1 class="navbar-brand m-0">
-      <a href="index.html">
-        <img class="logoImg" src="/foodies/assets/logo-75fbfbf0.png" alt="logoImg" />
-      </a>
-    </h1>
-    <button
-      class="navbar-toggler text-primary"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon text-primary"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8">
-        <li class="nav-item">
-          <a class="d-flex align-items-center gap-2" href="search.html">
-            <i class="bi bi-search search-icon text-primary fs-9"></i>
-            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="type.html"
-            >美食類別</a
-          >
-        </li>
+    <div class="container">
+        <h1 class="navbar-brand m-0">
+            <a href="index.html">
+                <img class="logoImg" src="/foodies/assets/logo-75fbfbf0.png" alt="logoImg">
+            </a>
+        </h1>
+        <!-- hamMenu 右側 -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
+            <li class="nav-item">
+                <a class="d-flex align-items-center gap-2" href="search.html">
+                    <i class="bi bi-search search-icon text-primary fs-9"></i>
+                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                </a>
 
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="./blogPost.html"
-            >部落格</a
-          >
-        </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="type.html">美食類別</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="./explore.html"
-            >探索新店</a
-          >
-        </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="./blogPost">部落格</a>
+            </li>
 
-        <li class="nav-item member-item position-relative">
-          <a class="text-primary p-0 fs-5" href="#"
-            ><i class="bi bi-person-circle person-icon"></i
-          ></a>
-          <ul
-            class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap"
-          >
-            <li>
-              <a
-                href="#"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-person-fill"></i>
-                <span>我的資料</span>
-              </a>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="./explore">探索新店</a>
             </li>
-            <li>
-              <a
-                href="collection.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-heart-fill"></i>
-                <span>收藏夾</span>
-              </a>
+
+            <li class="nav-item member-item position-relative">
+                <a class="text-primary  p-0 fs-5" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-person-fill"></i>
+                            <span>我的資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collection.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>收藏夾</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="editArticle.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-pen-fill"></i>
+                            <span>發表文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-folder-fill"></i>
+                            <span>管理文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
-            <li>
-              <a
-                href="editArticle.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-pen-fill"></i>
-                <span>發表文章</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-folder-fill"></i>
-                <span>管理文章</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-box-arrow-right"></i>
-                <span>登出</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </ul>
+
+        <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+            aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
+
+
+        <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
+            id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header justify-content-end">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
+                    <li class="nav-item ">
+                        <a class="d-flex align-items-center gap-2" href="search.html">
+                            <i class="bi bi-search search-icon text-primary fs-9"></i>
+                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                        </a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="type.html">美食類別</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="./blogPost">部落格</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="./explore">探索新店</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="collection.html"
+                            class="text-primary p-0 nav-link">收藏夾
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="editArticle.html"
+                            class="text-primary p-0 nav-link">
+                            發表文章
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="#"
+                            class="text-primary p-0 nav-link">
+                            管理文章
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="#"
+                            class="text-primary p-0 nav-link">
+                            登出
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
     </div>
-  </div>
 </nav>
-
     <section class="mt-5 mb-10">
       <nav aria-label="breadcrumb" class="container restaurant-breadcrumb">
         <ol class="breadcrumb">
@@ -445,8 +478,6 @@
             <button
               type="button"
               class="btn btn-outline-secondary px-6 py-3 fx-6 border-radius-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#cancel-comment"
             >
               撰寫評價
             </button>
@@ -463,8 +494,6 @@
             aria-label="type-city"
           >
             <option selected>相關性最高</option>
-            <option value="1">最新評論</option>
-            <option value="2">最熱門評論</option>
           </select>
         </div>
 
@@ -487,7 +516,7 @@
             type="button"
             class="btn btn-outline-primary text-secondary border-radius-lg border-secondary py-3 px-6 fs-7"
           >
-            負評
+            壞評
           </button>
         </div>
       </div>
@@ -748,134 +777,11 @@
       </ul>
     </section>
 
-    <div
-      class="modal fade"
-      id="cancel-comment"
-      tabindex="-1"
-      aria-labelledby="cancel-comment"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-cancel-comment">
-              相演無煙燒肉
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-4">
-            <div class="body-top d-flex justify-content-between mb-4">
-              <div class="body-user d-flex align-items-center">
-                <i class="bi bi-person-circle fs-lg-3 fs-4 me-4"></i>
-                <p class="mb-0 fs-lg-7 fs-6">USER</p>
-              </div>
-
-              <button type="button" class="btn btn-primary border-radius-xss">
-                新增圖片
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="body-center d-flex justify-content-center align-items-center mb-4"
-          >
-            <i
-              class="bi bi-star-fill text-dark-gray fs-lg-5 fs-6 me-1 star"
-            ></i>
-            <i
-              class="bi bi-star-fill text-dark-gray fs-lg-5 fs-6 me-1 star"
-            ></i>
-            <i
-              class="bi bi-star-fill text-dark-gray fs-lg-5 fs-6 me-1 star"
-            ></i>
-            <i
-              class="bi bi-star-fill text-dark-gray fs-lg-5 fs-6 me-1 star"
-            ></i>
-            <i class="bi bi-star-fill text-dark-gray fs-lg-5 fs-6 star"></i>
-          </div>
-
-          <div class="body-end px-4 pb-4">
-            <textarea
-              class="form-control fs-lg-8 fs-9"
-              id="message-text"
-              placeholder="評論內容"
-            ></textarea>
-          </div>
-
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary border-radius-xss"
-              data-bs-dismiss="modal"
-            >
-              取消
-            </button>
-            <button type="button" class="btn btn-primary border-radius-xss">
-              送出
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
     <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
     <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
   </footer>
 
-  
-    <script>
-      const stars = document.querySelectorAll(".star");
-      let currentclick = -1;
-
-      stars.forEach((star, index) => {
-        star.addEventListener("click", () => {
-          // console.log("當前點擊", index);
-          // console.log("當前星星", currentclick);
-          if (currentclick === -1) {
-            for (let i = 0; i < index + 1; i++) {
-              changeColor(stars[i]);
-            }
-            currentclick = index;
-          } else {
-            if (index === currentclick) {
-              for (let i = 0; i < index + 1; i++) {
-                changeColor(stars[i]);
-              }
-              currentclick = -1;
-            } else if (index >= currentclick) {
-              // console.log("大於");
-              for (let i = currentclick + 1; i < index + 1; i++) {
-                changeColor(stars[i]);
-              }
-              currentclick = index;
-            } else {
-              // console.log("小於");
-              for (let i = currentclick; i > index; i--) {
-                changeColor(stars[i]);
-              }
-              currentclick = index;
-            }
-          }
-        });
-      });
-
-      function changeColor(star) {
-        if (star.classList.contains("text-dark-gray")) {
-          star.classList.remove("text-dark-gray");
-          star.classList.add("text-primary");
-        } else {
-          star.classList.remove("text-primary");
-          star.classList.add("text-dark-gray");
-        }
-      }
-    </script>
-
-    
+      
   </body>
 </html>
