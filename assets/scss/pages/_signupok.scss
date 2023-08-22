@@ -1,0 +1,25 @@
+.member-bg {
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/login&signup-banner.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-box {
+  background-color: #D9D9D999; /*hex透明度表示法-99為60%*/
+}
+
+.pt-187 {
+  padding-top: 50px;
+
+  @include large{
+    padding-top: 187px;
+  }
+}
+
+.pb-187 {
+  padding-bottom: 50px;
+
+  @include large{
+    padding-bottom: 187px;
+  }
+}

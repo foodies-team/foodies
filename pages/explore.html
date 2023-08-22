@@ -12,7 +12,7 @@
       <div
         class="container explore-banner d-flex align-items-center col-12 justify-content-center justify-content-lg-start"
       >
-        <h2 class="fs-3 text-white fw-bolder">探所味蕾，發現美食</h2>
+        <h2 class="fs-3 text-white fw-bolder">探索味蕾，發現美食</h2>
       </div>
     </section>
 
@@ -35,7 +35,9 @@
           class="explore-select-width form-select border border-1 border-radius-lg p-3 mb-lg-0 mb-4"
           aria-label="explore-city"
         >
-          <option selected>依評價排序</option>
+          <option selected>評價數最多</option>
+          <option value="1">最新更新</option>
+          <option value="2">評分最高</option>
         </select>
 
         <div
@@ -117,7 +119,11 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
+                  ><i
+                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-type"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -161,7 +167,11 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
+                  ><i
+                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-type"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -204,7 +214,11 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
+                  ><i
+                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-type"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -245,7 +259,11 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
+                  ><i
+                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-type"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -288,7 +306,11 @@
                 class="store-collect d-flex justify-content-center align-items-center"
               >
                 <a href="#" class="text-secondary"
-                  ><i class="bi bi-heart fs-lg-3 fs-6"></i
+                  ><i
+                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-type"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -367,7 +389,65 @@
       >
     </section>
 
+    <div
+      class="modal fade"
+      id="cancel-type"
+      tabindex="-1"
+      aria-labelledby="cancel-type"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-cancel-type">
+              確認訊息
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">
+              需登入後才能收藏此餐廳~是否立即跳轉至登入頁面?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary border-radius-xss">
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
+
+    <script>
+      const icons = document.querySelectorAll(".store-collect-icon");
+
+      icons.forEach((icon) => {
+        icon.addEventListener("mouseenter", function () {
+          icon.classList.remove("bi-heart");
+          icon.classList.add("bi-heart-fill");
+        });
+
+        icon.addEventListener("mouseleave", function () {
+          icon.classList.remove("bi-heart-fill");
+          icon.classList.add("bi-heart");
+        });
+      });
+    </script>
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>
