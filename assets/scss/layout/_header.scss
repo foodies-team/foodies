@@ -31,6 +31,23 @@
   margin-top: -4px;
 }
 
+.offcanvasMenu{
+  .btn-close{
+    background-image: url(../images/btn-close.png);
+  }
+  
+}
+.nav-item{
+  .accordion-button::after{
+    background-image: url(../images/plus.png);
+    margin-top:0;
+  }
+  .accordion-button:not(.collapsed)::after{
+    background-image: url(../images/dash.png);
+   
+  }
+}
+
 .navbar-toggler-icon {
   background-image: url(../images/ham-menu-primary.svg);
 }
