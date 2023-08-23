@@ -1,36 +1,128 @@
 .restaurant-banner {
-  max-height: 456px;
+  height: 700px;
+  gap: 1.5rem;
+
+  @include large {
+    height: 456px;
+  }
 }
 
-.banner-sm-imgs {
-  .img-sm {
-    height: 25%;
+.banner-left {
+  .banner-sm-imgs {
+    gap: 0.75rem;
+  }
+
+  .banner-btn {
+    height: 36px;
+  }
+
+  .img-aside {
+    width: 72px;
+    height: 72px;
+  }
+
+  @include large {
+    .img-aside {
+      width: 86px;
+      height: 86px;
+    }
   }
 }
 
 .banner-center {
+  height: 39.6%;
   .img-lg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include large {
     height: 100%;
   }
 }
 
-.item-width {
-  width: 50%;
+.banner-right {
+  .banner-right-btn {
+    width: 28.1%;
+  }
+
+  .link-content:hover {
+    color: #ffe400 !important;
+    text-decoration: underline;
+  }
 }
 
-.google-map {
-  width: 100%;
+.inform-left {
+  .item-width {
+    width: 50%;
+  }
+
+  .some-inform {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  @include large {
+    .some-inform {
+      border: 0;
+    }
+  }
+}
+
+.inform-right {
+  border: 0;
+
+  .business-time {
+    border-bottom: 1px solid #000;
+  }
+
+  .go-immediately:hover {
+    color: #ffe400 !important;
+    text-decoration: underline;
+  }
+
+  @include large {
+    border: 1px solid #000;
+
+    .business-time {
+      border-bottom: 0;
+    }
+  }
 }
 
 .bottom,
 .upper {
-  height: 42px;
+  height: 24px;
+
+  @include large {
+    height: 42px;
+  }
 }
 
 .user {
   .bi-person-circle {
-    font-size: 72px;
+    font-size: 40px;
   }
+
+  @include large {
+    .bi-person-circle {
+      font-size: 72px;
+    }
+  }
+}
+
+.stars {
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  color: #000 !important;
+  background-color: #ffe400 !important;
+}
+
+.read-more:hover {
+  color: #ffe400 !important;
+  text-decoration: underline;
 }
 
 .messenge-list,
@@ -39,52 +131,75 @@
 }
 
 .user-img {
-  width: 86px;
-  height: 86px;
+  width: 48px;
+  height: 48px;
+  @include large {
+    width: 86px;
+    height: 86px;
+  }
 }
 
-.messenge-imgs {
-  height: 216px;
+.article {
+  border-bottom: 1px solid #000;
+
+  @include large {
+    border-bottom: 0;
+  }
 }
 
 .messenge-img {
-  height: auto;
+  width: 125px;
+  height: 125px;
+  @include large {
+    width: 216px;
+    height: 216px;
+  }
 }
 
-.article-item,
+.article-item {
+  width: 100%;
+  @include large {
+    width: 23.6%;
+  }
+}
+
 .like-item {
-  width: 23.6%;
+  width: 46.2%;
+  height: 181px;
+
+  @include large {
+    width: 23.6%;
+    height: 353px;
+  }
 }
 
 .article-img {
   width: 100%;
   height: 180px;
-}
-
-.like-item {
-  height: 353px;
+  background-size: cover;
+  background-position: center;
 }
 
 .like-shop1 {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-13.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/search-paging-food-2.png?raw=true");
   background-size: cover;
   background-position: center;
 }
 
 .like-shop2 {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-14.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/search-paging-food-3.png?raw=true");
   background-size: cover;
   background-position: center;
 }
 
 .like-shop3 {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-15.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/search-paging-food-4.jpg?raw=true");
   background-size: cover;
   background-position: center;
 }
 
 .like-shop4 {
-  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/restaurant-food-16.jpg?raw=true");
+  background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/search-paging-food-5.png?raw=true");
   background-size: cover;
   background-position: center;
 }
