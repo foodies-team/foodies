@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>explore</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>explore</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
 
     <section class="explore-banner-bg">
       <div
-        class="container explore-banner d-flex align-items-center col-12 justify-content-center justify-content-lg-start"
-      >
+        class="container explore-banner d-flex align-items-center col-12 justify-content-center justify-content-lg-start">
         <h2 class="fs-3 text-white fw-bolder">探索味蕾，發現美食</h2>
       </div>
     </section>
@@ -28,54 +29,38 @@
         </ol>
       </nav>
 
-      <div
-        class="explore d-flex justify-content-between pb-4 border-bottom border-secondary flex-lg-row flex-column"
-      >
-        <select
-          class="explore-select-width form-select border border-1 border-radius-lg p-3 mb-lg-0 mb-4"
-          aria-label="explore-city"
-        >
-          <option selected>評價數最多</option>
-          <option value="1">最新更新</option>
-          <option value="2">評分最高</option>
+      <div class="explore d-flex justify-content-between pb-4 border-bottom border-secondary flex-lg-row flex-column">
+        <select class="explore-select-width form-select border border-1 border-radius-lg p-3 mb-lg-0 mb-4"
+          aria-label="explore-city">
+          <option selected value="1">依評論數高至低</option>
+          <option value="2">依評價高至低</option>
+          <option value="3">依評價低至高</option>
         </select>
 
-        <div
-          class="scrollable-btns d-flex justify-content-lg-end justify-content-start"
-        >
+        <div class="scrollable-btns d-flex justify-content-lg-end justify-content-start">
           <div class="btns">
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
+            <button type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
               提供外帶
             </button>
 
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
+            <button type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
               接受訂位
             </button>
 
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
+            <button type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
               親子友善
             </button>
 
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
+            <button type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
               有吸菸區
             </button>
 
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1"
-            >
+            <button type="button"
+              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1">
               適合團體
             </button>
           </div>
@@ -84,17 +69,11 @@
 
       <div class="stores col-10 d-flex flex-column py-13 mx-auto">
         <ul class="store-list d-flex flex-column mb-6">
-          <li
-            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
-          >
-            <img
-              src="../assets/images/index-food-1.jpg"
-              alt="平安京茶室"
-              class="store-img col-lg-5 col-12 d-block img-fluid"
-            />
+          <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
+            <img src="../assets/images/index-food-1.jpg" alt="平安京茶室"
+              class="store-img col-lg-5 col-12 d-block img-fluid" />
             <div
-              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
-            >
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12">
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">平安京茶室</h2>
                 <div class="rank d-flex mb-3 align-items-center">
@@ -115,31 +94,18 @@
                   <p class="fs-9 mb-0">地址 : 100台北市中正區師大路165號</p>
                 </div>
               </div>
-              <div
-                class="store-collect d-flex justify-content-center align-items-center"
-              >
-                <a href="#" class="text-secondary"
-                  ><i
-                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cancel-type"
-                  ></i
-                ></a>
+              <div class="store-collect d-flex justify-content-center align-items-center">
+                <a href="#" class="text-secondary"><i class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal" data-bs-target="#cancel-type"></i></a>
               </div>
             </div>
           </li>
 
-          <li
-            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
-          >
-            <img
-              src="../assets/images/search-paging-food-2.png"
-              alt="Cun Siou Jia 村秀家"
-              class="store-img col-lg-5 col-12 d-block img-fluid"
-            />
+          <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
+            <img src="../assets/images/search-paging-food-2.png" alt="Cun Siou Jia 村秀家"
+              class="store-img col-lg-5 col-12 d-block img-fluid" />
             <div
-              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
-            >
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12">
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">
                   Cun Siou Jia 村秀家
@@ -163,31 +129,18 @@
                 </div>
               </div>
 
-              <div
-                class="store-collect d-flex justify-content-center align-items-center"
-              >
-                <a href="#" class="text-secondary"
-                  ><i
-                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cancel-type"
-                  ></i
-                ></a>
+              <div class="store-collect d-flex justify-content-center align-items-center">
+                <a href="#" class="text-secondary"><i class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal" data-bs-target="#cancel-type"></i></a>
               </div>
             </div>
           </li>
 
-          <li
-            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
-          >
-            <img
-              src="../assets/images/search-paging-food-3.png"
-              alt="沙丘"
-              class="store-img col-lg-5 col-12 d-block img-fluid"
-            />
+          <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
+            <img src="../assets/images/search-paging-food-3.png" alt="沙丘"
+              class="store-img col-lg-5 col-12 d-block img-fluid" />
             <div
-              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
-            >
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12">
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">沙丘</h2>
                 <div class="rank d-flex mb-3 align-items-center">
@@ -210,31 +163,18 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="store-collect d-flex justify-content-center align-items-center"
-              >
-                <a href="#" class="text-secondary"
-                  ><i
-                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cancel-type"
-                  ></i
-                ></a>
+              <div class="store-collect d-flex justify-content-center align-items-center">
+                <a href="#" class="text-secondary"><i class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal" data-bs-target="#cancel-type"></i></a>
               </div>
             </div>
           </li>
 
-          <li
-            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
-          >
-            <img
-              src="../assets/images/search-paging-food-4.jpg"
-              alt="角公園咖啡’"
-              class="store-img col-lg-5 col-12 d-block img-fluid"
-            />
+          <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
+            <img src="../assets/images/search-paging-food-4.jpg" alt="角公園咖啡’"
+              class="store-img col-lg-5 col-12 d-block img-fluid" />
             <div
-              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
-            >
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12">
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">角公園咖啡</h2>
                 <div class="rank d-flex mb-3 align-items-center">
@@ -255,31 +195,18 @@
                   <p class="fs-9 mb-0">地址 : 103台北市大同區太原路131號2樓</p>
                 </div>
               </div>
-              <div
-                class="store-collect d-flex justify-content-center align-items-center"
-              >
-                <a href="#" class="text-secondary"
-                  ><i
-                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cancel-type"
-                  ></i
-                ></a>
+              <div class="store-collect d-flex justify-content-center align-items-center">
+                <a href="#" class="text-secondary"><i class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal" data-bs-target="#cancel-type"></i></a>
               </div>
             </div>
           </li>
 
-          <li
-            class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
-          >
-            <img
-              src="../assets/images/search-paging-food-5.png"
-              alt="金雞母-東門店’"
-              class="store-img col-lg-5 col-12 d-block img-fluid"
-            />
+          <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
+            <img src="../assets/images/search-paging-food-5.png" alt="金雞母-東門店’"
+              class="store-img col-lg-5 col-12 d-block img-fluid" />
             <div
-              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
-            >
+              class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12">
               <div class="store-inform">
                 <h2 class="fs-7 fw-semibold text-secondary">金雞母-東門店</h2>
                 <div class="rank d-flex mb-3 align-items-center">
@@ -302,72 +229,38 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="store-collect d-flex justify-content-center align-items-center"
-              >
-                <a href="#" class="text-secondary"
-                  ><i
-                    class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
-                    data-bs-toggle="modal"
-                    data-bs-target="#cancel-type"
-                  ></i
-                ></a>
+              <div class="store-collect d-flex justify-content-center align-items-center">
+                <a href="#" class="text-secondary"><i class="bi bi-heart fs-lg-3 fs-6 store-collect-icon"
+                    data-bs-toggle="modal" data-bs-target="#cancel-type"></i></a>
               </div>
             </div>
           </li>
         </ul>
 
-        <div
-          class="pagination-container d-flex justify-content-lg-end justify-content-center"
-        >
+        <div class="pagination-container d-flex justify-content-lg-end justify-content-center">
           <nav>
             <ul class="pagination mb-0">
               <li class="page-item">
-                <a
-                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
-                  href="#"
-                  aria-label="Previous"
-                >
+                <a class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2" href="#" aria-label="Previous">
                   <i class="bi bi-chevron-left fs-lg-8 fs-9 text-secondary"></i>
                 </a>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
-                  href="#"
-                  >1</a
-                >
+                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
+                  href="#">1</a>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
-                  href="#"
-                  >2</a
-                >
+                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">2</a>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
-                  href="#"
-                  >3</a
-                >
+                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">3</a>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
-                  href="#"
-                  >4</a
-                >
+                <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">4</a>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
-                  href="#"
-                  aria-label="Previous"
-                >
-                  <i
-                    class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"
-                  ></i>
+                <a class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2" href="#" aria-label="Previous">
+                  <i class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"></i>
                 </a>
               </li>
             </ul>
@@ -377,49 +270,30 @@
     </main>
 
     <section
-      class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11"
-    >
+      class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11">
       <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">發現更多美食寶藏</h2>
       <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看更多類似店家</h3>
-      <a
-        href="#"
+      <a href="#"
         class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4"
-        role="button"
-        >探索美食</a
-      >
+        role="button">探索美食</a>
     </section>
 
-    <div
-      class="modal fade"
-      id="cancel-type"
-      tabindex="-1"
-      aria-labelledby="cancel-type"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="cancel-type" tabindex="-1" aria-labelledby="cancel-type" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-lg-6 fs-7" id="modalLabel-cancel-type">
               確認訊息
             </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p class="fs-lg-8 fs-9 mb-0">
-              需登入後才能收藏此餐廳~是否立即跳轉至登入頁面?
+              是否確定收藏此餐廳?
             </p>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-outline-secondary border-radius-xss"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-outline-secondary border-radius-xss" data-bs-dismiss="modal">
               取消
             </button>
             <button type="button" class="btn btn-primary border-radius-xss">
@@ -432,22 +306,23 @@
 
     <%- include('./layout/footer'); -%>
 
-    <script>
-      const icons = document.querySelectorAll(".store-collect-icon");
+      <script>
+        const icons = document.querySelectorAll(".store-collect-icon");
 
-      icons.forEach((icon) => {
-        icon.addEventListener("mouseenter", function () {
-          icon.classList.remove("bi-heart");
-          icon.classList.add("bi-heart-fill");
+        icons.forEach((icon) => {
+          icon.addEventListener("mouseenter", function () {
+            icon.classList.remove("bi-heart");
+            icon.classList.add("bi-heart-fill", "add-collection");
+          });
+
+          icon.addEventListener("mouseleave", function () {
+            icon.classList.remove("bi-heart-fill", "add-collection");
+            icon.classList.add("bi-heart");
+          });
         });
+      </script>
 
-        icon.addEventListener("mouseleave", function () {
-          icon.classList.remove("bi-heart-fill");
-          icon.classList.add("bi-heart");
-        });
-      });
-    </script>
+      <script type="module" src="../main.js"></script>
+</body>
 
-    <script type="module" src="../main.js"></script>
-  </body>
 </html>
