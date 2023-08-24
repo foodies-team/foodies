@@ -26,3 +26,32 @@ const swiper = new Swiper(".tag-swiper", {
     },
   },
 });
+
+//發表文章 tags 手機版用swiper
+const swiperSearch = new Swiper(".tag-swiper-2", {
+  //避免使用者移動到
+  allowTouchMove: true,
+  spaceBetween: 16,
+  //一次呈現幾個.swiper-slide
+  slidesPerView: "auto",
+
+  //grabCursor: true,
+
+  breakpoints: {
+    // 斷點顯示設定
+    
+    320: {
+      // 當裝置寬大於 320
+      slidesPerView: 3, // 要看見幾頁內容 (可用小數點讓使用者知道可滑動)
+      spaceBetween: 16,
+      grabCursor: true,
+    },
+    768: {
+      // 當裝置寬大於 768
+      slidesPerView: 5,
+      spaceBetween: 20,
+      grabCursor: false,
+      
+    },
+  },
+});
