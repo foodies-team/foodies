@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>index</title>
+    <title>收藏夾</title>
+    <link rel="icon" href="../assets/images/logo-top.png" type="image/x-icon" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -36,7 +36,7 @@
 
     <section class="container collection-content mb-lg-13 mb-14">
       <ul class="row gy-lg-6 gy-8 mb-0 gx-lg-6 gx-0">
-        <li class="col-lg-3 item text-center ">
+        <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/index-food-7.jpg" alt="早午餐" class="item-img">
@@ -56,7 +56,7 @@
           
         </li>
 
-        <li class="col-lg-3 item text-center ">
+        <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/index-food-9.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
@@ -74,7 +74,7 @@
 
           
         </li>
-        <li class="col-lg-3 item text-center ">
+        <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/index-food-14.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
@@ -92,8 +92,8 @@
 
           
         </li>
-        <li class="col-lg-3 item text-center ">
-          <a class="position-relative" href="collectionPage.html">
+        <li class="col-lg-4 item text-center ">
+          <a class="position-relative" href="./editCollection.html">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/index-food-8.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
             </div>
@@ -110,7 +110,7 @@
 
           
         </li>
-        <li class="col-lg-3 item text-center ">
+        <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/index-food-18.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
@@ -128,7 +128,7 @@
 
           
         </li>
-        <li class="col-lg-3 item text-center ">
+        <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
               <img src="../assets/images/collection-food-6.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
@@ -152,11 +152,18 @@
       </ul>
     </section>
 
-    <section class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11">
-      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">為收藏夾添加更多美食</h2>
-      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看網友推薦熱門美食</h3>
-      <a href="#" class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4" role="button">探索美食</a>
-    </section>
+    <section
+    class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11"
+  >
+    <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">口袋名單還缺一家？</h2>
+    <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">看網友推薦熱門美食</h3>
+    <a
+      href="./explore.html"
+      class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
+      role="button"
+      >探索美食</a
+    >
+  </section>
 
     <!-- 點擊新增收藏類別彈跳視窗 -->
     <div class="modal fade" id="new-collection-modal" tabindex="-1" aria-labelledby="new-collection-modal" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">

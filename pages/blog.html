@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>部落格</title>
+    <link rel="icon" href="../assets/images/logo-top.png" type="image/x-icon" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <img src="../assets/images/blog-food-1.jpg" alt="restaurant" class="d-inline-block d-lg-none blog-banner w-100"/>
+    <img src="../assets/images/blog-food-1.jpg" alt="restaurant" class="blog-banner d-inline-block d-lg-none w-100"/>
     <nav
       aria-label="breadcrumb text-secondary"
       class="container blog-breadcrumb mb-8 d-md-block"
     >
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#" class="text-secondary">首頁</a>
+          <a href="./index.html" class="text-secondary">首頁</a>
         </li>
         <li
-          class="breadcrumb-item single-breadcrumb active text-nowrap"
+          class="breadcrumb-item active"
           aria-current="page"
         >
           部落格
@@ -27,12 +28,12 @@
 
     <section class="container blog-news mb-10 mb-md-13">
       <div class="row">
-        <div class="col-lg-6 h-100">
+        <div class="col-lg-6">
           <a href="./blogPost.html" class="link-secondary">
             <div class="card border-0">
               <img src="../assets/images/blog-food-1.jpg" alt="restaurant" class="d-none d-lg-inline-block"/>
               <div class="card-body px-0 mb-border">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-3">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-3">
                     異國料理與客製化調酒~多人聚餐首推！
                   </h3>
                 <div
@@ -47,11 +48,11 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <h2 class="fs-xl-1 fs-md-2 d-none d-lg-block mb-md-4">最新食態</h2>
+          <h2 class="fs-xl-2 fs-md-3 d-none d-lg-block mb-md-4">最新食態</h2>
           <a href="#" class="link-secondary">
             <div class="card border-0 border-bottom">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   享受一個人的時光！不限時咖啡廳，激推西西里咖啡、培根司康
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -64,7 +65,7 @@
           <a href="#" class="link-secondary d-none d-lg-block">
             <div class="card border-0 border-bottom">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   包容的滋味：回憶滿滿的客家湯圓與水餃
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -77,7 +78,7 @@
           <a href="#" class="link-secondary d-none d-lg-block">
             <div class="card border-0 border-bottom mb-5">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   一定要收藏的市場美食~超營養潤餅不到中午就賣光
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -88,7 +89,6 @@
             </div>
             </a
           >
-
           <a href="#" class="text-end link-dark-gray explore-more mt-5">
             EXPLORE MORE
             <i class="bi bi-chevron-right"></i>
@@ -100,8 +100,8 @@
     </section>
 
     <section class="container single mb-10 mb-md-16">
-        <div class="d-flex justify-content-between mb-8 mb-md-13">
-          <h2 class="fs-xl-1 fs-md-2 fs-3">獨享超滿足</h2>
+        <div class="d-flex justify-content-between align-items-center mb-8 mb-md-13">
+          <h2 class="fs-xl-2 fs-md-3 fs-4 mb-0">獨享超滿足</h2>
           <a href="#"><i class="bi bi-pencil-square edit-icon"></i></a>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-md-11">
@@ -114,7 +114,7 @@
                 </div>
                 
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">小孩才做選擇~遨遊甜鹹派之間</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">小孩才做選擇~遨遊甜鹹派之間</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By Vivian</span>
@@ -127,10 +127,9 @@
           </div>
           <div class="col">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="../assets/images/blog-food-3.jpg" alt="fried rice">
+             <div class="overflow-hidden"> <img src="../assets/images/blog-food-3.jpg" alt="fried rice" class="w-100"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">一吃就難忘，讓人魂牽夢縈的炒飯！</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">一吃就難忘，讓人魂牽夢縈的炒飯！</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By peihsuan</span>
@@ -143,10 +142,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="../assets/images/blog-food-4.jpg" alt="sweet">
+             <div class="overflow-hidden"><img src="../assets/images/blog-food-4.jpg" alt="sweet"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">幸福的滋味，每天限量的手做甜點</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">幸福的滋味，每天限量的手做甜點</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By 美食戰隊</span>
@@ -159,10 +157,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="../assets/images/blog-food-5.jpg" alt="brunch">
+             <div class="overflow-hidden"> <img src="../assets/images/blog-food-5.jpg" alt="brunch"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">用豐盛的早午餐，開啟正能量的一天</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">用豐盛的早午餐，開啟正能量的一天</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By 吃貨小姐</span>
@@ -175,10 +172,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="../assets/images/blog-food-6.jpg" alt="chicken">
+             <div class="overflow-hidden"><img src="../assets/images/blog-food-6.jpg" alt="chicken" class="w-100"></div> 
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">現炸雞排與超解膩紅茶，宵夜第一選擇</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">現炸雞排與超解膩紅茶，宵夜第一選擇</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By abalun</span>
@@ -191,10 +187,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="../assets/images/blog-food-7.jpg" alt="bread">
+             <div class="overflow-hidden"> <img src="../assets/images/blog-food-7.jpg" alt="bread"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fs-lg-4 fw-bold mb-0 flex-grow-1 px-4">經典可口越南麵包，清爽無負擔</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">經典可口越南麵包，清爽無負擔</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By mm</span>
@@ -247,7 +242,7 @@
 
 
       <section class="container group mb-10 mb-md-16">
-        <h2 class="fs-xl-1 fs-md-2 fs-3 mb-8 mb-md-13">聚會嗨翻天</h2>
+        <h2 class="fs-xl-2 fs-md-3 fs-4 mb-8 mb-md-13">聚會嗨翻天</h2>
         <div class="row mb-6 mb-md-8">
          
           <div class="col-md-5">
@@ -255,7 +250,7 @@
           </div>
           <div class="col-md-7">
             <a href="#" class="item  h-100 py-4 py-md-0 link-secondary d-flex flex-column justify-content-between">
-                <h3 class="fs-6 fs-lg-5 fw-bold mb-0 px-4 px-md-0">隱藏巷弄的串燒居酒屋，沒預約可是吃不到！</h3>
+                <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">隱藏巷弄的串燒居酒屋，沒預約可是吃不到！</h3>
                 <hr class="d-md-none">
                 <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
                   <span>By 愛吃星球</span>
@@ -272,7 +267,7 @@
 <div class="col-md-7">
 
     <a href="#" class="item  h-100 py-4 py-md-0 d-flex link-secondary flex-column justify-content-between">
-        <h3 class="fs-6 fs-lg-5 fw-bold mb-0 px-4 px-md-0">獨門香料的熱炒桌菜，體驗道地客家風情！還有 KTV 包廂~</h3>
+        <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">獨門香料的熱炒桌菜，體驗道地客家風情！還有 KTV 包廂~</h3>
        <hr class="d-md-none">
         <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
           <span>By peihsuan</span>
@@ -290,7 +285,7 @@
           </div>
           <div class="col-md-7">
             <a href="#" class="item h-100 d-flex link-secondary flex-column justify-content-between">
-                <h3 class="fs-6 fs-lg-5 fw-bold mb-0">精選湯底與海陸食材~夏天吃鍋超過癮</h3>
+                <h3 class="fs-6 fs-xl-5 fw-bold mb-0">精選湯底與海陸食材~夏天吃鍋超過癮</h3>
                 <div class="d-flex justify-content-between fs-md-8">
                   <span>By 吃貨小姐</span>
                   <span>2023/06/24</span>
@@ -341,10 +336,10 @@
     <section
       class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11"
     >
-      <h2 class="fw-bold fs-4 fs-md-3 fs-lg-2">美食地圖還缺一角？</h2>
-      <h3 class="fs-5 fs-md-4 fs-lg-3 mb-md-13 mb-10">吃過這些才能算吃貨</h3>
+      <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">吃貨齊聚一堂</h2>
+      <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">共享美食情報</h3>
       <a
-        href="#"
+        href="./explore.html"
         class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
         role="button"
         >探索美食</a
