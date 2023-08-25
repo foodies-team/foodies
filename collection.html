@@ -6,32 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>收藏夾</title>
     <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
-    <script type="module" crossorigin src="/foodies/assets/main-9f73354b.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-60bf4b8e.css">
+    <script type="module" crossorigin src="/foodies/assets/main-804b1f58.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-f3be9de4.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
-  <div class="container">
-    <h1 class="navbar-brand m-0">
-      <a href="index.html">
-        <img class="logoImg" src="/foodies/assets/logo-75fbfbf0.png" alt="logoImg" />
-      </a>
-    </h1>
-    <!-- 桌機版menu -->
-    <ul
-      class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none"
-    >
-      <li class="nav-item">
-        <a class="d-flex align-items-center gap-2" href="search.html">
-          <i class="bi bi-search search-icon text-primary fs-9"></i>
-          <p class="nav-link mb-0 text-primary p-0">搜尋</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html"
-          >美食類別</a
-        >
-      </li>
+    <div class="container">
+        <h1 class="navbar-brand m-0">
+            <a href="index.html">
+                <img class="logoImg" src="/foodies/assets/logo-e06c9bbc.png" alt="logoImg">
+            </a>
+        </h1>
+         <!-- 桌機版menu -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
+            <li class="nav-item">
+                <a class="d-flex align-items-center gap-2" href="search.html">
+                    <i class="bi bi-search search-icon text-primary fs-9"></i>
+                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+            </li>
 
       <li class="nav-item">
         <a class="nav-link text-primary p-0 nav-link" href="blog.html"
@@ -45,100 +42,71 @@
         >
       </li>
 
-      <li class="nav-item member-item position-relative">
-        <a class="text-primary p-0 fs-5" href="#"
-          ><i class="bi bi-person-circle person-icon"></i
-        ></a>
-        <ul
-          class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap"
-        >
-          <li>
-            <a
-              href="#"
-              class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-            >
-              <i class="bi bi-person-fill"></i>
-              <span>我的資料</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="collection.html"
-              class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-            >
-              <i class="bi bi-heart-fill"></i>
-              <span>收藏夾</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="editArticle.html"
-              class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-            >
-              <i class="bi bi-pen-fill"></i>
-              <span>發表文章</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-            >
-              <i class="bi bi-folder-fill"></i>
-              <span>管理文章</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="logout.html"
-              class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-            >
-              <i class="bi bi-box-arrow-right"></i>
-              <span>登出</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+            <li class="nav-item member-item position-relative">
+                <a class="text-primary  p-0 fs-5" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-person-fill"></i>
+                            <span>我的資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collection.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>收藏夾</span>
+                        </a>
 
-    <!-- 手機版menu -->
-    <a
-      class="d-lg-none btn bg-transparent"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasResponsive"
-      aria-controls="offcanvasResponsive"
-      ><i class="bi bi-list text-primary fs-sm-5 fs-7"></i
-    ></a>
-    <div
-      class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none"
-      tabindex="-1"
-      id="offcanvasResponsive"
-      aria-labelledby="offcanvasResponsiveLabel"
-    >
-      <div class="offcanvas-header justify-content-end">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul
-          class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column"
-        >
-          <li class="nav-item">
-            <a class="d-flex align-items-center gap-2" href="search.html">
-              <i class="bi bi-search search-icon text-primary fs-9"></i>
-              <p class="nav-link mb-0 text-primary p-0">搜尋</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html"
-              >美食類別</a
-            >
-          </li>
+                    </li>
+                    <li>
+                        <a href="editArticle.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-pen-fill"></i>
+                            <span>發表文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleManagement.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-folder-fill"></i>
+                            <span>管理文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="logout.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 手機版menu -->
+        <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+            aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
+        <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
+            id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header justify-content-end">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
+                    <li class="nav-item ">
+                        <a class="d-flex align-items-center gap-2" href="search.html">
+                            <i class="bi bi-search search-icon text-primary fs-9"></i>
+                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                        </a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                    </li>
 
           <li class="nav-item">
             <a class="nav-link text-primary p-0 nav-link" href="blog.html"
@@ -169,7 +137,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="text-primary p-0 nav-link"> 管理文章 </a>
+            <a href="articleManagement.html" class="text-primary p-0 nav-link"> 管理文章 </a>
           </li>
 
           <li class="nav-item">
@@ -190,7 +158,7 @@
               <li class="breadcrumb-item active text-primary" aria-current="page">收藏夾</li>
             </ol>
           </nav>
-        <h2 class="fw-bolder fs-lg-3 fs-5 mb-lg-6 mb-5">收藏夾</h2>
+        <h2 class="fw-bolder fs-lg-4 fs-5 mb-lg-6 mb-5">收藏夾</h2>
         <div class="select-group d-flex justify-content-between align-items-center border-bottom border-1 border-secondary pb-lg-4 pb-3">
           <div class="select-width">
             <select class="form-select border border-1 border-radius-lg px-3 py-lg-3 py-2 fs-lg-9 fs-11" aria-label="collected-restaurants">
@@ -200,7 +168,7 @@
           </div>
          
 
-          <button type="button" class="btn btn-primary border-radius-lg py-lg-3 py-2 fs-lg-9 fs-11 select-width fw-semibold" data-bs-toggle="modal" data-bs-target="#new-collection-modal">新增收藏類別</button>
+          <button type="button" class="btn btn-primary btn-hover-black border-radius-lg py-lg-3 py-2 fs-lg-9 fs-11 select-width fw-semibold" data-bs-toggle="modal" data-bs-target="#new-collection-modal">新增收藏類別</button>
 
         </div>
     </section>
@@ -210,7 +178,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/index-food-7-c2e58502.jpg" alt="早午餐" class="item-img">
+              <img src="/foodies/assets/index-food-7-f4028d6b.jpg" alt="早午餐" class="item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
@@ -230,7 +198,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/index-food-9-5d766ff5.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
+              <img src="/foodies/assets/index-food-9-407ff552.jpg" alt="鍋物" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
@@ -248,7 +216,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/index-food-14-affa8691.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
+              <img src="/foodies/assets/index-food-14-2db5bea8.jpg" alt="小吃" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
@@ -266,7 +234,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="./editCollection.html">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/index-food-8-8fb520b0.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
+              <img src="/foodies/assets/index-food-8-76f7faf0.jpg" alt="下午茶" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
@@ -284,7 +252,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/index-food-18-3bb0aa19.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
+              <img src="/foodies/assets/index-food-18-3292a650.jpg" alt="燒烤" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">
@@ -302,7 +270,7 @@
         <li class="col-lg-4 item text-center ">
           <a class="position-relative" href="#">
             <div class="overflow-hidden item-wrap">
-              <img src="/foodies/assets/collection-food-6-32ff657c.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
+              <img src="/foodies/assets/collection-food-6-e06a9c1f.jpg" alt="早午餐" class="mb-lg-3 mb-4 item-img">
             </div>
             
             <div class="num d-flex align-items-center justify-content-center gap-2 py-2 position-absolute px-4">

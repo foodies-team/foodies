@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 網頁上頭LOGO -->
+  <link rel="shortcut icon" href="../assets/images/logo-black.png" type="image/x-icon">
+
+  <title>我的文章</title>
+  <script type="module" crossorigin src="/foodies/assets/main-804b1f58.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-f3be9de4.css">
+</head>
+
+<body>
+  <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
+    <div class="container">
+        <h1 class="navbar-brand m-0">
+            <a href="index.html">
+                <img class="logoImg" src="/foodies/assets/logo-e06c9bbc.png" alt="logoImg">
+            </a>
+        </h1>
+         <!-- 桌機版menu -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
+            <li class="nav-item">
+                <a class="d-flex align-items-center gap-2" href="search.html">
+                    <i class="bi bi-search search-icon text-primary fs-9"></i>
+                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+            </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+          >部落格</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+          >探索新店</a
+        >
+      </li>
+
+            <li class="nav-item member-item position-relative">
+                <a class="text-primary  p-0 fs-5" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-person-fill"></i>
+                            <span>我的資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collection.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>收藏夾</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="editArticle.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-pen-fill"></i>
+                            <span>發表文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleManagement.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-folder-fill"></i>
+                            <span>管理文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="logout.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 手機版menu -->
+        <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+            aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
+        <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
+            id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header justify-content-end">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
+                    <li class="nav-item ">
+                        <a class="d-flex align-items-center gap-2" href="search.html">
+                            <i class="bi bi-search search-icon text-primary fs-9"></i>
+                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                        </a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                    </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+              >部落格</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+              >探索新店</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="text-primary p-0 nav-link">我的資料 </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="collection.html" class="text-primary p-0 nav-link"
+              >收藏夾
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="editArticle.html" class="text-primary p-0 nav-link">
+              發表文章
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="articleManagement.html" class="text-primary p-0 nav-link"> 管理文章 </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="logout.html" class="text-primary p-0 nav-link"> 登出 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="container article-management mt-lg-10 mb-10 mt-5">
+
+      <div class="row justify-content-center mb-lg-13 mb-10">
+        <div class="col-lg-10">
+          <nav aria-label="breadcrumb text-secondary">
+            <ol class="breadcrumb mb-3">
+              <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+              <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+              <li class="breadcrumb-item active text-primary" aria-current="page">管理文章</li>
+            </ol>
+          </nav>
+          <div
+            class="d-flex justify-content-between align-items-center pb-md-5 pb-4 border-bottom border-1 border-secondary">
+            <h2 class="fw-bolder fs-lg-4 fs-5 mb-0">管理文章</h2>
+            <div class="btn-groups d-flex gap-3 alig-items-center">
+              <a href="editArticle.html"
+                class="newBtn border-radius-xs btn btn-primary btn-hover-black d-flex align-items-center justify-content-center py-md-3 py-2"><i
+                  class="bi bi-plus-circle-fill fs-8 me-md-2 "></i><span class="fs-8 d-none d-md-block">撰寫新文章</span></a>
+              <input type="text" placeholder="搜尋"
+                class="search border-radius-xs py-3 pe-md-3 pe-2 ps-md-10 ps-9 border-1 border-secondary">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-8">
+        <div class="col-lg-10">
+          <ul class="article-list mb-md-6 mb-8">
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="取消置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-primary"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">老屋麵線糊和滿滿膠質俗又大碗的滷肉飯</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">已創建草稿 ・上次更新 : 1天前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  草　稿</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="取消置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-primary"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">苗栗後龍美食｜手工現桿的好吃湯包！</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">已創建草稿 ・上次更新 : 3天前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  草　稿</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-light-gray"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">異國料理與客製化調酒~多人聚餐首推！</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">發佈於2023/07/20 ・上次更新 : 6天前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  已發佈</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-light-gray"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">幸福的滋味，每天限量的手做甜點</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">發佈於2023/07/04 ・上次更新 : 10天前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  已發佈</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-light-gray"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">餐點好吃的超人氣寵物友善居酒屋到中壢啦！</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">已創建草稿・上次更新 : 15天前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  草　稿</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+            <li
+              class="item d-flex flex-xl-row flex-column align-items-center justify-content-between pb-md-3 pb-4 border-bottom border-secondary mb-md-10 mb-8">
+              <div class="d-flex align-items-center col-xl-8 col-12 justify-content-between">
+                <div class="title d-flex align-items-start gap-md-4 gap-4">
+                  <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="置頂"><i
+                      class="bi bi-star-fill fs-md-7 fs-sm-9 fs-11 text-light-gray"></i></a>
+
+                  <div class="text-area ">
+                    <h3 class="mb-0 fs-md-7 fs-sm-8 fs-11">精選湯底與海陸食材~夏天吃鍋超過癮</h3>
+                    <p class="mb-0 text-dark-gray fs-sm-9 fs-11">發佈於2023/06/24・上次更新 : 一個月前</p>
+                  </div>
+                </div>
+
+                <div
+                  class="status border border-secondary col-1 text-center border-radius-xs fs-md-8 fs-sm-9 fs-11 py-2 ">
+                  已發佈</div>
+              </div>
+
+
+              <div class="d-flex align-items-center col-12 col-xl-4 justify-content-end mt-2 mt-xl-0">
+
+                <div class="operate d-flex align-items-center gap-md-6 gap-5">
+                  <div class="d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#"
+                      class="edit-btn btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-pencil-fill me-md-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">編輯</span>
+                    </a>
+                    <a href="#"
+                      class="publish btn btn-primary  d-flex align-items-center justify-content-center border-radius-xs py-2 btn-hover-black">
+                      <i class="bi bi-check-circle-fill me-1 fs-md-8 fs-sm-9 fs-11"></i><span
+                        class=" fs-md-8 fs-sm-9 fs-11">發佈</span><span
+                        class="d-md-block d-none fs-md-8 fs-sm-9 fs-11">文章</span>
+                    </a>
+                  </div>
+
+                  <div class="position-relative set-icon">
+                    <a href="#">
+                      <i class="bi bi-gear-fill fs-8"></i>
+                    </a>
+                    <ul class="setting-list position-absolute mb-0 bg-secondary p-3 opacity-75">
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-files"></i>
+                          <span>複製</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="d-flex align-items-center gap-3 fs-md-9 fs-sm-10 fs-11">
+                          <i class="bi bi-trash3-fill"></i>
+                          <span>刪除</span>
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </li>
+          </ul>
+
+          <div class="pagination-container d-flex justify-content-lg-end justify-content-center">
+            <nav>
+              <ul class="pagination mb-0">
+                <li class="page-item">
+                  <a class="page-link border-0  py-lg-2 py-1 px-lg-3 px-2" href="#" aria-label="Previous">
+                    <i class="bi bi-chevron-left fs-lg-8 fs-9 text-secondary"></i>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
+                    href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0  py-lg-2 py-1 px-lg-3 px-2" href="#" aria-label="Previous">
+                    <i class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
+    <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
+    <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
+  </footer>
+
+  
+      
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+      <script>
+        $(function () {
+          $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+
+        
+      </script>
+
+
+
+
+
+</body>
+
+</html>
