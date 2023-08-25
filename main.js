@@ -55,3 +55,22 @@ const swiperSearch = new Swiper(".tag-swiper-2", {
     },
   },
 });
+const swiper2 = new Swiper(".store-swiper", {
+  allowTouchMove: true,
+  slidesPerView: 1,
+  spaceBetween: 24,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+},
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+})
