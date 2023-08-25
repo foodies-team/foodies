@@ -14,7 +14,8 @@
     <section class="type-banner-bg">
       <div class="container type-banner d-flex align-items-center">
         <div class="banner-select d-flex col-lg-5 col-12 justify-content-between px-lg-2 py-lg-3 px-1 py-2">
-          <select class="banner-select-width select-shadow select-background form-select border border-radius-lg py-3 pe-3 ps-4 me-2"
+          <select
+            class="banner-select-width select-shadow select-background form-select border border-radius-lg py-3 pe-3 ps-4 me-2"
             aria-label="type-city">
             <option selected>不分區</option>
             <option value="1">台北市</option>
@@ -37,7 +38,8 @@
             <option value="18">花蓮縣</option>
             <option value="19">臺東縣</option>
           </select>
-          <select class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
+          <select
+            class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
             aria-label="type-city">
             <option selected>下午茶</option>
             <option value="1">早午餐、輕食</option>
@@ -314,19 +316,22 @@
     <%- include('./layout/footer'); -%>
 
       <script>
-        const icons = document.querySelectorAll(".store-collect-icon");
+        $(document).ready(function () {
+          const icons = document.querySelectorAll(".store-collect-icon");
 
-        icons.forEach((icon) => {
-          icon.addEventListener("mouseenter", function () {
-            icon.classList.remove("bi-heart");
-            icon.classList.add("bi-heart-fill", "add-collection");
+          icons.forEach((icon) => {
+            icon.addEventListener("mouseenter", function () {
+              icon.classList.remove("bi-heart");
+              icon.classList.add("bi-heart-fill", "add-collection");
+            });
+
+            icon.addEventListener("mouseleave", function () {
+              icon.classList.remove("bi-heart-fill", "add-collection");
+              icon.classList.add("bi-heart");
+            });
           });
 
-          icon.addEventListener("mouseleave", function () {
-            icon.classList.remove("bi-heart-fill", "add-collection");
-            icon.classList.add("bi-heart");
-          });
-        });
+        })
 
       </script>
 

@@ -310,16 +310,11 @@
     </main>
 
     <section
-      class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11"
-    >
+      class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11">
       <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">部落客都吃過這些店</h2>
       <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">值得二訪的道地美食</h3>
-      <a
-        href="./blog.html"
-        class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
-        role="button"
-        >看美食好文</a
-      >
+      <a href="./blog.html" class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
+        role="button">看美食好文</a>
     </section>
 
     <div class="modal fade" id="cancel-search" tabindex="-1" aria-labelledby="cancel-search" aria-hidden="true">
@@ -350,26 +345,28 @@
 
     <%- include('./layout/footer'); -%>
 
-      
+
       <script type="module" src="../main.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
       <script>
-        const icons = document.querySelectorAll(".store-collect-icon");
 
-        icons.forEach((icon) => {
-          icon.addEventListener("mouseenter", function () {
-            icon.classList.remove("bi-heart");
-            icon.classList.add("bi-heart-fill", "add-collection");
-          });
-
-          icon.addEventListener("mouseleave", function () {
-            icon.classList.remove("bi-heart-fill", "add-collection");
-            icon.classList.add("bi-heart");
-          });
-        });
 
         $(document).ready(function () {
+          const icons = document.querySelectorAll(".store-collect-icon");
+
+          icons.forEach((icon) => {
+            icon.addEventListener("mouseenter", function () {
+              icon.classList.remove("bi-heart");
+              icon.classList.add("bi-heart-fill", "add-collection");
+            });
+
+            icon.addEventListener("mouseleave", function () {
+              icon.classList.remove("bi-heart-fill", "add-collection");
+              icon.classList.add("bi-heart");
+            });
+          });
+          
           $(".tag-btn").click(function () {
             $(this).toggleClass("active"); // 使用關鍵字this代表當前點擊的元素
           });
