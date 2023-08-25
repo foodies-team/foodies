@@ -13,7 +13,7 @@
     <section class="explore-banner-bg">
       <div
         class="container explore-banner d-flex align-items-center col-12 justify-content-center justify-content-lg-start">
-        <h2 class="fs-3 text-white fw-bolder">探索味蕾，發現美食</h2>
+        <h2 class="fs-lg-4 fs-sm-5 fs-6 text-white fw-bolder">探索味蕾，發現美食</h2>
       </div>
     </section>
 
@@ -37,37 +37,37 @@
           <option value="3">依評價低至高</option>
         </select>
 
-        <div class="scrollable-btns d-flex justify-content-lg-end justify-content-start">
-          <div class="btns">
+        <div class="scrollable-btns tag-swiper-2 d-flex justify-content-lg-end justify-content-start">
+          <div class="btns swiper-wrapper">
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary  me-5 swiper-slide tag-btn">
               提供外帶
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary  me-5 swiper-slide tag-btn">
               接受訂位
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary p-1 me-5 swiper-slide tag-btn">
               親子友善
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary  me-5 swiper-slide tag-btn">
               有吸菸區
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary swiper-slide tag-btn">
               適合團體
             </button>
           </div>
         </div>
       </div>
 
-      <div class="stores col-10 d-flex flex-column py-13 mx-auto">
+      <div class="stores col-md-10 d-flex flex-column py-13 mx-auto">
         <ul class="store-list d-flex flex-column mb-6">
           <li class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8">
             <img src="../assets/images/index-food-1.jpg" alt="平安京茶室"
@@ -306,6 +306,9 @@
 
     <%- include('./layout/footer'); -%>
 
+      <script type="module" src="../main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
       <script>
         const icons = document.querySelectorAll(".store-collect-icon");
 
@@ -320,9 +323,14 @@
             icon.classList.add("bi-heart");
           });
         });
-      </script>
 
-      <script type="module" src="../main.js"></script>
+        $(document).ready(function () {
+          $(".tag-btn").click(function () {
+            $(this).toggleClass("active"); // 使用關鍵字this代表當前點擊的元素
+          });
+        });
+
+      </script>
 </body>
 
 </html>

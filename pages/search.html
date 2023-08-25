@@ -13,7 +13,8 @@
     <section class="search-banner-bg">
       <div class="container search-banner d-flex align-items-center">
         <div class="banner-select d-flex col-lg-5 col-12 justify-content-between px-lg-2 py-lg-3 px-1 py-2">
-          <select class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
+          <select
+            class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
             aria-label="search-city">
             <option selected>台北市</option>
             <option value="1">新北市</option>
@@ -35,7 +36,8 @@
             <option value="17">花蓮縣</option>
             <option value="18">臺東縣</option>
           </select>
-          <select class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
+          <select
+            class="banner-select-width select-shadow select-background form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
             aria-label="search-city">
             <option selected>下午茶</option>
             <option value="1">早午餐、輕食</option>
@@ -77,27 +79,27 @@
         <div class="scrollable-btns d-flex swiper tag-swiper-2 justify-content-lg-end justify-content-start">
           <div class="btns swiper-wrapper">
             <button type="button "
-              class="btn btn-outline-primary text-secondary p-md-3 border-radius-lg border-secondary p-1 me-5 swiper-slide">
+              class="btn btn-outline-primary text-secondary border-radius-lg border-secondary p-3 me-5 swiper-slide tag-btn">
               木柵動物園
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-md-3 border-radius-lg border-secondary p-1 me-5 swiper-slide">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5 swiper-slide tag-btn">
               國父紀念館
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-md-3 border-radius-lg border-secondary p-1 me-5 swiper-slide">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5 swiper-slide tag-btn">
               台北貓空
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-md-3 border-radius-lg border-secondary p-1 me-5 swiper-slide">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary me-5 swiper-slide tag-btn">
               松山文創園區
             </button>
 
             <button type="button"
-              class="btn btn-outline-primary text-secondary p-md-3 border-radius-lg border-secondary p-1 swiper-slide">
+              class="btn btn-outline-primary text-secondary p-3 border-radius-lg border-secondary swiper-slide tag-btn">
               四四南村
             </button>
           </div>
@@ -343,6 +345,10 @@
 
     <%- include('./layout/footer'); -%>
 
+      
+      <script type="module" src="../main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
       <script>
         const icons = document.querySelectorAll(".store-collect-icon");
 
@@ -357,9 +363,14 @@
             icon.classList.add("bi-heart");
           });
         });
-      </script>
 
-      <script type="module" src="../main.js"></script>
+        $(document).ready(function () {
+          $(".tag-btn").click(function () {
+            $(this).toggleClass("active"); // 使用關鍵字this代表當前點擊的元素
+          });
+        });
+
+      </script>
 </body>
 
 </html>

@@ -69,6 +69,12 @@
     }
   }
 
+  .active{
+    background-color: $primary;
+    border: 1px solid transparent !important;
+    }
+  
+
   .swiper-slide{
     width: auto!important;
   }
