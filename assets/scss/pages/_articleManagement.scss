@@ -1,0 +1,55 @@
+.article-management {
+    .newBtn {
+        width: 48px;
+        @include medium {
+            width: 193px;
+        }
+    }
+
+    .search {
+        width: 100px;
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-position: 12px center;
+
+        @include small {
+            width: 140px;
+        }
+
+        @include medium {
+            width: 193px;
+        }
+    }
+
+    .status {
+        width: 60px;
+
+        @include small {
+            width: 84px;
+        }
+    }
+
+    .set-icon {
+        .setting-list {
+            display: none;
+            white-space: nowrap;
+            background: rgba(0, 0, 0, 0.60);
+            box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.20);
+            border-radius: 5px;
+            backdrop-filter: blur(4px);
+            top:32px;
+            right:0px;
+            z-index:10;
+        }
+
+        &:hover {
+            .setting-list {
+                display: block;
+            }
+            
+        }
+
+        
+    }
+
+}
