@@ -2,7 +2,6 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Swiper from "swiper/bundle";
 
-
 //發表文章 tags 手機版用swiper
 const swiper = new Swiper(".tag-swiper", {
   //避免使用者移動到
@@ -51,10 +50,10 @@ const swiperSearch = new Swiper(".tag-swiper-2", {
       slidesPerView: 5,
       spaceBetween: 20,
       grabCursor: false,
-
     },
   },
 });
+
 const swiper2 = new Swiper(".store-swiper", {
   allowTouchMove: true,
   slidesPerView: 1,
@@ -68,9 +67,16 @@ const swiper2 = new Swiper(".store-swiper", {
       slidesPerView: 3,
       slidesPerGroup: 3,
     },
-},
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
-})
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const myswiper = new Swiper(".messenge-swiper", {
+  loop: false,
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  centeredSlides: true,
+});

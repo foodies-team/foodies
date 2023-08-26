@@ -125,8 +125,7 @@
   text-decoration: underline;
 }
 
-.messenge-list,
-.messenge-imgs {
+.messenge-list {
   gap: 1.5rem;
 }
 
@@ -147,12 +146,12 @@
   }
 }
 
-.messenge-img {
-  width: 150px;
-  height: 150px;
+.swiper-slide {
+  height: 100px;
+  width: 100px;
   @include large {
-    width: 216px;
-    height: 216px;
+    height: 215px;
+    width: 215px;
   }
 }
 
