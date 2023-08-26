@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的資料</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <section class="member-bg vh-100 vw-100">
+    <div class="container"><div class="row justify-content-center">
+        <div class="mt-8">
+            <nav aria-label="breadcrumb text-secondary">
+                <ol class="breadcrumb mb-3">
+                <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+                <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+                <li class="breadcrumb-item active text-primary" aria-current="page">我的資料</li>
+                </ol>
+            </nav>    
+        </div>
+    </div>
+    </div>
+    <div class="container mb-10 mt-50">
+        <div class="row member-bg-w mx-auto">
+        <h2 class="fw-bolder fs-lg-3 fs-5 mt-10 m-lg-10">我的資料</h2>
+        <div class="container mt-10 m-lg-10 align-items-center">  
+            <ul class="row list-group list-group-horizontal d-flex align-items-center">
+            <li class="col-3 list-group-item">姓名</li>
+            <li class="col-3 list-group-item">MM</li>
+            </ul>
+            <hr width="90%">
+            <ul class="row list-group list-group-horizontal pt-5 pt-lg-10 d-flex align-items-center">
+            <li class="col-3 list-group-item">電子郵件</li>
+            <li class="col-3 list-group-item">minn.oyc@gmail.com</li>
+            </ul>
+            <hr width="90%">
+            <ul class="row list-group list-group-horizontal pt-5 pt-lg-10 d-flex align-items-center">
+            <li class="col-3 list-group-item">密碼</li>
+            <li class="col-3 list-group-item">********</li>
+            <li class="col-3 list-group-item justify-content-end"><i class="bi bi-eye-fill fs-6 me-3"></i><a href="#" class="btn btn-outline-secondary py-2 px-4 border-radius-xs" role="button">重設</a></li>
+            </ul>
+            <hr width="90%">
+            <ul><li class="d-flex align-items-center justify-content-center"><a href="#" class="btn btn-primary py-2 px-4 my-10 border-radius-xs" role="button">儲存</a></li></ul>
+        </div>                        
+        </div>
+    </div>
+
+</section>
+
+<%- include('./layout/footer'); -%>
+
+<script type="module" src="../main.js"></script>
+</body>
+</html>
