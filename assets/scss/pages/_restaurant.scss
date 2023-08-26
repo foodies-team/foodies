@@ -146,12 +146,14 @@
   }
 }
 
-.swiper-slide {
-  height: 100px;
-  width: 100px;
-  @include large {
-    height: 215px;
-    width: 215px;
+.messenge-swiper {
+  .swiper-slide {
+    height: 100px;
+    width: 100px;
+    @include large {
+      height: 215px;
+      width: 215px;
+    }
   }
 }
 
