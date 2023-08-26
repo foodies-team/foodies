@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>explore</title>
+    <title>type</title>
     <script type="module" crossorigin src="/foodies/assets/main-f27017d4.js"></script>
     <link rel="stylesheet" href="/foodies/assets/main-3b34e33c.css">
   </head>
@@ -111,81 +111,81 @@
   </div>
 </nav>
 
-    <section class="explore-banner-bg">
-      <div
-        class="container explore-banner d-flex align-items-center col-12 justify-content-center justify-content-lg-start"
-      >
-        <h2 class="fs-3 text-white fw-bolder">探索味蕾，發現美食</h2>
+    <section class="type-banner-bg">
+      <div class="container type-banner d-flex align-items-center">
+        <div
+          class="banner-select d-flex col-lg-5 col-12 justify-content-between px-lg-2 py-lg-3 px-1 py-2"
+        >
+          <select
+            class="banner-select-width form-select border border-radius-lg py-3 pe-3 ps-4 me-2"
+            aria-label="type-city"
+          >
+            <option selected>不分區</option>
+            <option value="1">台北市</option>
+            <option value="2">新北市</option>
+            <option value="3">基隆市</option>
+            <option value="4">新竹市</option>
+            <option value="5">桃園市</option>
+            <option value="6">新竹縣</option>
+            <option value="7">宜蘭縣</option>
+            <option value="8">臺中市</option>
+            <option value="9">苗栗縣</option>
+            <option value="10">彰化縣</option>
+            <option value="11">南投縣</option>
+            <option value="12">雲林縣</option>
+            <option value="13">高雄市</option>
+            <option value="14">臺南市</option>
+            <option value="15">嘉義市</option>
+            <option value="16">嘉義縣</option>
+            <option value="17">屏東縣</option>
+            <option value="18">花蓮縣</option>
+            <option value="19">臺東縣</option>
+          </select>
+          <select
+            class="banner-select-width form-select border border-1 border-radius-lg py-3 pe-3 ps-4"
+            aria-label="type-city"
+          >
+            <option selected>下午茶</option>
+            <option value="1">早午餐、輕食</option>
+            <option value="2">精選湯底鍋</option>
+            <option value="3">國民小吃</option>
+            <option value="4">燒烤、炸物</option>
+            <option value="5">氣氛餐酒館</option>
+          </select>
+        </div>
       </div>
     </section>
 
-    <main class="container explore-main my-5">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mt-6">
-          <li class="breadcrumb-item">
-            <a href="index.html" class="text-secondary">首頁</a>
-          </li>
-          <li class="breadcrumb-item active text-primary" aria-current="page">
-            探索新店
-          </li>
-        </ol>
-      </nav>
-
+    <main class="container type-main my-5">
       <div
-        class="explore d-flex justify-content-between pb-4 border-bottom border-secondary flex-lg-row flex-column"
+        class="search d-flex justify-content-between align-items-center pb-4 border-bottom border-secondary"
       >
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb py-3 mb-0">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-secondary">首頁</a>
+            </li>
+            <li class="breadcrumb-item breadCrumn-width">
+              <a href="#" class="text-secondary">美食類別</a>
+            </li>
+
+            <li class="breadcrumb-item active text-primary" aria-current="page">
+              下午茶
+            </li>
+          </ol>
+        </nav>
+
         <select
-          class="explore-select-width form-select border border-1 border-radius-lg p-3 mb-lg-0 mb-4"
-          aria-label="explore-city"
+          class="search-select-width form-select border border-radius-lg py-lg-3 py-2"
+          aria-label="type-city"
         >
           <option selected>評價數最多</option>
           <option value="1">最新更新</option>
           <option value="2">評分最高</option>
         </select>
-
-        <div
-          class="scrollable-btns d-flex justify-content-lg-end justify-content-start"
-        >
-          <div class="btns">
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
-              提供外帶
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
-              接受訂位
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
-              親子友善
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1 me-5"
-            >
-              有吸菸區
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-outline-primary text-secondary p-lg-3 border-radius-lg border-secondary p-1"
-            >
-              適合團體
-            </button>
-          </div>
-        </div>
       </div>
 
-      <div class="stores col-10 d-flex flex-column py-13 mx-auto">
+      <div class="stores col-lg-10 col-12 d-flex flex-column py-13 mx-auto">
         <ul class="store-list d-flex flex-column mb-6">
           <li
             class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
@@ -236,17 +236,15 @@
             class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
           >
             <img
-              src="/foodies/assets/search-paging-food-2-b9dbfe86.png"
-              alt="Cun Siou Jia 村秀家"
+              src="/foodies/assets/index-food-2-6d8ef230.jpg"
+              alt="井上豆花"
               class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
               class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
-                <h2 class="fs-7 fw-semibold text-secondary">
-                  Cun Siou Jia 村秀家
-                </h2>
+                <h2 class="fs-7 fw-semibold text-secondary">井上豆花</h2>
                 <div class="rank d-flex mb-3 align-items-center">
                   <p class="fs-9 me-1 mb-0">4</p>
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
@@ -258,11 +256,11 @@
                 </div>
                 <div class="phone d-flex mb-3 align-items-center">
                   <i class="bi bi-telephone-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">電話 : 02 2595 5871</p>
+                  <p class="fs-9 mb-0">電話 : 03 333 0183</p>
                 </div>
                 <div class="site d-flex mb-3 align-items-center">
                   <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">地址 : 103台北市大同區昌吉街4-1號</p>
+                  <p class="fs-9 mb-0">地址 : 330桃園市桃園區成功路三段200號</p>
                 </div>
               </div>
 
@@ -284,15 +282,17 @@
             class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
           >
             <img
-              src="/foodies/assets/search-paging-food-3-58b5b243.png"
-              alt="沙丘"
+              src="/foodies/assets/index-food-3-9031b5ce.jpg"
+              alt="敲我ciaoo烘焙工作室"
               class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
               class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
-                <h2 class="fs-7 fw-semibold text-secondary">沙丘</h2>
+                <h2 class="fs-7 fw-semibold text-secondary">
+                  敲我ciaoo烘焙工作室
+                </h2>
                 <div class="rank d-flex mb-3 align-items-center">
                   <p class="fs-9 me-1 mb-0">4</p>
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
@@ -304,13 +304,11 @@
                 </div>
                 <div class="phone d-flex mb-3 align-items-center">
                   <i class="bi bi-telephone-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">電話 : 02 2556 9932</p>
+                  <p class="fs-9 mb-0">電話 : 02 2277 3203</p>
                 </div>
                 <div class="site d-flex mb-3 align-items-center">
                   <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">
-                    地址 : 103台北市大同區延平北路二段62號5樓
-                  </p>
+                  <p class="fs-9 mb-0">地址 : 242新北市新莊區明中街36號</p>
                 </div>
               </div>
               <div
@@ -331,15 +329,15 @@
             class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
           >
             <img
-              src="/foodies/assets/search-paging-food-4-0ccc97ee.jpg"
-              alt="角公園咖啡’"
+              src="/foodies/assets/index-food-4-af603a1a.jpg"
+              alt="林椐’"
               class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
               class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
-                <h2 class="fs-7 fw-semibold text-secondary">角公園咖啡</h2>
+                <h2 class="fs-7 fw-semibold text-secondary">林椐</h2>
                 <div class="rank d-flex mb-3 align-items-center">
                   <p class="fs-9 me-1 mb-0">4</p>
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
@@ -351,11 +349,13 @@
                 </div>
                 <div class="phone d-flex mb-3 align-items-center">
                   <i class="bi bi-telephone-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">電話 : 02 2556 1773</p>
+                  <p class="fs-9 mb-0">電話 : 暫不提供</p>
                 </div>
                 <div class="site d-flex mb-3 align-items-center">
                   <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">地址 : 103台北市大同區太原路131號2樓</p>
+                  <p class="fs-9 mb-0">
+                    地址 : 242新北市新莊區中正路新生巷55號
+                  </p>
                 </div>
               </div>
               <div
@@ -376,15 +376,15 @@
             class="store-items d-flex flex-lg-row flex-column justify-content-between mb-lg-10 mb-8"
           >
             <img
-              src="/foodies/assets/search-paging-food-5-a3fcafab.png"
-              alt="金雞母-東門店’"
+              src="/foodies/assets/food-type-food-6-4dfdb13c.png"
+              alt="Piepai Cafe’"
               class="store-img col-lg-5 col-12 d-block img-fluid"
             />
             <div
               class="store px-lg-6 px-2 py-lg-13 py-4 d-flex align-items-lg-center align-items-start col-lg-5 col-12"
             >
               <div class="store-inform">
-                <h2 class="fs-7 fw-semibold text-secondary">金雞母-東門店</h2>
+                <h2 class="fs-7 fw-semibold text-secondary">Piepai Cafe’</h2>
                 <div class="rank d-flex mb-3 align-items-center">
                   <p class="fs-9 me-1 mb-0">4</p>
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
@@ -392,17 +392,15 @@
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
                   <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
                   <i class="bi bi-star fs-7"></i>
-                  <p class="fs-9 ms-6 mb-0">30則評價</p>
+                  <p class="fs-9 ms-6 mb-0">45則評價</p>
                 </div>
                 <div class="phone d-flex mb-3 align-items-center">
                   <i class="bi bi-telephone-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">電話 : 0908 232 108</p>
+                  <p class="fs-9 mb-0">電話 : 03 416 2546</p>
                 </div>
                 <div class="site d-flex mb-3 align-items-center">
                   <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
-                  <p class="fs-9 mb-0">
-                    地址 : 100台北市中正區杭州南路一段143巷36號
-                  </p>
+                  <p class="fs-9 mb-0">地址 : 320桃園市中壢區莒光路89號</p>
                 </div>
               </div>
               <div
@@ -482,8 +480,10 @@
     <section
       class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11"
     >
-      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">發現更多美食寶藏</h2>
-      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">看更多類似店家</h3>
+      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">美食地圖還缺一角</h2>
+      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">
+        跟著吃貨糾察隊出隊巡邏
+      </h3>
       <a
         href="#"
         class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4"
