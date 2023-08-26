@@ -4,123 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>部落格</title>
-    <script type="module" crossorigin src="/foodies/assets/main-f27017d4.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-3b34e33c.css">
+    <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
+    <script type="module" crossorigin src="/foodies/assets/main-6dba0f93.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-63eb8ed0.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
-  <div class="container">
-    <h1 class="navbar-brand m-0">
-      <a href="index.html">
-        <img class="logoImg" src="/foodies/assets/logo-75fbfbf0.png" alt="logoImg" />
-      </a>
-    </h1>
-    <button
-      class="navbar-toggler text-primary"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon text-primary"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8">
-        <li class="nav-item">
-          <a class="d-flex align-items-center gap-2" href="search.html">
-            <i class="bi bi-search search-icon text-primary fs-9"></i>
-            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="type.html"
-            >美食類別</a
-          >
-        </li>
+    <div class="container">
+        <h1 class="navbar-brand m-0">
+            <a href="index.html">
+                <img class="logoImg" src="/foodies/assets/logo-e06c9bbc.png" alt="logoImg">
+            </a>
+        </h1>
+         <!-- 桌機版menu -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
+            <li class="nav-item">
+                <a class="d-flex align-items-center gap-2" href="search.html">
+                    <i class="bi bi-search search-icon text-primary fs-9"></i>
+                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                </a>
 
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="./blogPost.html"
-            >部落格</a
-          >
-        </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-primary p-0 nav-link" href="./explore.html"
-            >探索新店</a
-          >
-        </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+          >部落格</a
+        >
+      </li>
 
-        <li class="nav-item member-item position-relative">
-          <a class="text-primary p-0 fs-5" href="#"
-            ><i class="bi bi-person-circle person-icon"></i
-          ></a>
-          <ul
-            class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap"
-          >
-            <li>
-              <a
-                href="profile.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-person-fill"></i>
-                <span>我的資料</span>
-              </a>
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+          >探索新店</a
+        >
+      </li>
+
+            <li class="nav-item member-item position-relative">
+                <a class="text-primary  p-0 fs-5" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
+                    <li>
+                        <a href="#"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-person-fill"></i>
+                            <span>我的資料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collection.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>收藏夾</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="editArticle.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-pen-fill"></i>
+                            <span>發表文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleManagement.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-folder-fill"></i>
+                            <span>管理文章</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="logout.html"
+                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>登出</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
-            <li>
-              <a
-                href="collection.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-heart-fill"></i>
-                <span>收藏夾</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="editArticle.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-pen-fill"></i>
-                <span>發表文章</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-folder-fill"></i>
-                <span>管理文章</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="logout.html"
-                class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative"
-              >
-                <i class="bi bi-box-arrow-right"></i>
-                <span>登出</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </ul>
+
+        <!-- 手機版menu -->
+        <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+            aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
+        <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
+            id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header justify-content-end">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
+                    <li class="nav-item ">
+                        <a class="d-flex align-items-center gap-2" href="search.html">
+                            <i class="bi bi-search search-icon text-primary fs-9"></i>
+                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                        </a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                    </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+              >部落格</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+              >探索新店</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="text-primary p-0 nav-link">我的資料 </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="collection.html" class="text-primary p-0 nav-link"
+              >收藏夾
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="editArticle.html" class="text-primary p-0 nav-link">
+              發表文章
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="articleManagement.html" class="text-primary p-0 nav-link"> 管理文章 </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="logout.html" class="text-primary p-0 nav-link"> 登出 </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
-    <img src="/foodies/assets/blog-food-1-e7d76208.jpg" alt="restaurant" class="d-inline-block d-lg-none blog-banner w-100"/>
+    <img src="/foodies/assets/blog-food-1-6dce9fda.jpg" alt="restaurant" class="blog-banner d-inline-block d-lg-none w-100"/>
     <nav
       aria-label="breadcrumb text-secondary"
       class="container blog-breadcrumb mb-8 d-md-block"
     >
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#" class="text-secondary">首頁</a>
+          <a href="./index.html" class="text-secondary">首頁</a>
         </li>
         <li
-          class="breadcrumb-item single-breadcrumb active text-nowrap"
+          class="breadcrumb-item active"
           aria-current="page"
         >
           部落格
@@ -130,12 +167,12 @@
 
     <section class="container blog-news mb-10 mb-md-13">
       <div class="row">
-        <div class="col-lg-6 h-100">
+        <div class="col-lg-6">
           <a href="./blogPost.html" class="link-secondary">
             <div class="card border-0">
-              <img src="/foodies/assets/blog-food-1-e7d76208.jpg" alt="restaurant" class="d-none d-lg-inline-block"/>
+              <img src="/foodies/assets/blog-food-1-6dce9fda.jpg" alt="restaurant" class="d-none d-lg-inline-block"/>
               <div class="card-body px-0 mb-border">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-3">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-3">
                     異國料理與客製化調酒~多人聚餐首推！
                   </h3>
                 <div
@@ -150,11 +187,11 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <h2 class="fs-xl-1 fs-md-2 d-none d-lg-block mb-md-4">最新食態</h2>
+          <h2 class="fs-xl-2 fs-md-3 d-none d-lg-block mb-md-4">最新食態</h2>
           <a href="#" class="link-secondary">
             <div class="card border-0 border-bottom">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   享受一個人的時光！不限時咖啡廳，激推西西里咖啡、培根司康
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -167,7 +204,7 @@
           <a href="#" class="link-secondary d-none d-lg-block">
             <div class="card border-0 border-bottom">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   包容的滋味：回憶滿滿的客家湯圓與水餃
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -180,7 +217,7 @@
           <a href="#" class="link-secondary d-none d-lg-block">
             <div class="card border-0 border-bottom mb-5">
               <div class="card-body px-0">
-                <h3 class="card-title fs-6 fs-lg-5 fw-bold">
+                <h3 class="card-title fs-6 fs-xl-5 fw-bold">
                   一定要收藏的市場美食~超營養潤餅不到中午就賣光
                 </h3>
                 <div class="card-text d-flex justify-content-between fs-md-8">
@@ -191,7 +228,6 @@
             </div>
             </a
           >
-
           <a href="#" class="text-end link-dark-gray explore-more mt-5">
             EXPLORE MORE
             <i class="bi bi-chevron-right"></i>
@@ -203,8 +239,8 @@
     </section>
 
     <section class="container single mb-10 mb-md-16">
-        <div class="d-flex justify-content-between mb-8 mb-md-13">
-          <h2 class="fs-xl-1 fs-md-2 fs-3">獨享超滿足</h2>
+        <div class="d-flex justify-content-between align-items-center mb-8 mb-md-13">
+          <h2 class="fs-xl-2 fs-md-3 fs-4 mb-0">獨享超滿足</h2>
           <a href="#"><i class="bi bi-pencil-square edit-icon"></i></a>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-md-11">
@@ -213,11 +249,11 @@
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
               
                 <div class="overflow-hidden">
-                  <img class="w-100" src="/foodies/assets/blog-food-2-226c2196.jpg" alt="pie">
+                  <img class="w-100" src="/foodies/assets/blog-food-2-c8dc09f9.jpg" alt="pie">
                 </div>
                 
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">小孩才做選擇~遨遊甜鹹派之間</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">小孩才做選擇~遨遊甜鹹派之間</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By Vivian</span>
@@ -230,10 +266,9 @@
           </div>
           <div class="col">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="/foodies/assets/blog-food-3-660abd07.jpg" alt="fried rice">
+             <div class="overflow-hidden"> <img src="/foodies/assets/blog-food-3-8f44a20b.jpg" alt="fried rice" class="w-100"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">一吃就難忘，讓人魂牽夢縈的炒飯！</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">一吃就難忘，讓人魂牽夢縈的炒飯！</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By peihsuan</span>
@@ -246,10 +281,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="/foodies/assets/blog-food-4-7e2e72f3.jpg" alt="sweet">
+             <div class="overflow-hidden"><img src="/foodies/assets/blog-food-4-ac7b56cd.jpg" alt="sweet"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">幸福的滋味，每天限量的手做甜點</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">幸福的滋味，每天限量的手做甜點</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By 美食戰隊</span>
@@ -262,10 +296,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="/foodies/assets/blog-food-5-c66febb7.jpg" alt="brunch">
+             <div class="overflow-hidden"> <img src="/foodies/assets/blog-food-5-90e68818.jpg" alt="brunch"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">用豐盛的早午餐，開啟正能量的一天</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">用豐盛的早午餐，開啟正能量的一天</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By 吃貨小姐</span>
@@ -278,10 +311,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="/foodies/assets/blog-food-6-d07b0d2b.jpg" alt="chicken">
+             <div class="overflow-hidden"><img src="/foodies/assets/blog-food-6-d07b0d2b.jpg" alt="chicken" class="w-100"></div> 
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fw-bold mb-0 flex-grow-1 px-4">現炸雞排與超解膩紅茶，宵夜第一選擇</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">現炸雞排與超解膩紅茶，宵夜第一選擇</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By abalun</span>
@@ -294,10 +326,9 @@
           </div>
           <div class="col d-none d-md-block">
             <a href="#" class="card h-100 link-secondary border-0 rounded-0">
-             
-                <img src="/foodies/assets/blog-food-7-2f57117b.jpg" alt="bread">
+             <div class="overflow-hidden"> <img src="/foodies/assets/blog-food-7-d3cbd46c.jpg" alt="bread"></div>
                 <div class="card-body d-flex flex-column px-0 border">
-                     <h3 class="card-title fs-6 fs-lg-5 fs-lg-4 fw-bold mb-0 flex-grow-1 px-4">經典可口越南麵包，清爽無負擔</h3>
+                     <h3 class="card-title fs-6 fs-xl-5 fw-bold mb-0 flex-grow-1 px-4">經典可口越南麵包，清爽無負擔</h3>
                   <hr>
                   <div class="card-text d-flex justify-content-between fs-md-8 px-4">
                     <span>By mm</span>
@@ -350,15 +381,15 @@
 
 
       <section class="container group mb-10 mb-md-16">
-        <h2 class="fs-xl-1 fs-md-2 fs-3 mb-8 mb-md-13">聚會嗨翻天</h2>
+        <h2 class="fs-xl-2 fs-md-3 fs-4 mb-8 mb-md-13">聚會嗨翻天</h2>
         <div class="row mb-6 mb-md-8">
          
           <div class="col-md-5">
-            <img src="/foodies/assets/blog-food-8-50a2ddae.jpg" alt="skewer" class="w-100">
+            <img src="/foodies/assets/blog-food-8-4256addf.jpg" alt="skewer" class="w-100">
           </div>
           <div class="col-md-7">
             <a href="#" class="item  h-100 py-4 py-md-0 link-secondary d-flex flex-column justify-content-between">
-                <h3 class="fs-6 fs-lg-5 fw-bold mb-0 px-4 px-md-0">隱藏巷弄的串燒居酒屋，沒預約可是吃不到！</h3>
+                <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">隱藏巷弄的串燒居酒屋，沒預約可是吃不到！</h3>
                 <hr class="d-md-none">
                 <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
                   <span>By 愛吃星球</span>
@@ -370,12 +401,12 @@
         </div>
         <div class="row mb-6 mb-md-8">
           <div class="col-md-5">
-            <img src="/foodies/assets/blog-food-9-8c0d5484.jpg" alt="fry" class="w-100 img">
+            <img src="/foodies/assets/blog-food-9-ffb6c65d.jpg" alt="fry" class="w-100 img">
           </div>
 <div class="col-md-7">
 
     <a href="#" class="item  h-100 py-4 py-md-0 d-flex link-secondary flex-column justify-content-between">
-        <h3 class="fs-6 fs-lg-5 fw-bold mb-0 px-4 px-md-0">獨門香料的熱炒桌菜，體驗道地客家風情！還有 KTV 包廂~</h3>
+        <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">獨門香料的熱炒桌菜，體驗道地客家風情！還有 KTV 包廂~</h3>
        <hr class="d-md-none">
         <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
           <span>By peihsuan</span>
@@ -389,11 +420,11 @@
         
         <div class="d-none d-md-flex row mb-md-11">
           <div class="col-md-5">
-            <img src="/foodies/assets/blog-food-10-03181f2e.jpg" alt="hotpot" class="w-100">
+            <img src="/foodies/assets/blog-food-10-55616ade.jpg" alt="hotpot" class="w-100">
           </div>
           <div class="col-md-7">
             <a href="#" class="item h-100 d-flex link-secondary flex-column justify-content-between">
-                <h3 class="fs-6 fs-lg-5 fw-bold mb-0">精選湯底與海陸食材~夏天吃鍋超過癮</h3>
+                <h3 class="fs-6 fs-xl-5 fw-bold mb-0">精選湯底與海陸食材~夏天吃鍋超過癮</h3>
                 <div class="d-flex justify-content-between fs-md-8">
                   <span>By 吃貨小姐</span>
                   <span>2023/06/24</span>
@@ -444,10 +475,10 @@
     <section
       class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11"
     >
-      <h2 class="fw-bold fs-4 fs-md-3 fs-lg-2">美食地圖還缺一角？</h2>
-      <h3 class="fs-5 fs-md-4 fs-lg-3 mb-md-13 mb-10">吃過這些才能算吃貨</h3>
+      <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">吃貨齊聚一堂</h2>
+      <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">共享美食情報</h3>
       <a
-        href="#"
+        href="./explore.html"
         class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
         role="button"
         >探索美食</a
