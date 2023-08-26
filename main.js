@@ -79,4 +79,10 @@ const myswiper = new Swiper(".messenge-swiper", {
   slidesPerView: "auto",
   spaceBetween: 24,
   centeredSlides: true,
+
+  320: {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    centeredSlides: false,
+  },
 });
