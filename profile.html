@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>美食糾察隊</title>
-    <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
-    <script type="module" crossorigin src="/foodies/assets/main-4dfa6dcc.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-076c2558.css">
-  </head>
-  <body>
+    <title>我的資料</title>
+  <script type="module" crossorigin src="/foodies/assets/main-4dfa6dcc.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-076c2558.css">
+</head>
+<body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
     <div class="container">
         <h1 class="navbar-brand m-0">
@@ -95,19 +93,52 @@
   </div>
 </nav>
 
-    <h1 class="index-title fs-7">我是首頁 </h1>
-    <a href="type.html" class="text-secondary">美食類別</a>
-    <a href="search.html" class="text-secondary">搜尋個頁</a>
-    <a href="explore.html" class="text-secondary">探索美食</a>
-    <a href="collectionPage.html" class="text-secondary">收藏個頁</a>
-    <a href="restaurant.html" class="text-secondary">餐廳資訊</a>
-    
-    <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
+    <section class="member-bg vh-100 vw-100">
+    <div class="container"><div class="row justify-content-center">
+        <div class="mt-8">
+            <nav aria-label="breadcrumb text-secondary">
+                <ol class="breadcrumb mb-3">
+                <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+                <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
+                <li class="breadcrumb-item active text-primary" aria-current="page">我的資料</li>
+                </ol>
+            </nav>    
+        </div>
+    </div>
+    </div>
+    <div class="container mb-10 mt-50">
+        <div class="row member-bg-w mx-auto">
+        <h2 class="fw-bolder fs-lg-3 fs-5 mt-10 m-lg-10">我的資料</h2>
+        <div class="container mt-10 m-lg-10 align-items-center">  
+            <ul class="row list-group list-group-horizontal d-flex align-items-center">
+            <li class="col-3 list-group-item">姓名</li>
+            <li class="col-3 list-group-item">MM</li>
+            </ul>
+            <hr width="90%">
+            <ul class="row list-group list-group-horizontal pt-5 pt-lg-10 d-flex align-items-center">
+            <li class="col-3 list-group-item">電子郵件</li>
+            <li class="col-3 list-group-item">minn.oyc@gmail.com</li>
+            </ul>
+            <hr width="90%">
+            <ul class="row list-group list-group-horizontal pt-5 pt-lg-10 d-flex align-items-center">
+            <li class="col-3 list-group-item">密碼</li>
+            <li class="col-3 list-group-item">********</li>
+            <li class="col-3 list-group-item justify-content-end"><i class="bi bi-eye-fill fs-6 me-3"></i><a href="#" class="btn btn-outline-secondary py-2 px-4 border-radius-xs" role="button">重設</a></li>
+            </ul>
+            <hr width="90%">
+            <ul><li class="d-flex align-items-center justify-content-center"><a href="#" class="btn btn-primary py-2 px-4 my-10 border-radius-xs" role="button">儲存</a></li></ul>
+        </div>                        
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer text-center container-fluid text-primary bg-secondary py-5">
     <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
     <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
   </footer>
 
   
-    
-  </body>
+
+</body>
 </html>
