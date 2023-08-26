@@ -20,10 +20,13 @@
 .blog-news {
   img {
     @include medium {
-      min-height: 480px;
+      min-height: 380px;
     }
-    @include large {
-      min-height: 520px;
+    @include large{
+      min-height: 430px;
+    }
+    @include xlarge {
+      min-height: 450px;
     }
   }
   a:not(:last-child):hover,
@@ -59,21 +62,11 @@
   }
 }
 
-.edit-icon {
-  font-size: 40px;
-  color: $secondary;
-  @include large {
-    font-size: 80px;
-  }
-  &:hover {
-    color: $primary;
-  }
-}
+
 
 .single {
   img {
     height: 240px;
-
     @include medium {
       height: 300px;
     }
@@ -84,8 +77,18 @@
       transform: scale(1.05);
     }
   }
-  .card {
-    overflow: hidden;
+  .edit-icon {
+    font-size: 35px;
+    color: $secondary;
+    &:hover{
+      color: $primary;
+    }
+    @include medium {
+      font-size: 45px;
+    }
+    @include xlarge {
+      font-size: 60px;
+    }
   }
 }
 
@@ -93,6 +96,7 @@
   a:hover {
     background-color: $primary;
   }
+
 }
 
 .group {

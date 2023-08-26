@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>collectionpage</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="collectionpage-banner-bg">
+      <div
+        class="container collectionpage-banner d-flex align-items-center gap-lg-6 gap-3"
+      >
+        <h2 class="fs-md-3 fs-5 text-white fw-bolder">下午茶</h2>
+        <a href="#"
+          ><i
+            class="bi bi-pencil-fill fs-7 text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop-edit-collectionName"
+          ></i
+        ></a>
+      </div>
+    </section>
+
+    <main class="container collectionpage-main my-lg-5 my-4">
+      <nav aria-label="breadcrumb" class="mb-lg-6 mb-4">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-secondary">首頁</a>
+          </li>
+          <li class="breadcrumb-item breadCrumn-width">
+            <a href="#" class="text-secondary">會員中心</a>
+          </li>
+          <li class="breadcrumb-item breadCrumn-width-s">
+            <a href="collection.html" class="text-secondary text-nowrap"
+              >收藏夾</a
+            >
+          </li>
+          <li class="breadcrumb-item active text-primary" aria-current="page">
+            類別 - 下午茶
+          </li>
+        </ol>
+      </nav>
+
+      <div class="collectionpage d-flex justify-content-between pb-lg-6 pb-4 border-bottom border-secondary">
+        <select class="collectionpage-select-width form-select border border-1 border-radius-lg  py-lg-3 py-2"
+          aria-label="collectionpage-city">
+          <option selected value="1">依評價高至低</option>
+          <option value="2">依評價低至高</option>
+          <option value="3">依添加時間</option>
+        </select>
+
+        <button
+          type="button"
+          class="btn btn-primary text-secondary fw-bolder py-lg-3 py-2 border-radius-lg collectionpage-select-width"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-collectionName"
+        >
+          刪除收藏類別
+        </button>
+      </div>
+
+      <div
+        class="stores collection col-lg-10 col-12 d-flex flex-column py-lg-13 py-10 mx-auto"
+      >
+        <ul class="store-list d-flex flex-column mb-6">
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8"
+          >
+            <img
+              src="../assets/images/index-food-1.jpg"
+              alt="平安京茶事"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
+            />
+
+            <div
+              class="store px-lg-6 px-2 py-4 py-lg-0 d-flex justify-content-between flex-lg-row flex-column col-lg-6 col-12"
+            >
+              <div class="store-inform order-1 order-lg-0">
+                <h2
+                  class="fs-lg-7 fs-8 fw-semibold text-secondary mb-lg-5 mb-2"
+                >
+                  平安京茶事
+                </h2>
+                <div
+                  class="rank d-flex mb-lg-3 mb-2 align-items-xl-center align-items-lg-start align-items-center flex-xl-row flex-lg-column flex-row"
+                >
+                  <div class="d-flex align-items-center">
+                    <p class="fs-9 me-1 mb-0">4</p>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill fs-7 text-light-gray"></i>
+                  </div>
+                  <p class="fs-9 ms-xl-6 ms-lg-0 ms-4 mb-0">123則評價</p>
+                </div>
+                <div class="phone d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-telephone-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">電話 : 02 2368 2277</p>
+                </div>
+                <div class="site d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">地址 : 100台北市中正區師大路165號</p>
+                </div>
+              </div>
+              <div
+                class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto"
+              >
+                <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">
+                  添加時間 : 2023/07/02
+                </p>
+                <a href="#" class="text-secondary"
+                  ><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-heart"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-collectionItem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8"
+          >
+            <img
+              src="../assets/images/search-paging-food-2.png"
+              alt="Cun Siou Jia 村秀家"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
+            />
+
+            <div
+              class="store px-lg-6 px-2 py-4 py-lg-0 d-flex justify-content-between flex-lg-row flex-column col-lg-6 col-12"
+            >
+              <div class="store-inform order-1 order-lg-0">
+                <h2
+                  class="fs-lg-7 fs-8 fw-semibold text-secondary mb-lg-5 mb-2"
+                >
+                  Cun Siou Jia 村秀家
+                </h2>
+                <div
+                  class="rank d-flex mb-lg-3 mb-2 align-items-xl-center align-items-lg-start align-items-center flex-xl-row flex-lg-column flex-row"
+                >
+                  <div class="d-flex align-items-center">
+                    <p class="fs-9 me-1 mb-0">4</p>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill fs-7 me-1 text-primary"></i>
+                    <i class="bi bi-star-fill fs-7 text-light-gray"></i>
+                  </div>
+                  <p class="fs-9 ms-xl-6 ms-lg-0 ms-4 mb-0">100則評價</p>
+                </div>
+                <div class="phone d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-telephone-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">電話 : 02 2595 5871</p>
+                </div>
+                <div class="site d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">地址 : 103台北市大同區昌吉街4-1號</p>
+                </div>
+              </div>
+              <div
+                class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto"
+              >
+                <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">
+                  添加時間 : 2023/06/28
+                </p>
+                <a href="#" class="text-secondary"
+                  ><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-heart"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-collectionItem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8"
+          >
+            <img
+              src="../assets/images/search-paging-food-3.png"
+              alt="沙丘"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
+            />
+
+            <div
+              class="store px-lg-6 px-2 py-4 py-lg-0 d-flex justify-content-between flex-lg-row flex-column col-lg-6 col-12"
+            >
+              <div class="store-inform order-1 order-lg-0">
+                <h2
+                  class="fs-lg-7 fs-8 fw-semibold text-secondary mb-lg-5 mb-2"
+                >
+                  沙丘
+                </h2>
+                <div
+                  class="rank d-flex mb-lg-3 mb-2 align-items-xl-center align-items-lg-start align-items-center flex-xl-row flex-lg-column flex-row"
+                >
+                  <div class="d-flex align-items-center">
+                    <p class="fs-9 me-1 mb-0">3</p>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill fs-7 text-light-gray"></i>
+                  </div>
+                  <p class="fs-9 ms-xl-6 ms-lg-0 ms-4 mb-0">89則評價</p>
+                </div>
+                <div class="phone d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-telephone-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">電話 : 02 2556 9932</p>
+                </div>
+                <div class="site d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">
+                    地址 : 103台北市大同區延平北路二段62號5樓
+                  </p>
+                </div>
+              </div>
+              <div
+                class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto"
+              >
+                <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">
+                  添加時間 : 2023/06/20
+                </p>
+                <a href="#" class="text-secondary"
+                  ><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-heart"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-collectionItem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8"
+          >
+            <img
+              src="../assets/images/search-paging-food-4.jpg"
+              alt="角公園咖啡"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
+            />
+
+            <div
+              class="store px-lg-6 px-2 py-4 py-lg-0 d-flex justify-content-between flex-lg-row flex-column col-lg-6 col-12"
+            >
+              <div class="store-inform order-1 order-lg-0">
+                <h2
+                  class="fs-lg-7 fs-8 fw-semibold text-secondary mb-lg-5 mb-2"
+                >
+                  角公園咖啡
+                </h2>
+                <div
+                  class="rank d-flex mb-lg-3 mb-2 align-items-xl-center align-items-lg-start align-items-center flex-xl-row flex-lg-column flex-row"
+                >
+                  <div class="d-flex align-items-center">
+                    <p class="fs-9 me-1 mb-0">4</p>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star fs-7"></i>
+                  </div>
+                  <p class="fs-9 ms-xl-6 ms-lg-0 ms-4 mb-0">45則評價</p>
+                </div>
+                <div class="phone d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-telephone-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">電話 : 02 2556 1773</p>
+                </div>
+                <div class="site d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">地址 : 103台北市大同區太原路131號2樓</p>
+                </div>
+              </div>
+              <div
+                class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto"
+              >
+                <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">
+                  添加時間 : 2023/06/15
+                </p>
+                <a href="#" class="text-secondary"
+                  ><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-heart"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-collectionItem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8"
+          >
+            <img
+              src="../assets/images/food-type-food-6.png"
+              alt="Piepai Cafe’"
+              class="store-img col-lg-5 col-12 d-block img-fluid"
+            />
+
+            <div
+              class="store px-lg-6 px-2 py-4 py-lg-0 d-flex justify-content-between flex-lg-row flex-column col-lg-6 col-12"
+            >
+              <div class="store-inform order-1 order-lg-0">
+                <h2
+                  class="fs-lg-7 fs-8 fw-semibold text-secondary mb-lg-5 mb-2"
+                >
+                  Piepai Cafe’
+                </h2>
+                <div
+                  class="rank d-flex mb-lg-3 mb-2 align-items-xl-center align-items-lg-start align-items-center flex-xl-row flex-lg-column flex-row"
+                >
+                  <div class="d-flex align-items-center">
+                    <p class="fs-9 me-1 mb-0">4</p>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star-fill text-primary fs-7 me-1"></i>
+                    <i class="bi bi-star fs-7"></i>
+                  </div>
+                  <p class="fs-9 ms-xl-6 ms-lg-0 ms-4 mb-0">35則評價</p>
+                </div>
+                <div class="phone d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-telephone-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">電話 : 03 416 2546</p>
+                </div>
+                <div class="site d-flex mb-lg-3 mb-2 align-items-center">
+                  <i class="bi bi-geo-alt-fill fs-9 me-1"></i>
+                  <p class="fs-9 mb-0">地址 : 320桃園市中壢區莒光路89號</p>
+                </div>
+              </div>
+              <div
+                class="store-collect order-0 order-lg-1 d-flex align-items-lg-end justify-content-between justify-content-lg-start flex-lg-column w-auto"
+              >
+                <p class="fs-9 mb-lg-7 mb-0 text-nowrap text-lg-end">
+                  添加時間 : 2023/06/05
+                </p>
+                <a href="#" class="text-secondary"
+                  ><i
+                    class="bi bi-heart-fill text-primary fs-lg-4 fs-6 add-heart"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cancel-collectionItem"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div
+          class="pagination-container d-flex justify-content-lg-end justify-content-center"
+        >
+          <nav>
+            <ul class="pagination mb-0">
+              <li class="page-item">
+                <a
+                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <i class="bi bi-chevron-left fs-lg-8 fs-9 text-secondary"></i>
+                </a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0 active"
+                  href="#"
+                  >1</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >3</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link fs-lg-8 fs-9 py-lg-2 py-1 px-lg-4 px-3 text-secondary border-0"
+                  href="#"
+                  >4</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link border-0 py-lg-2 py-1 px-lg-3 px-2"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <i
+                    class="bi bi-chevron-right fs-lg-8 fs-9 text-secondary"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+
+    <section
+      class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-lg-16 py-11"
+    >
+      <h2 class="fw-bolder fs-lg-1 fs-4 mb-0">為收藏夾添加更多美食</h2>
+      <h3 class="fw-semibold fs-lg-2 fs-6 mb-lg-13 mb-10">
+        看網友推薦熱門美食
+      </h3>
+      <a
+        href="#"
+        class="footer-more-btn btn btn-secondary text-primary border-radius-lg text-decoration-none fs-lg-7 fs-9 pt-lg-2 pt-1 px-lg-6 px-4"
+        role="button"
+        >探索美食</a
+      >
+    </section>
+
+    <!-- 刪除收藏類別彈跳視窗  -->
+    <div
+      class="modal fade"
+      id="delete-collectionName"
+      tabindex="-1"
+      aria-labelledby="delete-collectionName"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-lg-6 fs-7"
+              id="modalLabel-delete-collectionName"
+            >
+              確認訊息
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">確定刪除此收藏類別?</p>
+            <p class="mb-0 fs-lg-8 fs-9">
+              <i class="bi bi-exclamation-triangle-fill text-primary"></i
+              >一旦刪除該類別，原收藏的餐廳將一併移出收藏夾
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary border-radius-xss">
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 修改收藏類別名稱 -->
+    <div
+      class="modal fade"
+      id="staticBackdrop-edit-collectionName"
+      tabindex="-1"
+      aria-labelledby="new-collection-modal"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-lg-6 fs-7"
+              id="staticBackdropLabel-edit-collectionName"
+            >
+              修改收藏類別名稱
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="new-collection-name" class="form-label fs-lg-8 fs-9"
+              >類別名稱</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="new-collection-name"
+              placeholder="請輸入類別名稱"
+              aria-describedby="new-collection-name"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary border-radius-xss">
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 取消收藏類別彈跳視窗  -->
+    <div
+      class="modal fade"
+      id="cancel-collectionItem"
+      tabindex="-1"
+      aria-labelledby="cancel-collectionItem"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-lg-6 fs-7"
+              id="modalLabel-cancel-collectionItem"
+            >
+              確認訊息
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-lg-8 fs-9 mb-0">確定取消收藏此餐廳?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary border-radius-xss"
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-primary border-radius-xss">
+              確定
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

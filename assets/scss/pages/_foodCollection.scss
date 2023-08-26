@@ -1,0 +1,35 @@
+.fc-banner {
+  background-image: url(../images/blog-banner.jpg);
+  height: 322px;
+  background-size: cover;
+  background-position: center;
+}
+
+.fc-title:hover{
+  color: $dark-gray !important;
+  transition: 0.3s ease-in-out;
+}
+.egg-icon {
+  margin-top: -4px;
+}
+
+.fc-store {
+  .col,
+  .swiper-slide {
+    height: 412px;
+  }
+  .card-body {
+    flex: initial;
+  }
+  img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 30px;
+    color: $primary;
+    
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.70));
+  }
+}
