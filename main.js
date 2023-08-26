@@ -74,26 +74,9 @@ const swiper2 = new Swiper(".store-swiper", {
   },
 });
 
-const commentswiper = new Swiper(".comment-swiper", {
-  //避免使用者移動到
-  allowTouchMove: true,
+const myswiper = new Swiper(".messenge-swiper", {
+  loop: false,
+  slidesPerView: "auto",
   spaceBetween: 24,
-  //一次呈現幾個.swiper-slide
-  slidesPerView: 2,
-
-  grabCursor: true,
-
-  breakpoints: {
-    // 斷點顯示設定
-    320: {
-      // 當裝置寬大於 320
-      slidesPerView: 3, // 要看見幾頁內容 (可用小數點讓使用者知道可滑動)
-      spaceBetween: 16,
-    },
-    768: {
-      // 當裝置寬大於 768
-      slidesPerView: 5,
-      spaceBetween: 16,
-    },
-  },
+  centeredSlides: true,
 });
