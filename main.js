@@ -27,7 +27,7 @@ const swiper = new Swiper(".tag-swiper", {
   },
 });
 
-//發表文章 tags 手機版用swiper
+//探索新店、搜尋個頁 tags 手機版用swiper
 const swiperSearch = new Swiper(".tag-swiper-2", {
   //避免使用者移動到
   //allowTouchMove: true,
@@ -53,7 +53,7 @@ const swiperSearch = new Swiper(".tag-swiper-2", {
     },
   },
 });
-
+//美食總覽 swiper
 const swiper2 = new Swiper(".store-swiper", {
   allowTouchMove: true,
   slidesPerView: 1,
@@ -73,16 +73,23 @@ const swiper2 = new Swiper(".store-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
+//餐廳資訊 swiper
 const myswiper = new Swiper(".messenge-swiper", {
   loop: false,
   slidesPerView: "auto",
   spaceBetween: 24,
-  centeredSlides: true,
+  //centeredSlides: true,
 
   320: {
     slidesPerView: 2,
     spaceBetween: 24,
     centeredSlides: false,
+    grabCursor: true,
+  },
+  768: {
+    // 當裝置寬大於 768
+    slidesPerView: 3,
+    spaceBetween: 24,
+    grabCursor: false,
   },
 });
