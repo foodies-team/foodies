@@ -147,12 +147,12 @@
   }
 }
 
-.messenge-img {
-  width: 150px;
-  height: 150px;
-  @include large {
-    width: 216px;
-    height: 216px;
+.comment-swiper-container {
+  .swiper-slide {
+    height: 80px;
+    @include large {
+      height: 216px;
+    }
   }
 }
 

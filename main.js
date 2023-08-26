@@ -2,7 +2,6 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Swiper from "swiper/bundle";
 
-
 //發表文章 tags 手機版用swiper
 const swiper = new Swiper(".tag-swiper", {
   //避免使用者移動到
@@ -51,10 +50,10 @@ const swiperSearch = new Swiper(".tag-swiper-2", {
       slidesPerView: 5,
       spaceBetween: 20,
       grabCursor: false,
-
     },
   },
 });
+
 const swiper2 = new Swiper(".store-swiper", {
   allowTouchMove: true,
   slidesPerView: 1,
@@ -68,9 +67,33 @@ const swiper2 = new Swiper(".store-swiper", {
       slidesPerView: 3,
       slidesPerGroup: 3,
     },
-},
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
-})
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const commentswiper = new Swiper(".comment-swiper", {
+  //避免使用者移動到
+  allowTouchMove: true,
+  spaceBetween: 24,
+  //一次呈現幾個.swiper-slide
+  slidesPerView: 2,
+
+  grabCursor: true,
+
+  breakpoints: {
+    // 斷點顯示設定
+    320: {
+      // 當裝置寬大於 320
+      slidesPerView: 3, // 要看見幾頁內容 (可用小數點讓使用者知道可滑動)
+      spaceBetween: 16,
+    },
+    768: {
+      // 當裝置寬大於 768
+      slidesPerView: 5,
+      spaceBetween: 16,
+    },
+  },
+});
