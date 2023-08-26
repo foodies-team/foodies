@@ -36,22 +36,6 @@
 
     <%- include('./layout/footer'); -%>
 
-    <script>
-      const icons = document.querySelectorAll(".store-collect-icon");
-
-      icons.forEach((icon) => {
-        icon.addEventListener("mouseenter", function () {
-          icon.classList.remove("bi-heart");
-          icon.classList.add("bi-heart-fill");
-        });
-
-        icon.addEventListener("mouseleave", function () {
-          icon.classList.remove("bi-heart-fill");
-          icon.classList.add("bi-heart");
-        });
-      });
-    </script>
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>
