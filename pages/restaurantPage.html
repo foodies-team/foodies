@@ -1015,51 +1015,6 @@
 
     <script type="module" src="../main.js"></script>
     <script>
-      const stars = document.querySelectorAll(".star");
-      let currentclick = -1;
-
-      stars.forEach((star, index) => {
-        star.addEventListener("click", () => {
-          // console.log("當前點擊", index);
-          // console.log("當前星星", currentclick);
-          if (currentclick === -1) {
-            for (let i = 0; i < index + 1; i++) {
-              changeColor(stars[i]);
-            }
-            currentclick = index;
-          } else {
-            if (index === currentclick) {
-              for (let i = 0; i < index + 1; i++) {
-                changeColor(stars[i]);
-              }
-              currentclick = -1;
-            } else if (index >= currentclick) {
-              // console.log("大於");
-              for (let i = currentclick + 1; i < index + 1; i++) {
-                changeColor(stars[i]);
-              }
-              currentclick = index;
-            } else {
-              // console.log("小於");
-              for (let i = currentclick; i > index; i--) {
-                changeColor(stars[i]);
-              }
-              currentclick = index;
-            }
-          }
-        });
-      });
-
-      function changeColor(star) {
-        if (star.classList.contains("text-dark-gray")) {
-          star.classList.remove("text-dark-gray");
-          star.classList.add("text-primary");
-        } else {
-          star.classList.remove("text-primary");
-          star.classList.add("text-dark-gray");
-        }
-      }
-
       const messenge_icons = document.querySelectorAll(".messenge-icon");
       const messenge_menu = document.querySelectorAll(".comment-menu-list");
 
