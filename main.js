@@ -74,7 +74,7 @@ const swiper2 = new Swiper(".store-swiper", {
   },
 });
 
-var mySwiper = new Swiper(".like-swiper-container", {
+var likeSwiper = new Swiper(".like-swiper-container", {
   direction: "horizontal",
   loop: true,
   allowTouchMove: true,
