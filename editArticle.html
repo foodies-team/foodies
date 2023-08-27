@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>編輯文章</title>
   <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
-  <script type="module" crossorigin src="/foodies/assets/main-4603b7f6.js"></script>
-  <link rel="stylesheet" href="/foodies/assets/main-687b3817.css">
+  <script type="module" crossorigin src="/foodies/assets/main-1e991d6b.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-8b84d109.css">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
       </li>
 
             <li class="nav-item member-item position-relative">
-                <a class="text-primary  p-0 fs-5" href="#"><i class="bi bi-person-circle person-icon"></i></a>
+                <a class="text-primary  p-0 fs-5" href="javascript:;"><i class="bi bi-person-circle person-icon"></i></a>
                 <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
                     <li>
                         <a href="#"
@@ -173,24 +173,24 @@
             class="form-control fs-lg-7 fs-8 text-light-gray fw-semibold border-1 border-top-0 border-start-0 border-end-0 border-radius-0 border-bottom border-secondary pb-3 input-text mb-4 ps-0"
             id="article-title" placeholder="請輸入標題">
 
-          <div class="tags pb-3 border-radius-0 border-bottom border-secondary d-flex align-items-center mb-4">
+          <div class="tags pb-3 border-radius-0 border-bottom border-secondary d-flex align-items-center mb-4 ">
             <h3 class="fs-lg-7 fs-8 text-secondary mb-0 text-nowrap">Tags : </h3>
             <div class="swiper tag-swiper ms-6 d-flex justify-content-start">
               <ul class="tag-list d-flex swiper-wrapper mb-0 ">
                 <li class="item swiper-slide"><a href="#"
-                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">火鍋</a>
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link article-tag">火鍋</a>
                 </li>
                 <li class="item swiper-slide"><a href="#"
-                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">聚餐</a>
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link article-tag">聚餐</a>
                 </li>
                 <li class="item swiper-slide"><a href="#"
-                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">台北火鍋店</a>
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link article-tag">台北火鍋店</a>
                 </li>
                 <li class="item swiper-slide"><a href="#"
-                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link">青花驕</a>
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm text-secondary item-link article-tag">青花驕</a>
                 </li>
                 <li class="item swiper-slide"><a href="#"
-                    class="border border-secondary border-1 py-2 px-3 border-radius-sm-m text-secondary item-link"><i
+                    class="border border-secondary border-1 py-2 px-3 border-radius-sm-m text-secondary item-link "><i
                       class="bi bi-plus-lg"></i></a></li>
               </ul>
             </div>
@@ -242,8 +242,10 @@
   
       
       <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
       <script>
-       
+
         //ckeditor
         ClassicEditor
           .create(document.querySelector('#editor'))
@@ -253,6 +255,10 @@
           .catch(error => {
             console.error(error);
           });
+
+        $(".article-tag").click(function () {
+          $(this).toggleClass("active"); // 使用關鍵字this代表當前點擊的元素
+        });
 
       </script>
 </body>
