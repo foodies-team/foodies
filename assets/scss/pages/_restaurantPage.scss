@@ -44,6 +44,9 @@
 .banner-right {
   .banner-right-btn {
     width: 28.1%;
+    &:hover{
+      border-color:transparent !important;
+    }
   }
 
   .link-content:hover {
@@ -118,6 +121,7 @@
 .more-btn:hover {
   color: #000 !important;
   background-color: #ffe400 !important;
+  border-color:transparent !important;
 }
 
 .read-more:hover {
@@ -213,4 +217,8 @@
   .form-control {
     height: 144px;
   }
+}
+
+.comment-btn:hover{
+  border-color:transparent !important;
 }

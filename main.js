@@ -81,7 +81,7 @@ const myswiper = new Swiper(".messenge-swiper", {
   //centeredSlides: true,
 
   320: {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 24,
     centeredSlides: false,
     grabCursor: true,
