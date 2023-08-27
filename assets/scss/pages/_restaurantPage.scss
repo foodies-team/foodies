@@ -44,9 +44,6 @@
 .banner-right {
   .banner-right-btn {
     width: 28.1%;
-    &:hover{
-      border-color:transparent !important;
-    }
   }
 
   .link-content:hover {
@@ -121,7 +118,6 @@
 .more-btn:hover {
   color: #000 !important;
   background-color: #ffe400 !important;
-  border-color:transparent !important;
 }
 
 .read-more:hover {
@@ -150,15 +146,13 @@
   }
 }
 
-.messenge-swiper {
-  .swiper-slide {
-    height: 100px;
-    width: 100px;
-    @include large {
-      height: 215px;
-      width: 215px;
-    }
-  }
+.messenge-img-item {
+  width: 29.7%;
+  height: auto;
+}
+
+.messenge_img {
+  aspect-ratio: 1/1;
 }
 
 .article-item {
@@ -219,6 +213,25 @@
   }
 }
 
-.comment-btn:hover{
-  border-color:transparent !important;
+.like-swiper {
+  overflow-x: hidden;
+  position: relative;
+
+  .like-swiper-container {
+    width: auto;
+  }
+}
+
+.comment-menu-list {
+  width: 180px;
+  z-index: 99;
+  top: 100%;
+
+  .list-group-item {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
 }
