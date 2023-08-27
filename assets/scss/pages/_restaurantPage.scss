@@ -44,6 +44,9 @@
 .banner-right {
   .banner-right-btn {
     width: 28.1%;
+    &:hover{
+      border-color:transparent !important;
+    }
   }
 
   .link-content:hover {
@@ -118,6 +121,7 @@
 .more-btn:hover {
   color: #000 !important;
   background-color: #ffe400 !important;
+  border-color:transparent !important;
 }
 
 .read-more:hover {
@@ -127,6 +131,10 @@
 
 .messenge-list {
   gap: 1.5rem;
+
+  .bi-three-dots-vertical{
+    cursor: pointer;
+  }
 }
 
 .user-img {
@@ -213,12 +221,25 @@
   }
 }
 
+.comment-btn:hover{
+  border-color:transparent !important;
+}
+
+.comment-sort.active{
+  border-color:transparent !important;
+}
+
 .like-swiper {
   overflow-x: hidden;
   position: relative;
 
   .like-swiper-container {
     width: auto;
+  }
+
+  .swiper-button-prev:after,.swiper-button-next:after{
+    font-size: 30px;
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.7));
   }
 }
 
