@@ -146,15 +146,13 @@
   }
 }
 
-.messenge-swiper {
-  .swiper-slide {
-    height: 100px;
-    width: 100px;
-    @include large {
-      height: 215px;
-      width: 215px;
-    }
-  }
+.messenge-img-item {
+  width: 29.7%;
+  height: auto;
+}
+
+.messenge_img {
+  aspect-ratio: 1/1;
 }
 
 .article-item {
@@ -212,5 +210,28 @@
 .body-end {
   .form-control {
     height: 144px;
+  }
+}
+
+.like-swiper {
+  overflow-x: hidden;
+  position: relative;
+
+  .like-swiper-container {
+    width: auto;
+  }
+}
+
+.comment-menu-list {
+  width: 180px;
+  z-index: 99;
+  top: 100%;
+
+  .list-group-item {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1 !important;
+    }
   }
 }

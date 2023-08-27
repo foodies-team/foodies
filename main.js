@@ -73,23 +73,24 @@ const swiper2 = new Swiper(".store-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-//餐廳資訊 swiper
-const myswiper = new Swiper(".messenge-swiper", {
-  loop: false,
-  slidesPerView: "auto",
-  spaceBetween: 24,
-  //centeredSlides: true,
 
-  320: {
-    slidesPerView: 2,
-    spaceBetween: 24,
-    centeredSlides: false,
-    grabCursor: true,
+var mySwiper = new Swiper(".like-swiper-container", {
+  direction: "horizontal",
+  loop: true,
+  allowTouchMove: true,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 16,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  768: {
-    // 當裝置寬大於 768
-    slidesPerView: 3,
-    spaceBetween: 24,
-    grabCursor: false,
+
+  breakpoints: {
+    768: {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+    },
   },
 });
