@@ -9,6 +9,11 @@ color:$light-gray;
         margin-top: -8px;
     }
 
+    .article-tag.active{
+        background-color: $primary;
+        border-color:transparent !important;
+    }
+
     .ck.ck-toolbar{
         border: 1px solid $secondary;
     }
