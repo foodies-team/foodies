@@ -1,3 +1,8 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  //height:calc(100vh - 80px);
+  height: 686px;
+  background-image: url(../images/index-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
