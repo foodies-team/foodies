@@ -6,3 +6,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.middle-bg {
+  background-image: url("../assets/images/index-banner-2.png");
+  background-size: cover;
+  background-position: center;
+  height: 256px;
+  @include medium{
+      height: 456px;
+  }
+  @include large{
+      height: 686px;
+  }
+}
+
+.middle-text {
+  color: $primary;
+}

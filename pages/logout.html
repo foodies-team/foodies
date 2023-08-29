@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登出</title>
-  </head>
-  <body>
+</head>
+<body>
     <%- include('./layout/headerLogout'); -%>
 
-    <section class="member-bg vh-100 vw-100">
-        <div class="main">
+    <section class="member-bg mx-auto vh-100">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-11 col-lg-10 mt-8">
                     <nav aria-label="breadcrumb text-secondary">
@@ -23,7 +23,7 @@
             </div>
             
             <div class="container mt-lg-10 mb-10 mt-50">
-                <div class="row bg-box mx-auto">
+                <div class="row bg-box">
                     <ul class="col text-center">
                         <li><h2 class="fs-lg-3 fs-5 pt-187">已成功登出！</h2></li>
                         <li><h3 class="fs-lg-7 fs-8 pt-3 pb-187">期待您下次加入吃貨糾察隊一起巡邏</h3></li>
@@ -34,23 +34,6 @@
     </section>
 
     <%- include('./layout/footer'); -%>
-
-    <script>
-      const icons = document.querySelectorAll(".store-collect-icon");
-
-      icons.forEach((icon) => {
-        icon.addEventListener("mouseenter", function () {
-          icon.classList.remove("bi-heart");
-          icon.classList.add("bi-heart-fill");
-        });
-
-        icon.addEventListener("mouseleave", function () {
-          icon.classList.remove("bi-heart-fill");
-          icon.classList.add("bi-heart");
-        });
-      });
-    </script>
-
     <script type="module" src="../main.js"></script>
-  </body>
+</body>
 </html>
