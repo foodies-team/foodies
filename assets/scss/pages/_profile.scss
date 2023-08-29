@@ -1,0 +1,15 @@
+.member-bg-w {
+    background-color: #fff;
+    @include medium{
+        height: 456px;
+    }
+    @include large{
+        height: 686px;
+    }
+}
+    
+.list-group-item {
+    border: none;
+}
+    
+

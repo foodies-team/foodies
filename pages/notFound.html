@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>您搜尋的頁面不存在</title>
     <link rel="icon" href="../assets/images/logo-top.png" type="image/x-icon" />
-  </head>
-  <body>
+</head>
+<body>
     <%- include('./layout/header'); -%>
 
-    <section class="member-bg vh-100 vw-100">
-        <div class="main">
+    <section class="member-bg mx-auto vh-100">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-11 col-lg-10 mt-8">
                     <nav aria-label="breadcrumb text-secondary">
@@ -23,13 +23,12 @@
                 </div>
             </div>
             
-            <div class="container mt-lg-10 mb-10 mt-5">
-                <div class="row bg-box mx-auto">
+            <div class="container mt-lg-10 mb-10 mt-5 mx-auto vh-100">
+                <div class="row bg-box mx-auto ">
                     <ul class="col text-center">
                         <li><h2 class="fs-lg-3 fs-5 pt-187">Uh ohhh！</h2></li>
-                        <li><h3 class="fs-lg-7 fs-8 pt-3">很抱歉，您搜尋的頁面</br>
-                          已超出吃貨糾察隊的巡邏範圍唷~</h3></li>
-                        <li class="pt-6 pb-187"><a href="http://localhost:5173/foodies/pages/index.html" class="btn btn-primary py-1 px-3 border-radius-xs fw-bold fs-8" role="button">回首頁</a></li>
+                        <li><h3 class="fs-lg-7 fs-8 pt-3">很抱歉，您搜尋的頁面</br>已超出吃貨糾察隊的巡邏範圍唷~</h3></li>
+                        <li class="pt-6 pb-187"><a href="index.html" class="btn btn-primary btn-hover-black py-2 px-4 border-radius-xs" role="button">回首頁</a></li>
                     </ul>                
                 </div>
             </div>
@@ -37,23 +36,6 @@
     </section>
 
     <%- include('./layout/footer'); -%>
-
-    <script>
-      const icons = document.querySelectorAll(".store-collect-icon");
-
-      icons.forEach((icon) => {
-        icon.addEventListener("mouseenter", function () {
-          icon.classList.remove("bi-heart");
-          icon.classList.add("bi-heart-fill");
-        });
-
-        icon.addEventListener("mouseleave", function () {
-          icon.classList.remove("bi-heart-fill");
-          icon.classList.add("bi-heart");
-        });
-      });
-    </script>
-
     <script type="module" src="../main.js"></script>
-  </body>
+</body>
 </html>
