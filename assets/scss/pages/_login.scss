@@ -1,10 +1,10 @@
-.reset-bg {
+.login-bg {
   background-image: url("https://github.com/foodies-team/foodies/blob/master/assets/images/login&signup-banner.jpg?raw=true");
   background-size: cover;
   background-position: center;
 }
 
-.reset-grbg {
+.login-grbg {
   background-color: #D9D9D999; /*hex透明度表示法-99為60%*/
   padding: 50px 0;
   display: none;
@@ -23,10 +23,8 @@
 
 }
 
-.reset-box {
+.login-box {
   background-color: #fff;
-
-
 
   @include medium{
     height: 50%;
@@ -35,7 +33,7 @@
   @include large{
     position:absolute;
     top:20%;
-    right:20%;
+    left:20%;
     height: 70%;
   }
 
@@ -48,7 +46,7 @@
   align-items: center;
 }
 
-.reset-btn {
+.login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,11 +56,6 @@
   }
 }
 
-.member-icon {
-  background-image: url(../images/person-circle.svg);
-  background-repeat: no-repeat;
-  background-position: right 5% bottom 50%;
-}
 
 .envelope-icon {
   background-image: url(../images/envelope-fill.svg);
