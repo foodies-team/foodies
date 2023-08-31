@@ -23,3 +23,31 @@
 .middle-text {
   color: $primary;
 }
+
+.pain-img {
+  height: 200px;
+  width: 200px;
+}
+
+.pain-text {
+  display: flex;
+  margin-left: 50px;
+  width: 6rem;
+
+  @include large{
+  width: 13rem;
+  margin-left: 0;
+  }
+}
+
+
+.pain-text-r {
+  display: flex;
+  margin-right: 50px;
+  width: 6rem;
+
+  @include large{
+  width: 13rem;
+  margin-left: 0;
+  }
+}
