@@ -120,11 +120,12 @@ AOS.init({
 });
 
 
-let search = document.getElementById("nav-search")
-let food = document.getElementById("nav-food")
-let blog = document.getElementById("nav-blog")
-let explore = document.getElementById("nav-explore")
+let search = document.getElementById("nav-search");
+let food = document.getElementById("nav-food");
+let blog = document.getElementById("nav-blog");
+let explore = document.getElementById("nav-explore");
 
+window.addEventListener("load", () => {
 if (location.pathname == "/foodies/search.html"){
   search.classList.add("nav-active")
 }else if (location.pathname == "/foodies/foodCollection.html"){
@@ -134,4 +135,4 @@ if (location.pathname == "/foodies/search.html"){
 }else if (location.pathname == "/foodies/explore.html"){
   explore.classList.add("nav-active")
 }
-
+})
