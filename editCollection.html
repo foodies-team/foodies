@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>collectionpage</title>
-  <script type="module" crossorigin src="/foodies/assets/main-933bd5e1.js"></script>
-  <link rel="stylesheet" href="/foodies/assets/main-e4372bbf.css">
+  <script type="module" crossorigin src="/foodies/assets/main-c46d1082.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-cb0d0615.css">
 </head>
 
 <body>
@@ -193,7 +193,7 @@
       </div>
 
       <div class="stores collection col-lg-10 col-12 d-flex flex-column py-lg-13 py-10 mx-auto">
-        <ul class="store-list d-flex flex-column mb-6">
+        <ul class="store-list d-flex flex-column mb-6 animate__animated animate__fadeIn">
           <li
             class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
             <a href="restaurantPage.html" class="col-lg-5 col-12 d-block img-fluid ">
@@ -239,7 +239,7 @@
           </li>
 
           <li
-            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8" data-aos="fade-up">
             <a href="restaurantPage.html" class="col-lg-5 col-12 d-block img-fluid ">
               <img src="/foodies/assets/search-paging-food-2-5e09e3f9.png" alt="Cun Siou Jia 村秀家" class="w-100 store-img rounded" />
             </a>
@@ -283,7 +283,7 @@
           </li>
 
           <li
-            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8" data-aos="fade-up"> 
 
             <a href="restaurantPage.html" class="col-lg-5 col-12 d-block img-fluid ">
               <img src="/foodies/assets/search-paging-food-3-975ae083.png" alt="沙丘" class="w-100 store-img rounded"  />
@@ -330,7 +330,7 @@
           </li>
 
           <li
-            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8" data-aos="fade-up">
             <a href="restaurantPage.html" class="col-lg-5 col-12 d-block img-fluid ">
               <img src="/foodies/assets/search-paging-food-4-e3ced2fc.jpg" alt="角公園咖啡" class="w-100 store-img rounded" />
             </a>
@@ -374,7 +374,7 @@
           </li>
 
           <li
-            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8">
+            class="store-items d-flex flex-column flex-lg-row align-items-center justify-content-between mb-lg-10 mb-8" data-aos="fade-up">
             <a href="restaurantPage.html" class="col-lg-5 col-12 d-block img-fluid ">
               <img src="/foodies/assets/food-type-food-6-89676f32.png" alt="Piepai Cafe’" class="w-100 store-img rounded" />
             </a>
@@ -545,11 +545,34 @@
     </div>
 
     <footer class="footer text-center container-fluid text-primary bg-secondary py-5 position-relative z-index-5">
-    <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
-    <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
-  </footer>
+  <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
+  <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
+  <a href="#" class="page-top-btn" ic="page-top-btn">
+    <span class="material-icons position-absolute page-top text-dark fs-md-2 fs-4">
+      expand_circle_down
+      </span>
+  </a>
+  
+</footer>
 
-        
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+ 
+
+  $(".page-top-btn").click(function (e) {
+    e.preventDefault();
+    $("html").animate({
+
+      scrollTop: 0,
+    },
+      500);
+
+    //500為0.5秒，為animate裡用來設定滑動到最上方(scrollTop:0)時的秒數
+  });
+
+</script>      
 </body>
 
 </html>

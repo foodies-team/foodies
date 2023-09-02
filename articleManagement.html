@@ -9,8 +9,8 @@
   <link rel="shortcut icon" href="../assets/images/logo-black.png" type="image/x-icon">
 
   <title>我的文章</title>
-  <script type="module" crossorigin src="/foodies/assets/main-933bd5e1.js"></script>
-  <link rel="stylesheet" href="/foodies/assets/main-e4372bbf.css">
+  <script type="module" crossorigin src="/foodies/assets/main-c46d1082.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-cb0d0615.css">
 </head>
 
 <body>
@@ -610,11 +610,34 @@
 
 
     <footer class="footer text-center container-fluid text-primary bg-secondary py-5 position-relative z-index-5">
-    <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
-    <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
-  </footer>
-
+  <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
+  <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
+  <a href="#" class="page-top-btn" ic="page-top-btn">
+    <span class="material-icons position-absolute page-top text-dark fs-md-2 fs-4">
+      expand_circle_down
+      </span>
+  </a>
   
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+ 
+
+  $(".page-top-btn").click(function (e) {
+    e.preventDefault();
+    $("html").animate({
+
+      scrollTop: 0,
+    },
+      500);
+
+    //500為0.5秒，為animate裡用來設定滑動到最上方(scrollTop:0)時的秒數
+  });
+
+</script>
       
       <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
