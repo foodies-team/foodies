@@ -5,209 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>註冊會員</title>
     <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
-  <script type="module" crossorigin src="/foodies/assets/main-2bbd29c7.js"></script>
-  <link rel="stylesheet" href="/foodies/assets/main-b9a2c965.css">
+  <script type="module" crossorigin src="/foodies/assets/main-933bd5e1.js"></script>
+  <link rel="stylesheet" href="/foodies/assets/main-e4372bbf.css">
 </head>
 <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
-    <div class="container">
-        <h1 class="navbar-brand m-0">
-            <a href="index.html">
-                <img class="logoImg" src="/foodies/assets/logo-e06c9bbc.png" alt="logoImg">
+  <div class="container">
+    <h1 class="navbar-brand m-0">
+      <a href="index.html">
+        <img class="logoImg" src="/foodies/assets/logo-e06c9bbc.png" alt="logoImg">
+      </a>
+    </h1>
+    <!-- 桌機版menu -->
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
+      <li class="nav-item">
+        <a class="d-flex align-items-center gap-2" href="search.html">
+          <i class="bi bi-search search-icon text-primary fs-9"></i>
+          <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+        </a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="blog.html">部落格</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-primary p-0 nav-link" href="explore.html">探索新店</a>
+      </li>
+
+      <li class="nav-item member-item position-relative">
+        <a class="text-primary  p-0 fs-5" href="javascript:;"><i class="bi bi-person-circle person-icon"></i></a>
+        <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
+          <li>
+            <a href="signup.html" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+              <i class="bi bi-person-plus-fill"></i>
+              <span>註冊</span>
             </a>
-        </h1>
-         <!-- 桌機版menu -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 d-lg-flex d-none">
-            <li class="nav-item">
-                <a class="d-flex align-items-center gap-2" href="search.html">
-                    <i class="bi bi-search search-icon text-primary fs-9"></i>
-                    <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
-                </a>
-
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
-            </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-primary p-0 nav-link" href="blog.html"
-        id="nav-blog" >部落格</a
-        >
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-primary p-0 nav-link" href="explore.html" id="nav-explore"
-          >探索新店</a
-        >
-      </li>
-
-            <li class="nav-item member-item position-relative">
-                <a class="text-primary  p-0 fs-5" href="javascript:;"><i class="bi bi-person-circle person-icon"></i></a>
-                <ul class="position-absolute sub-menu list-unstyled bg-secondary py-4 px-3 end-0 text-nowrap">
-                    <li>
-                        <a href="profile.html"
-                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
-                            <i class="bi bi-person-fill"></i>
-                            <span>我的資料</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="collection.html"
-                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
-                            <i class="bi bi-heart-fill"></i>
-                            <span>收藏夾</span>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="editArticle.html"
-                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
-                            <i class="bi bi-pen-fill"></i>
-                            <span>發表文章</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="articleManagement.html"
-                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
-                            <i class="bi bi-folder-fill"></i>
-                            <span>管理文章</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="logout.html"
-                            class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
-                            <i class="bi bi-box-arrow-right"></i>
-                            <span>登出</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+          </li>
+          <li>
+            <a href="login.html" class="text-primary d-flex align-items-center gap-2 mb-3 sub-link position-relative">
+              <i class="bi bi-box-arrow-left"></i>
+              <span>登入</span>
+            </a>
+          </li>
         </ul>
+      </li>
+    </ul>
 
-        <!-- 手機版menu -->
-        <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
-            aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
-        <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
-            id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-            <div class="offcanvas-header justify-content-end">
+    <!-- 手機版menu -->
+    <a class="d-lg-none btn bg-transparent" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive"><i class="bi bi-list text-primary fs-sm-5 fs-7"></i></a>
+    <div class="offcanvas-lg offcanvas-end offcanvasMenu bg-secondary text-primary d-lg-none" tabindex="-1"
+      id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+      <div class="offcanvas-header justify-content-end">
 
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
-                    <li class="nav-item ">
-                        <a class="d-flex align-items-center gap-2" href="search.html">
-                            <i class="bi bi-search search-icon text-primary fs-9"></i>
-                            <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
-                        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-8 flex-column">
+          <li class="nav-item ">
+            <a class="d-flex align-items-center gap-2" href="search.html">
+              <i class="bi bi-search search-icon text-primary fs-9"></i>
+              <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+            </a>
 
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
-                    </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="blog.html"  id="nav-blog"
-              >部落格</a
-            >
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="explore.html"  id="nav-explore"
-              >探索新店</a
-            >
+          <li class="nav-item ">
+            <a class="nav-link text-primary p-0 nav-link" href="blog.html">部落格</a>
           </li>
 
-          <li class="nav-item">
-            <a href="#" class="text-primary p-0 nav-link">我的資料 </a>
+          <li class="nav-item ">
+            <a class="nav-link text-primary p-0 nav-link" href="explore.html">探索新店</a>
           </li>
 
-          <li class="nav-item">
-            <a href="collection.html" class="text-primary p-0 nav-link"
-              >收藏夾
+          
+          <li class="nav-item ">
+            <a href="signupok.html" class="nav-link text-primary p-0 nav-link">
+              註冊
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="editArticle.html" class="text-primary p-0 nav-link">
-              發表文章
+          <li class="nav-item ">
+            <a href="#" class="nav-link text-primary p-0 nav-link">
+              登入
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="articleManagement.html" class="text-primary p-0 nav-link"> 管理文章 </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="logout.html" class="text-primary p-0 nav-link"> 登出 </a>
-          </li>
         </ul>
       </div>
     </div>
+
   </div>
 </nav>
 
-
-
-    <section class="signup-bg mx-auto vh-100">
-        <div class="container">
+    <section class="signup-bg mx-auto vh-100 position-relative vh-100">
+       
+        <div class="container position-absolute top-50 start-50 translate-middle">
             <div class="row justify-content-center">
-                <div class="col-11 col-lg-10 mt-8">
+                <div class="col-11 col-lg-10 mt-sm-10 mt-5">
                     <nav aria-label="breadcrumb text-secondary">
                         <ol class="breadcrumb mb-3">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
-                        <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
-                        <li class="breadcrumb-item active text-primary" aria-current="page">註冊</li>
+                            <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
+                            <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a>
+                            </li>
+                            <li class="breadcrumb-item active text-primary" aria-current="page">註冊會員</li>
                         </ol>
-                    </nav>    
+                    </nav>
                 </div>
             </div>
-        </div>    
-        <div class="container">
             <div class="row justify-content-center">
-                <div class="signup-grbg col-8 col-lg-10">
+                <div class="login-grbg col-8 col-lg-10 position-relative">
                     <div class="container">
-                        <div class="row ">
+                        <div class="row justify-content-start">
                             <div class="col-6 text-area">
                                 <h2 class="fs-lg-4 fs-5">已經有會員?</h2>
                                 <h3 class="fs-md-7 fs-sm-8 fs-11 pt-4">一起來探索有哪些新美食！</h3>
-                                <a href="login.html" class="btn btn-secondary btn-hover-yellow py-2 px-4 border-radius-xs fs-md-8 fs-sm-9 fs-11 mt-4" role="button">登入會員</a>
+                                <a href="login.html"
+                                    class="btn btn-secondary btn-hover-yellow py-2 px-4 border-radius-xs fs-md-8 fs-sm-9 fs-11 mt-4"
+                                    role="button">登入會員</a>
                             </div>
-                            
+
                         </div>
-                        
+
+                    </div>
+                    <div
+                        class="col-10 col-lg-5 bg-white position-absolute top-50 translate-middle signup-area d-none d-lg-block">
+                        <div class="px-lg-12 px-10 py-lg-11 py-7">
+                            <h3 class="fw-bold fs-6 fs-xl-5  text-center mb-lg-11 mb-8">註冊</h3>
+                            <form class="">
+                                <div class="mb-8">
+                                    <label for="exampleInputName" class="form-label"></label>
+                                    <input placeholder="請輸入姓名" type="name" class="member-icon form-control" id="exampleInputName">
+                                </div>
+                                
+                                <div class="mb-8">
+
+                                    <input placeholder="請輸入電子郵件" type="email" class="envelope-icon form-control"
+                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-8">
+
+                                    <input placeholder="請輸入密碼" type="password" class="eye-icon form-control"
+                                        id="exampleInputPassword1">
+
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                    <a href="login.html"
+                                        class="text-secondary fs-md-9 fs-7 link-hover">已有會員？</a>
+                                    <div class="login-btn"><a href="#"
+                                            class="btn btn-primary btn-hover-black py-2 px-8 border-radius-xs"
+                                            role="button">註冊</a></div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-10 col-lg-5 bg-white d-block d-lg-none mt-7 mb-lg-16 mb-13">
+                    <div class="px-lg-12 px-10 py-lg-11 py-7">
+                        <h3 class="fw-bold fs-6 fs-xl-5  text-center mb-lg-11 mb-8">註冊</h3>
+                        <form class="">
+                            <div class="mb-8">
+                                <label for="exampleInputName" class="form-label"></label>
+                                <input placeholder="請輸入姓名" type="name" class="member-icon form-control" id="exampleInputName">
+                            </div>
+                            <div class="mb-8">
+
+                                <input placeholder="請輸入電子郵件" type="email" class="envelope-icon form-control"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-8">
+
+                                <input placeholder="請輸入密碼" type="password" class="eye-icon form-control"
+                                    id="exampleInputPassword1">
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+
+                                <a href="login.html"
+                                    class="text-secondary fs-md-8 fs-9 link-hover">已有會員？</a>
+                                <div class="login-btn"><a href="#"
+                                        class="btn btn-primary btn-hover-black py-2 px-8 border-radius-xs"
+                                        role="button">註冊</a></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div> 
-        <div class="container ">
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-4 signup-box">
-                    <h3 class="fw-bold fs-6 fs-xl-5 m-8 px-4 px-md-0 text-center">註冊</h3>
-                    <form class="m-8">
-                        <h4 class="d-lg-none fw-bold fs-8 fs-xl-6 m-4 px-4 px-md-0 text-center">歡迎加入一同分享美食清單!</h4>
-                        <div class="mb-4">
-                            <label for="exampleInputName" class="form-label"></label>
-                            <input placeholder="請輸入姓名" type="name" class="member-icon form-control" id="exampleInputName">
-                        </div>
-                        <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label"></label>
-                            <input placeholder="請輸入電子郵件" type="email" class="envelope-icon form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label"></label>
-                            <input placeholder="請輸入密碼" type="password" class="eye-icon form-control" id="exampleInputPassword1">
-                            
-                        </div>
-                        <div class="signup-btn"><a href="#" class="btn btn-primary btn-hover-black py-2 px-8 mt-4 border-radius-xs" role="button">註冊</a></div>
-                    </form>
-                </div>
-            </div>
-        </div>           
+        </div>
     </section>
 
-    <footer class="footer text-center container-fluid text-primary bg-secondary py-5">
+    <footer class="footer text-center container-fluid text-primary bg-secondary py-5 position-relative z-index-5">
     <div class="copyright fs-md-8 fs-9">Copyright © 2023 吃貨糾察隊 All rights reserved</div>
     <div class="fs-md-9 fs-11">非商業用途，僅作為個人前端作品使用</div>
   </footer>
