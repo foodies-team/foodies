@@ -118,3 +118,20 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+let search = document.getElementById("nav-search")
+let food = document.getElementById("nav-food")
+let blog = document.getElementById("nav-blog")
+let explore = document.getElementById("nav-explore")
+
+if (location.pathname == "/foodies/pages/search.html"){
+  search.classList.add("nav-active")
+}else if (location.pathname == "/foodies/pages/foodCollection.html"){
+  food.classList.add("nav-active")
+}else if (location.pathname == "/foodies/pages/blog.html"){
+  blog.classList.add("nav-active")
+}else if (location.pathname == "/foodies/pages/explore.html"){
+  explore.classList.add("nav-active")
+}
+
