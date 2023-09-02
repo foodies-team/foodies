@@ -119,7 +119,7 @@ AOS.init({
 
 });
 
-
+//header 判斷當前頁面
 let search = document.getElementById("nav-search");
 let food = document.getElementById("nav-food");
 let blog = document.getElementById("nav-blog");
@@ -136,3 +136,4 @@ if (location.pathname == "/foodies/search.html"){
   explore.classList.add("nav-active")
 }
 })
+
