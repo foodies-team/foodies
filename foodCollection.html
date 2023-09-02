@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
     <title>美食總覽</title>
-    <script type="module" crossorigin src="/foodies/assets/main-6b8d1353.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-c09c037e.css">
+    <script type="module" crossorigin src="/foodies/assets/main-2bbd29c7.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-b9a2c965.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -21,22 +21,22 @@
             <li class="nav-item">
                 <a class="d-flex align-items-center gap-2" href="search.html">
                     <i class="bi bi-search search-icon text-primary fs-9"></i>
-                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                    <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
                 </a>
 
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
             </li>
 
       <li class="nav-item">
         <a class="nav-link text-primary p-0 nav-link" href="blog.html"
-          >部落格</a
+        id="nav-blog" >部落格</a
         >
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+        <a class="nav-link text-primary p-0 nav-link" href="explore.html" id="nav-explore"
           >探索新店</a
         >
       </li>
@@ -99,22 +99,22 @@
                     <li class="nav-item ">
                         <a class="d-flex align-items-center gap-2" href="search.html">
                             <i class="bi bi-search search-icon text-primary fs-9"></i>
-                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                            <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
                         </a>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
                     </li>
 
           <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+            <a class="nav-link text-primary p-0 nav-link" href="blog.html"  id="nav-blog"
               >部落格</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+            <a class="nav-link text-primary p-0 nav-link" href="explore.html"  id="nav-explore"
               >探索新店</a
             >
           </li>
@@ -147,6 +147,8 @@
     </div>
   </div>
 </nav>
+
+
     <section class="fc-banner mb-3 mb-md-5">
       <h2
         class="container fs-4 fs-md-3 fs-xl-2 fw-bold text-white position-relative top-50 translate-middle-y"
@@ -172,7 +174,7 @@
 
       <a href="#" class="mb-8 d-flex link-secondary fc-title">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
-        <h3 class="fs-6 fs-lg-5 fw-bold mb-0">只想慵懶>>>早午餐、輕食</h3>
+        <h3 class="fs-6 fs-lg-5 fw-bold mb-0">只想慵懶 >>> 早午餐、輕食</h3>
       </a>
 
       <div class="swiper store-swiper mb-10 fc-store">
@@ -270,12 +272,12 @@
         <div class="swiper-button-next"></div>
       </div>
 
-      <a href="#" class="mb-8 d-flex link-secondary fc-title">
+      <a href="#" class="mb-8 d-flex link-secondary fc-title"  data-aos="fade-up">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
-        <h3 class="fs-6 fs-lg-5 fw-bold mb-0">台灣人愛呷 >>>國民小吃</h3>
+        <h3 class="fs-6 fs-lg-5 fw-bold mb-0">台灣人愛呷 >>> 國民小吃</h3>
       </a>
 
-      <div class="swiper store-swiper mb-10 fc-store">
+      <div class="swiper store-swiper mb-10 fc-store" data-aos="fade-up">
         <div class="swiper-wrapper">
           <a
             href="#"
@@ -367,12 +369,12 @@
         <div class="swiper-button-next"></div>
       </div>
 
-      <a href="#" class="mb-8 d-flex link-secondary fc-title">
+      <a href="#" class="mb-8 d-flex link-secondary fc-title"  data-aos="fade-up">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
         <h3 class="fs-6 fs-lg-5 fw-bold mb-0">暖身也暖心 >>> 精選湯底鍋</h3>
       </a>
 
-      <div class="swiper store-swiper mb-10 fc-store">
+      <div class="swiper store-swiper mb-10 fc-store"  data-aos="fade-up">
         <div class="swiper-wrapper">
           <a
             href="#"
@@ -463,12 +465,12 @@
         <div class="swiper-button-next"></div>
       </div>
 
-      <a href="afternoonTea.html" class="mb-8 d-flex link-secondary fc-title">
+      <a href="afternoonTea.html" class="mb-8 d-flex link-secondary fc-title"  data-aos="fade-up">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
         <h3 class="fs-6 fs-lg-5 fw-bold mb-0">午後 chill chill >>> 下午茶</h3>
       </a>
 
-      <div class="swiper store-swiper mb-10 fc-store">
+      <div class="swiper store-swiper mb-10 fc-store"  data-aos="fade-up">
         <div class="swiper-wrapper">
           <a
             href="#"
@@ -561,12 +563,12 @@
         <div class="swiper-button-next"></div>
       </div>
 
-      <a href="#" class="mb-8 d-flex link-secondary fc-title">
+      <a href="#" class="mb-8 d-flex link-secondary fc-title"  data-aos="fade-up">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
         <h3 class="fs-6 fs-lg-5 fw-bold mb-0">放肆一下 >>> 燒烤、炸物</h3>
       </a>
 
-      <div class="swiper store-swiper mb-10 fc-store">
+      <div class="swiper store-swiper mb-10 fc-store"  data-aos="fade-up">
         <div class="swiper-wrapper">
           <a
             href="#"
@@ -659,12 +661,12 @@
         <div class="swiper-button-next"></div>
       </div>
 
-      <a href="#" class="mb-8 d-flex link-secondary fc-title">
+      <a href="#" class="mb-8 d-flex link-secondary fc-title"  data-aos="fade-up">
         <i class="bi bi-egg-fried egg-icon fs-7 fs-md-6 fs-lg-5 me-2"></i>
         <h3 class="fs-6 fs-lg-5 fw-bold mb-0">姊妹淘談心 >>> 氣氛餐酒館</h3>
       </a>
 
-      <div class="swiper store-swiper mb-10 fc-store">
+      <div class="swiper store-swiper mb-10 fc-store"  data-aos="fade-up">
         <div class="swiper-wrapper">
           <a
             href="#"

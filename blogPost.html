@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>異國料理與客製化調酒~多人聚餐首推！</title>
     <link rel="icon" href="/foodies/assets/logo-top-0721aa3c.png" type="image/x-icon" />
-    <script type="module" crossorigin src="/foodies/assets/main-6b8d1353.js"></script>
-    <link rel="stylesheet" href="/foodies/assets/main-c09c037e.css">
+    <script type="module" crossorigin src="/foodies/assets/main-2bbd29c7.js"></script>
+    <link rel="stylesheet" href="/foodies/assets/main-b9a2c965.css">
   </head>
   <body>
     <nav class="navbar main-nav navbar-expand-md bg-secondary fixed-top w-100">
@@ -21,22 +21,22 @@
             <li class="nav-item">
                 <a class="d-flex align-items-center gap-2" href="search.html">
                     <i class="bi bi-search search-icon text-primary fs-9"></i>
-                    <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                    <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
                 </a>
 
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
             </li>
 
       <li class="nav-item">
         <a class="nav-link text-primary p-0 nav-link" href="blog.html"
-          >部落格</a
+        id="nav-blog" >部落格</a
         >
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+        <a class="nav-link text-primary p-0 nav-link" href="explore.html" id="nav-explore"
           >探索新店</a
         >
       </li>
@@ -99,22 +99,22 @@
                     <li class="nav-item ">
                         <a class="d-flex align-items-center gap-2" href="search.html">
                             <i class="bi bi-search search-icon text-primary fs-9"></i>
-                            <p class="nav-link mb-0 text-primary p-0">搜尋</p>
+                            <p class="nav-link mb-0 text-primary p-0" id="nav-search">搜尋</p>
                         </a>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html">美食總覽</a>
+                        <a class="nav-link text-primary p-0 nav-link" href="foodCollection.html" id="nav-food">美食總覽</a>
                     </li>
 
           <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="blog.html"
+            <a class="nav-link text-primary p-0 nav-link" href="blog.html"  id="nav-blog"
               >部落格</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-primary p-0 nav-link" href="explore.html"
+            <a class="nav-link text-primary p-0 nav-link" href="explore.html"  id="nav-explore"
               >探索新店</a
             >
           </li>
@@ -147,6 +147,8 @@
     </div>
   </div>
 </nav>
+
+
     <div class="bg-primary post-bg"></div>
     <nav
       aria-label="breadcrumb text-secondary"
@@ -179,28 +181,28 @@
             <span>By 吃貨小姐</span>
             <span>2023/07/20</span>
           </div>
-          <img src="/foodies/assets/blog-food-1-6dce9fda.jpg" alt="abv bristo" class="post-banner w-100 d-inline-block mb-7 mb-md-11">
-          <div class="fs-7 fs-lg-6 mb-5 mb-md-7">假日睡到飽慵懶地起床，和許久未見面的姐妹約在三井 Outlet 附近的「ABV 地中海餐酒館」，這家餐廳距離機場捷運 A9 林口站步行大約 10 分鐘，交通還算方便。</div>
-          <div class="fs-7 fs-lg-6 fs-lg-4 mb-10 mb-md-11">來之前就有聽去過地中海玩的同事提過，這家餐廳的料理很道地，而且令人驚艷的是，還提供上百款的各國精釀啤酒，喜歡品酒的我，怎麼能錯過呢~</div>
+          <img src="/foodies/assets/blog-food-1-6dce9fda.jpg" alt="abv bristo" class="post-banner w-100 d-inline-block mb-7 mb-md-11 rounded">
+          <div class="fs-7 fs-lg-6 mb-5 mb-md-7" data-aos="fade-up">假日睡到飽慵懶地起床，和許久未見面的姐妹約在三井 Outlet 附近的「ABV 地中海餐酒館」，這家餐廳距離機場捷運 A9 林口站步行大約 10 分鐘，交通還算方便。</div>
+          <div class="fs-7 fs-lg-6 fs-lg-4 mb-10 mb-md-11" data-aos="fade-up">來之前就有聽去過地中海玩的同事提過，這家餐廳的料理很道地，而且令人驚艷的是，還提供上百款的各國精釀啤酒，喜歡品酒的我，怎麼能錯過呢~</div>
 
-          <div class="mb-7 mb-md-11 d-flex flex-column flex-md-row justify-content-md-between">
-           <img src="/foodies/assets/blog-article-food-2-3b25bef9.jpg" alt="abv bristo" class="post-img d-inline-block mb-10 mb-md-0">
-           <img src="/foodies/assets/blog-article-food-3-9cd761ba.jpg" alt="abv bristo" class="post-img  d-inline-block">  
+          <div class="mb-7 mb-md-11 d-flex flex-column flex-md-row justify-content-md-between" data-aos="fade-up">
+           <img src="/foodies/assets/blog-article-food-2-3b25bef9.jpg" alt="abv bristo" class="post-img d-inline-block mb-10 mb-md-0 rounded">
+           <img src="/foodies/assets/blog-article-food-3-9cd761ba.jpg" alt="abv bristo" class="post-img  d-inline-block rounded">  
         </div>
 
-        <div class="fs-7 fs-lg-6 fs-lg-4 mb-5 mb-md-7">這間店寬敞舒適，整體設計風格偏向歐式風情，空間規劃上有高腳座位區和沙發區，座位和座位間也還算有空間，不會靠太近，而且啊~這間店沒有限時，想做多久就坐多久，超讚的！</div>
+        <div class="fs-7 fs-lg-6 fs-lg-4 mb-5 mb-md-7" data-aos="fade-up">這間店寬敞舒適，整體設計風格偏向歐式風情，空間規劃上有高腳座位區和沙發區，座位和座位間也還算有空間，不會靠太近，而且啊~這間店沒有限時，想做多久就坐多久，超讚的！</div>
 
-        <div class="fs-7 fs-lg-6 fs-lg-4 mb-10 mb-md-11">一入店內，我看到超大酒櫃，琳瑯滿目的酒品讓我大開眼界，德式啤酒、英式啤酒、印度式淡愛爾、比利時啤酒、拉格、皮爾森、琥珀愛爾、台灣精釀啤酒等，和我一樣有選擇障礙的朋友，可以先請店家的侍酒師幫忙介紹，他會詢問你平常喜歡的啤酒風味，如偏酸、甜、苦、果香、麥香等，再介紹每款酒的特色，幫助你選擇適合自己的那支酒，有這個服務真的是很貼心。</div>
-        <div class="mb-7 mb-md-11 d-flex flex-column flex-md-row justify-content-md-between">
-            <img src="/foodies/assets/blog-article-food-4-bdc0aefd.jpg" alt="abv bristo" class="post-img d-inline-block mb-10 mb-md-0">
-            <img src="/foodies/assets/blog-article-food-5-c7ecbd24.jpg" alt="abv bristo" class="post-img d-inline-block">  
+        <div class="fs-7 fs-lg-6 fs-lg-4 mb-10 mb-md-11" data-aos="fade-up">一入店內，我看到超大酒櫃，琳瑯滿目的酒品讓我大開眼界，德式啤酒、英式啤酒、印度式淡愛爾、比利時啤酒、拉格、皮爾森、琥珀愛爾、台灣精釀啤酒等，和我一樣有選擇障礙的朋友，可以先請店家的侍酒師幫忙介紹，他會詢問你平常喜歡的啤酒風味，如偏酸、甜、苦、果香、麥香等，再介紹每款酒的特色，幫助你選擇適合自己的那支酒，有這個服務真的是很貼心。</div>
+        <div class="mb-7 mb-md-11 d-flex flex-column flex-md-row justify-content-md-between" data-aos="fade-up">
+            <img src="/foodies/assets/blog-article-food-4-bdc0aefd.jpg" alt="abv bristo" class="post-img d-inline-block mb-10 mb-md-0 rounded">
+            <img src="/foodies/assets/blog-article-food-5-c7ecbd24.jpg" alt="abv bristo" class="post-img d-inline-block rounded">  
          </div>
          
          
-      <div class="fs-7 fs-lg-6 fs-lg-4mb-10 mb-md-11">餐點部分我們點了西南凱薩沙拉、希臘優格黃瓜醬左批塔作為前菜，主餐點了經典西班牙海鮮飯、鮮蕈松露披薩、西班牙臘腸馬鈴薯蛋餅，還有巴薩米克蘑菇炒蝦和葡萄牙式馬介体等小點，每一道都能吃出道地的異國風情，彷彿置身國外。</div>
-      <img src="/foodies/assets/blog-article-food-6-96c5c559.jpg" alt="abv bristo" class="post-img-single d-inline-block w-100 mb-5 mb-md-7">
+      <div class="fs-7 fs-lg-6 fs-lg-4mb-10 mb-md-11" data-aos="fade-up">餐點部分我們點了西南凱薩沙拉、希臘優格黃瓜醬左批塔作為前菜，主餐點了經典西班牙海鮮飯、鮮蕈松露披薩、西班牙臘腸馬鈴薯蛋餅，還有巴薩米克蘑菇炒蝦和葡萄牙式馬介体等小點，每一道都能吃出道地的異國風情，彷彿置身國外。</div>
+      <img src="/foodies/assets/blog-article-food-6-96c5c559.jpg" alt="abv bristo" class="post-img-single d-inline-block w-100 mb-5 mb-md-7 rounded" data-aos="fade-up">
 
-      <div class="fs-7 fs-lg-6 fs-lg-4 mb-11 mb-md-13">法國菜、葡萄牙菜、西班牙菜、希臘菜等料理，這裡真的是應有盡有、選擇多樣 (只怕你口袋不夠深 XDD) ，但是以餐酒館來說，這價位算 CP 值很高，建議大家揪朋友一起 share，可以一次享受到多道異國料理！</div>
+      <div class="fs-7 fs-lg-6 fs-lg-4 mb-11 mb-md-13" data-aos="fade-up">法國菜、葡萄牙菜、西班牙菜、希臘菜等料理，這裡真的是應有盡有、選擇多樣 (只怕你口袋不夠深 XDD) ，但是以餐酒館來說，這價位算 CP 值很高，建議大家揪朋友一起 share，可以一次享受到多道異國料理！</div>
 
 
       <div class="fs-8 fs-xl-7 d-flex justify-content-lg-end align-items-center flex-wrap">
