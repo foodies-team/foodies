@@ -15,8 +15,9 @@
   }
 
   @include large{
-    padding: 125px 0;
-    margin-top: 25px;
+    padding: 100px 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
     display: block;
     top:90%;
   }
@@ -67,4 +68,13 @@
   background-image: url(../images/eye-fill.svg);
   background-repeat: no-repeat;
   background-position: right 5% bottom 50%;
+}
+
+.login-area{
+  @include large{
+    left:220px;
+  }
+  @include xlarge{
+    left:300px;
+  }
 }

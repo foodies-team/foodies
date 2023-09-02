@@ -75,3 +75,12 @@
   background-repeat: no-repeat;
   background-position: right 5% bottom 50%;
 }
+
+.signup-area{
+  @include large{
+    right:-80px;
+  }
+  @include xlarge{
+    right:-120px;
+  }
+}
