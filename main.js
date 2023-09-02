@@ -125,13 +125,13 @@ let food = document.getElementById("nav-food")
 let blog = document.getElementById("nav-blog")
 let explore = document.getElementById("nav-explore")
 
-if (location.pathname == "/foodies/pages/search.html"){
+if (location.pathname == "/foodies/search.html"){
   search.classList.add("nav-active")
-}else if (location.pathname == "/foodies/pages/foodCollection.html"){
+}else if (location.pathname == "/foodies/foodCollection.html"){
   food.classList.add("nav-active")
-}else if (location.pathname == "/foodies/pages/blog.html"){
+}else if (location.pathname == "/foodies/blog.html"){
   blog.classList.add("nav-active")
-}else if (location.pathname == "/foodies/pages/explore.html"){
+}else if (location.pathname == "/foodies/explore.html"){
   explore.classList.add("nav-active")
 }
 
