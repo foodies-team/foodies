@@ -65,6 +65,20 @@
   }
 }
 
+.kind-area {
+  font-size: 0;
+}
+
+.kind-img {
+  width: 100px;
+  height: 100px;
+
+  @include large{
+  width: 300px;
+  height: 300px;
+  }
+}
+
 .group-recommend{
   background-color: rgba(255, 228, 0, 0.07);;
   
