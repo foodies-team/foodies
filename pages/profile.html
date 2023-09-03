@@ -8,11 +8,11 @@
 <body>
     <%- include('./layout/header'); -%>
 
-    <section class="profile-bg vh-100">
+    <section class="profile-bg">
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <nav aria-label="breadcrumb text-secondary" class="mt-10">
+                    <nav aria-label="breadcrumb text-secondary" class="mt-10 mt-sm-10 mt-5">
                         <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html" class="text-secondary">首頁</a></li>
                         <li class="breadcrumb-item breadCrumn-width"><a href="#" class="text-secondary">會員中心</a></li>
@@ -22,30 +22,43 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container pb-13">
             <div class="row justify-content-center">
-                <div class="profile-box col-8 col-lg-10 mx-auto">
-                    <h2 class="fw-bolder fs-lg-3 fs-5 m-8">我的資料</h2>  
-                    <ul class="list-group list-group-horizontal">
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11">姓名</li>
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11">MM</li>
-                    </ul>
-                    <hr width="90%" class="mx-auto">
-                    <ul class="list-group list-group-horizontal">
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11">電子郵件</li>
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11 ">minn.oyc@gmail.com</li>
-                    </ul>
-                    <hr width="90%" class="mx-auto">
-                    <ul class="list-group list-group-horizontal">
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11">密碼</li>
-                        <li class="col-3 list-group-item fs-md-7 fs-sm-8 fs-11">********</li>
-                        <li class="col-3 eye"><i class="bi bi-eye-fill me-2 fs-md-8 fs-sm-9 fs-11"></i><a href="resetPassword.html" class="btn btn-outline-dark btn-hover-black p-md-2 fs-md-8 fs-sm-9 fs-11">重設</a></li>
-                    </ul>
-                    <hr width="90%" class="mx-auto">
-                    <div class="container d-flex justify-content-center alig-items-center mb-4"><a href="#" class="btn btn-primary border-radius-xs py-2 btn-hover-black fs-md-8 fs-sm-9 fs-11">儲存</a></div>
-                </div>                        
+                <div class="profile-box col-8 col-lg-10 mx-auto px-lg-10 px-7 py-lg-10 py-4">
+                    <h2 class="fw-bolder fs-lg-3 fs-5 mt-lg-8 pb-3 mt-0 mb-lg-10 mb-9 border-bottom border-2 border-dark-gray">我的資料</h2>  
+                    <div class="d-flex align-items-center gap-lg-15 gap-10 mb-lg-9 mb-8 border-2 border-dark-gray border-bottom pb-3">
+                        <p class="fs-md-7 fs-sm-8 fs-11 mb-0">姓名 </p>
+                        <span class="fs-md-7 fs-sm-8 fs-11">MM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-lg-6 gap-3 mb-lg-9 mb-8 border-2 border-dark-gray border-bottom pb-3">
+                        <p class="fs-md-7 fs-sm-8 fs-11 mb-0 ">電子郵件</p>
+                        <span class="fs-md-7 fs-sm-8 fs-11">minn.oyc@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-lg-19 mb-14 border-2 border-dark-gray border-bottom pb-3">
+                        <div class="d-flex align-items-center gap-lg-15 gap-10">
+                            <p class="fs-md-7 fs-sm-8 fs-11 mb-0">密碼</p>
+                            <span class="fs-md-7 fs-sm-8 fs-11">********</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-lg-6 gap-3">
+                            <a href="#" class="text-dark">
+                                <i class="bi bi-eye-fill me-2 fs-md-8 fs-sm-9 fs-11"></i>
+                            </a>
+                            
+                            <a href="resetPassword.html" class="btn btn-outline-dark btn-hover-black p-md-2 fs-md-8 fs-sm-9 fs-11">重設</a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-4">
+                        <button class="col-lg-3 btn btn-primary border-radius-xs py-2 btn-hover-black fs-md-8 fs-sm-9 fs-11 col-lg-2 mx-auto ">儲存</button>
+                    </div>
+                     
+                </div>  
+                                     
+                
             </div>
         </div>
+
+        
+        
     </section>
 
 

@@ -1,4 +1,28 @@
 .footer{
   background: #69F0AE;
   font-size: 64px;
+
+  
+
+  .page-top-btn{
+    .page-top{
+      transform: rotate(180deg);
+      opacity: 0.5;
+      top:-40px;
+      right:40px;
+      transition: all 0.2s ease-in-out;
+  
+      @include medium{
+        top:-60px;
+        right:80px;
+      }
+      
+    }
+
+    &:hover{
+      .page-top{
+        opacity: 1;
+      }
+    }
+  }
 }

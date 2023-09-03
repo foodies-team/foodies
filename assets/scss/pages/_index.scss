@@ -5,19 +5,31 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  .searchBox {
+    opacity: 0.85;
+    backdrop-filter: blur(5px);
+    @include large{
+      opacity: 1;
+      backdrop-filter:blur(0px);
+    }
+  }
 }
 
 .middle-bg {
-  background-image: url("../images/index-banner-2.png");
+  background-image: url("../images/index-banner-3.png");
   background-size: cover;
   background-position: center;
   height: 256px;
-  @include medium{
-      height: 456px;
+
+  @include medium {
+    background-image: url("../images/index-banner-2.png");
+    height: 456px;
   }
-  @include large{
-      height: 686px;
-  }
+
+  // @include large {
+  //   height: 686px;
+  // }
 }
 
 .middle-text {
@@ -34,9 +46,9 @@
   margin-left: 50px;
   width: 6rem;
 
-  @include large{
-  width: 13rem;
-  margin-left: 0;
+  @include large {
+    width: 13rem;
+    margin-left: 0;
   }
 }
 
@@ -46,9 +58,10 @@
   margin-right: 50px;
   width: 6rem;
 
-  @include large{
-  width: 13rem;
-  margin-left: 0;
+  @include large {
+    width: 13rem;
+    margin-left: 0;
+    margin-right: 0px;
   }
 }
 
@@ -64,4 +77,9 @@
   width: 300px;
   height: 300px;
   }
+}
+
+.group-recommend{
+  background-color: rgba(255, 228, 0, 0.07);;
+  
 }
