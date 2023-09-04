@@ -1,3 +1,15 @@
+
+.preloader-img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.main-area{
+  display: none;
+ 
+}
+
 .banner {
   //height:calc(100vh - 80px);
   height: 686px;
@@ -72,14 +84,16 @@
 .kind-img {
   width: 100px;
   height: 100px;
-
+  
   @include large{
   width: 300px;
   height: 300px;
+  
+
   }
 }
 
-.group-recommend{
+.bg-light-yellow{
   background-color: rgba(255, 228, 0, 0.07);;
   
 }

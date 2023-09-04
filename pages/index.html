@@ -1,397 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>美食糾察隊</title>
-    <link rel="icon" href="../assets/images/logo-top.png" type="image/x-icon" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美食糾察隊</title>
+  <link rel="icon" href="../assets/images/logo-top.png" type="image/x-icon" />
+
+  
+</head>
+
+<body class="pt-0">
+
+  <div class="preloader vh-100 bg-secondary position-relative">
+
+    <img src="../assets/images/logo-preloader-2.png" alt="foodie picket"
+      class="position-absolute top-50 start-50 translate-middle preloader-img animate__animated animate__fadeIn">
+
+    </svg>
+  </div>
+
+  <div class="main-area" style="padding-top: 76px;">
     <%- include('./layout/header'); -%>
+      <section class="banner position-relative animate__animated  animate__fadeIn ">
+        <div class="container position-absolute top-50 start-50 translate-middle">
+          <div class="row justify-content-lg-between justify-content-center align-items-center">
+            <div class="searchBox col-lg-6 col-11 bg-primary py-lg-9 py-6 border-radius-lg order-1">
+              <form class="col-8 mx-auto">
+                <p class="mb-lg-7 mb-8 fw-semibold fs-lg-5 fs-8 text-center ">快速搜尋</p>
+                <div class="mb-lg-7 mb-4">
+                  <label for="location" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">地區</label>
+                  <select class="form-select border-radius-lg py-lg-2 " aria-label="location-select">
+                    <option selected>不分區</option>
+                    <option value="1">台北市</option>
+                    <option value="2">新北市</option>
+                    <option value="3">基隆市</option>
+                    <option value="4">新竹市</option>
+                    <option value="5">桃園市</option>
+                    <option value="6">新竹縣</option>
+                    <option value="7">宜蘭縣</option>
+                    <option value="8">臺中市</option>
+                    <option value="9">苗栗縣</option>
+                    <option value="10">彰化縣</option>
+                    <option value="11">南投縣</option>
+                    <option value="12">雲林縣</option>
+                    <option value="13">高雄市</option>
+                    <option value="14">臺南市</option>
+                    <option value="15">嘉義市</option>
+                    <option value="16">嘉義縣</option>
+                    <option value="17">屏東縣</option>
+                    <option value="18">花蓮縣</option>
+                    <option value="19">臺東縣</option>
 
-    <section class="banner position-relative animate__animated  animate__fadeIn ">
-      <div class="container position-absolute top-50 start-50 translate-middle">
-        <div class="row justify-content-lg-between justify-content-center align-items-center">
-          <div class="searchBox col-lg-6 col-11 bg-primary py-lg-9 py-6 border-radius-lg order-1">
-            <form class="col-8 mx-auto">
-              <p class="mb-lg-7 mb-8 fw-semibold fs-lg-5 fs-8 text-center ">快速搜尋</p>
-              <div class="mb-lg-7 mb-4">
-                <label for="location" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">地區</label>
-                <select class="form-select border-radius-lg py-lg-2 " aria-label="location-select">
-                  <option selected>不分區</option>
-                  <option value="1">台北市</option>
-                  <option value="2">新北市</option>
-                  <option value="3">基隆市</option>
-                  <option value="4">新竹市</option>
-                  <option value="5">桃園市</option>
-                  <option value="6">新竹縣</option>
-                  <option value="7">宜蘭縣</option>
-                  <option value="8">臺中市</option>
-                  <option value="9">苗栗縣</option>
-                  <option value="10">彰化縣</option>
-                  <option value="11">南投縣</option>
-                  <option value="12">雲林縣</option>
-                  <option value="13">高雄市</option>
-                  <option value="14">臺南市</option>
-                  <option value="15">嘉義市</option>
-                  <option value="16">嘉義縣</option>
-                  <option value="17">屏東縣</option>
-                  <option value="18">花蓮縣</option>
-                  <option value="19">臺東縣</option>
+                  </select>
 
-                </select>
+                </div>
+                <div class="mb-lg-7 mb-4">
+                  <label for="type" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">類別</label>
+                  <select class="form-select border-radius-lg py-lg-2 " aria-label="type-select">
+                    <option selected>請選擇想要的美食類別</option>
+                    <option value="1">下午茶</option>
+                    <option value="2">早午餐、輕食</option>
+                    <option value="3">精選湯底鍋</option>
+                    <option value="4">國民小吃</option>
+                    <option value="5">燒烤、炸物</option>
+                    <option value="6">氣氛餐酒館</option>
 
-              </div>
-              <div class="mb-lg-7 mb-4">
-                <label for="type" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">類別</label>
-                <select class="form-select border-radius-lg py-lg-2 " aria-label="type-select">
-                  <option selected>請選擇想要的美食類別</option>
-                  <option value="1">下午茶</option>
-                  <option value="2">早午餐、輕食</option>
-                  <option value="3">精選湯底鍋</option>
-                  <option value="4">國民小吃</option>
-                  <option value="5">燒烤、炸物</option>
-                  <option value="6">氣氛餐酒館</option>
+                  </select>
+                </div>
 
-                </select>
-              </div>
+                <div class="mb-lg-9 mb-8">
+                  <label for="keyword" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">關鍵字</label>
+                  <input type="text" class="form-control border-radius-lg py-lg-2 " id="keyword"
+                    placeholder="請輸入臭豆腐、鹹酥雞等…">
+                </div>
 
-              <div class="mb-lg-9 mb-8">
-                <label for="keyword" class="form-label mb-0 fs-lg-8 fs-9 fw-semibold">關鍵字</label>
-                <input type="text" class="form-control border-radius-lg py-lg-2 " id="keyword" placeholder="請輸入臭豆腐、鹹酥雞等…">
-              </div>
+                <a href="#" class="btn btn-secondary text-primary border-radius-lg w-100 fs-lg-7 fs-9 btn-hover-dark"
+                  type="submit"><i class="bi bi-search me-lg-2 me-1"></i>搜尋</a>
 
-              <a href="#" class="btn btn-secondary text-primary border-radius-lg w-100 fs-lg-7 fs-9 btn-hover-dark" type="submit"><i class="bi bi-search me-lg-2 me-1"></i>搜尋</a>
-              
-            </form>
-          </div>
-          <div class="slogan col-md-5 col-sm-6 col-8 order-0 order-lg-2 mb-12 mb-lg-0">
-            <h2 class="text-primary mb-0 fs-lg-3 fs-5">吃貨糾察隊</h2>
-            <h2 class="text-primary mb-0 text-end fs-lg-3 fs-5">帶你發掘美食</h2>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-    <section class="container"> 
-      <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-4 mt-15 px-4 px-md-0">想好好吃頓飯卻總是</h3>
-      <div class="row justify-content-center align-items-center" data-aos="fade-up">
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center">
-          <img class="pain-img rounded-circle m-4" src="../assets/images/pain-point-1.jpg" alt="痛點圖1">
-          <span class="fw-bold pain-text">身在異地不曉得要吃什麼？</span>
-        </div>
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center flex-row-reverse">
-          <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-2.jpg" alt="痛點圖2">
-          <span class="fw-bold pain-text-r">想不起來之前好吃的店在哪？</span>
-        </div>
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center">
-          <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-3.jpg" alt="痛點圖3">
-          <span class="fw-bold pain-text">不要高評價，我要真寶藏！</span>
-        </div>
-      </div>
-      <div class="container mb-15">
-        <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mt-15 px-4 px-md-0" data-aos="fade-up">讓你享受美食變得更簡單！</h3>
-      <div class="row justify-content-center align-items-center" data-aos="fade-up">
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center">
-          <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-4.jpg" alt="痛點圖1">
-          <span class="fw-bold pain-text">快速搜尋所在區域熱門美食</span>
-        </div>
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center flex-row-reverse">
-          <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-5.jpg" alt="痛點圖5">
-          <span class="fw-bold pain-text-r">登入會員收藏那間好吃的店</span>
-        </div>
-        <div class="col-lg-3 d-flex flex-lg-column align-items-center">
-          <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-6.jpg" alt="痛點圖6">
-          <span class="fw-bold pain-text">吃貨前輩們最真實評價都在這</span>
-        </div>
-      </div>
-      </div>  
-    </section>
-
-    <section class="middle-bg d-flex justify-content-center align-items-center mb-12"> 
-      <h2 class="middle-text fw-bold text-center fs-4 fs-md-3 fs-xl-2" data-aos="zoom-in">讓我們一起<br>美食分享，味蕾同行</h2>    
-    </section>
-
-    <section class="container mb-10 mb-md-16">
-      <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">熱門餐點</h2>
-      <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">大啖美食，不需要理由</h3>
-      <div class="swiper store-swiper mb-10 fc-store" data-aos="fade-up">
-        <div class="swiper-wrapper">
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-1.jpg" alt="平安京茶室"/>
+              </form>
             </div>
-
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">平安京茶室</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.5</span>
-              </div>
-
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>台北市 大安區</span>
-              </div>
+            <div class="slogan col-md-5 col-sm-6 col-8 order-0 order-lg-2 mb-12 mb-lg-0">
+              <h2 class="text-primary mb-0 fs-lg-3 fs-5">吃貨糾察隊</h2>
+              <h2 class="text-primary mb-0 text-end fs-lg-3 fs-5">帶你發掘美食</h2>
             </div>
-          </a>
-
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-2.jpg" alt="井上豆花"/>
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">井上豆花</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.0</span>
-              </div>
-
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>桃園市 桃園區</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-3.jpg" alt="敲我Ciao.O"/>
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">敲我Ciao.O</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;5.0</span>
-              </div>
-
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>新北市 新莊區</span>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-
-   <section class="container mb-10 mb-md-16">
-      <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">美食類別</h2>
-      <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">品味共享，美食相伴</h3>
-      <div class="container">
-        <div class="row justify-content-center align-items-center gx-lg-11 gy-lg-9 gy-8 gx-0" data-aos="fade-up">
-          <div class="col-lg-6 kind-area position-relative">
-            
-            <div class="row flex-wrap g-0">
-              <div class="col-6">
-                <img class="w-100 rounded-up" src="../assets/images/index-food-5-sm.jpg" alt="美食類別圖1">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-right" src="../assets/images/index-food-6-sm.jpg" alt="美食類別圖2">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-left" src="../assets/images/index-food-7-sm.jpg" alt="美食類別圖3">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-down" src="../assets/images/index-food-8-sm.jpg" alt="美食類別圖4">
-              </div>
-            </div>
-
-            <a href="foodCollection.html" class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle" role="button">早午餐、輕食</a>
-          </div>
-          <div class="col-lg-6 kind-area position-relative">
-           
-            <div class="row flex-wrap g-0">
-              <div class="col-6">
-                <img class="w-100 rounded-up" src="../assets/images/index-food-9-sm.jpg" alt="美食類別圖5">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-right" src="../assets/images/index-food-10-sm.jpg" alt="美食類別圖6">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-left" src="../assets/images/index-food-11-sm.jpg" alt="美食類別圖7">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-down" src="../assets/images/index-food-12-sm.jpg" alt="美食類別圖8">
-              </div>
-            </div>
-            <a href="foodCollection.html" class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle" role="button">精選湯底鐹物</a>
-          </div>
-          <div class="col-lg-6 kind-area position-relative" data-aos-delay="300" data-aos="fade-up">
-            
-            <div class="row flex-wrap g-0">
-              <div class="col-6">
-                <img class="w-100 rounded-up" src="../assets/images/index-food-13-sm.jpg" alt="美食類別圖9">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-right" src="../assets/images/index-food-14-sm.jpg" alt="美食類別圖10">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-left" src="../assets/images/index-food-15-sm.jpg" alt="美食類別圖11">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-down" src="../assets/images/index-food-16-sm.jpg" alt="美食類別圖12">
-              </div>
-            </div>
-            <a href="foodCollection.html" class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle" role="button">國民小吃</a>
-          </div>
-          <div class="col-lg-6 kind-area position-relative" data-aos-delay="300" data-aos="fade-up">
-            
-
-            <div class="row flex-wrap g-0">
-              <div class="col-6">
-                <img class="w-100 rounded-up" src="../assets/images/index-food-17-sm.jpg" alt="美食類別圖13">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-right" src="../assets/images/index-food-18-sm.jpg" alt="美食類別圖14">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-down" src="../assets/images/index-food-19-sm.jpg" alt="美食類別圖15">
-              </div>
-              <div class="col-6">
-                <img class="w-100 rounded-left" src="../assets/images/index-food-20-sm.jpg" alt="美食類別圖16">
-              </div>
-            </div>
-            <a href="foodCollection.html" class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle" role="button">燒烤、炸物</a>
           </div>
         </div>
-      </div>
-      
-    </section>
 
-    <section class="container mb-10 mb-md-16">
-      <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">探索新店</h2>
-      <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">發現更多美食寶藏</h3>
-      <div class="swiper store-swiper mb-10 fc-store" data-aos="fade-up">
-        <div class="swiper-wrapper">
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-1.jpg" alt="平安京茶室"/>
+
+      </section>
+
+      <section class="container">
+        <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-4 mt-15 px-4 px-md-0">想好好吃頓飯卻總是</h3>
+        <div class="row justify-content-center align-items-center" data-aos="fade-up">
+          <div class="col-lg-3 d-flex flex-lg-column align-items-center">
+            <img class="pain-img rounded-circle m-4" src="../assets/images/pain-point-1.jpg" alt="痛點圖1">
+            <span class="fw-bold pain-text">身在異地不曉得要吃什麼？</span>
+          </div>
+          <div class="col-lg-3 d-flex flex-lg-column align-items-center flex-row-reverse">
+            <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-2.jpg" alt="痛點圖2">
+            <span class="fw-bold pain-text-r">想不起來之前好吃的店在哪？</span>
+          </div>
+          <div class="col-lg-3 d-flex flex-lg-column align-items-center">
+            <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-3.jpg" alt="痛點圖3">
+            <span class="fw-bold pain-text">不要高評價，我要真寶藏！</span>
+          </div>
+        </div>
+        <div class="container mb-15">
+          <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mt-15 px-4 px-md-0" data-aos="fade-up">讓你享受美食變得更簡單！</h3>
+          <div class="row justify-content-center align-items-center" data-aos="fade-up">
+            <div class="col-lg-3 d-flex flex-lg-column align-items-center">
+              <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-4.jpg" alt="痛點圖1">
+              <span class="fw-bold pain-text">快速搜尋所在區域熱門美食</span>
             </div>
+            <div class="col-lg-3 d-flex flex-lg-column align-items-center flex-row-reverse">
+              <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-5.jpg" alt="痛點圖5">
+              <span class="fw-bold pain-text-r">登入會員收藏那間好吃的店</span>
+            </div>
+            <div class="col-lg-3 d-flex flex-lg-column align-items-center">
+              <img class="pain pain-img rounded-circle m-4" src="../assets/images/pain-point-6.jpg" alt="痛點圖6">
+              <span class="fw-bold pain-text">吃貨前輩們最真實評價都在這</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">平安京茶室</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.5</span>
+      <section class="middle-bg d-flex justify-content-center align-items-center mb-12">
+        <h2 class="middle-text fw-bold text-center fs-4 fs-md-3 fs-xl-2" data-aos="zoom-in">讓我們一起<br>美食分享，味蕾同行</h2>
+      </section>
+
+      <section class="container mb-10 mb-md-16">
+        <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">熱門餐點</h2>
+        <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">大啖美食，不需要理由</h3>
+        <div class="swiper store-swiper mb-10 fc-store" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-1.jpg" alt="平安京茶室" />
               </div>
 
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>台北市 大安區</span>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">平安京茶室</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.5</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>台北市 大安區</span>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-2.jpg" alt="井上豆花"/>
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">井上豆花</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.0</span>
-              </div>
-
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>桃園市 桃園區</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="swiper-slide card text-decoration-none text-secondary">
-            <div class="overflow-hidden flex-grow-1 rounded-top">
-              <img class="card-img-top h-100" src="../assets/images/index-food-3.jpg" alt="敲我Ciao.O"/>
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">敲我Ciao.O</h4>
-                <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;5.0</span>
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-2.jpg" alt="井上豆花" />
               </div>
 
-              <div class="card-text d-flex fs-8">
-                <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>新北市 新莊區</span>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">井上豆花</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.0</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>桃園市 桃園區</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-3.jpg" alt="敲我Ciao.O" />
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">敲我Ciao.O</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;5.0</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>新北市 新莊區</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="bg-light-yellow pb-7 pb-md-10 pt-md-10 pt-7">
+        <div class="container  ">
+          <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">美食類別</h2>
+          <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">品味共享，美食相伴</h3>
+          <div class="container">
+            <div class="row justify-content-center align-items-center gx-lg-11 gy-lg-9 gy-8 gx-0" data-aos="fade-up">
+              <div class="col-lg-6 kind-area position-relative">
+  
+                <div class="row flex-wrap g-0">
+                  <div class="col-6">
+                    <img class="w-100 rounded-up" src="../assets/images/index-food-5-sm.jpg" alt="美食類別圖1">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-right" src="../assets/images/index-food-6-sm.jpg" alt="美食類別圖2">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-left" src="../assets/images/index-food-7-sm.jpg" alt="美食類別圖3">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-down" src="../assets/images/index-food-8-sm.jpg" alt="美食類別圖4">
+                  </div>
+                </div>
+  
+                <a href="foodCollection.html"
+                  class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle"
+                  role="button">早午餐、輕食</a>
+              </div>
+              <div class="col-lg-6 kind-area position-relative">
+  
+                <div class="row flex-wrap g-0">
+                  <div class="col-6">
+                    <img class="w-100 rounded-up" src="../assets/images/index-food-9-sm.jpg" alt="美食類別圖5">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-right" src="../assets/images/index-food-10-sm.jpg" alt="美食類別圖6">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-left" src="../assets/images/index-food-11-sm.jpg" alt="美食類別圖7">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-down" src="../assets/images/index-food-12-sm.jpg" alt="美食類別圖8">
+                  </div>
+                </div>
+                <a href="foodCollection.html"
+                  class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle"
+                  role="button">精選湯底鐹物</a>
+              </div>
+              <div class="col-lg-6 kind-area position-relative" data-aos-delay="300" data-aos="fade-up">
+  
+                <div class="row flex-wrap g-0">
+                  <div class="col-6">
+                    <img class="w-100 rounded-up" src="../assets/images/index-food-13-sm.jpg" alt="美食類別圖9">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-right" src="../assets/images/index-food-14-sm.jpg" alt="美食類別圖10">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-left" src="../assets/images/index-food-15-sm.jpg" alt="美食類別圖11">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-down" src="../assets/images/index-food-16-sm.jpg" alt="美食類別圖12">
+                  </div>
+                </div>
+                <a href="foodCollection.html"
+                  class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle"
+                  role="button">國民小吃</a>
+              </div>
+              <div class="col-lg-6 kind-area position-relative" data-aos-delay="300" data-aos="fade-up">
+  
+  
+                <div class="row flex-wrap g-0">
+                  <div class="col-6">
+                    <img class="w-100 rounded-up" src="../assets/images/index-food-17-sm.jpg" alt="美食類別圖13">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-right" src="../assets/images/index-food-18-sm.jpg" alt="美食類別圖14">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-down" src="../assets/images/index-food-19-sm.jpg" alt="美食類別圖15">
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 rounded-left" src="../assets/images/index-food-20-sm.jpg" alt="美食類別圖16">
+                  </div>
+                </div>
+                <a href="foodCollection.html"
+                  class="btn btn-primary btn-hover-black py-lg-3 py-2 fs-lg-7 fs-8 d-grid gap-2 position-absolute top-50 start-50 translate-middle"
+                  role="button">燒烤、炸物</a>
               </div>
             </div>
-          </a>
+          </div>
+  
+        </div>
+      </section>
+
+      <section class="container mb-10 mb-md-16 mt-10 mt-md-16">
+        <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-4" data-aos="fade-up">探索新店</h2>
+        <h3 class="fw-bold text-center fs-6 fs-xl-5 fw-bold mb-8 px-4 px-md-0" data-aos="fade-up">發現更多美食寶藏</h3>
+        <div class="swiper store-swiper mb-10 fc-store" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-1.jpg" alt="平安京茶室" />
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">平安京茶室</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.5</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>台北市 大安區</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-2.jpg" alt="井上豆花" />
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center flex-grow-1 mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">井上豆花</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;4.0</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>桃園市 桃園區</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="swiper-slide card text-decoration-none text-secondary">
+              <div class="overflow-hidden flex-grow-1 rounded-top">
+                <img class="card-img-top h-100" src="../assets/images/index-food-3.jpg" alt="敲我Ciao.O" />
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h4 class="card-title fs-7 fs-lg-6 mb-0 fw-bold">敲我Ciao.O</h4>
+                  <span class="d-flex fs-8"><i class="bi bi-star-fill text-primary"></i>&nbsp;5.0</span>
+                </div>
+
+                <div class="card-text d-flex fs-8">
+                  <i class="bi bi-geo-alt-fill text-danger"></i>&nbsp;<span>新北市 新莊區</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+        <div class="text-center">
+          <a href="explore.html"
+            class="btn btn-secondary text-primary btn-hover-yellow border-radius-lg py-lg-3 py-2 fs-lg-7 fs-9 d-grid gap-2 col-lg-6 mx-auto"
+            role="button">探索更多新店</a>
+        </div>
 
-      <div class="text-center">
-        <a href="explore.html" class="btn btn-secondary text-primary btn-hover-yellow border-radius-lg py-lg-3 py-2 fs-lg-7 fs-9 d-grid gap-2 col-lg-6 mx-auto" role="button">探索更多新店</a>
-      </div>
+      </section>
 
-    </section>
-
-    <section class=" group-recommend group pt-lg-10 pt-7">
-      <div class="container pb-10 pb-md-16">
-        <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-7 mb-md-10" data-aos="fade-up">各方推薦美食</h2>
-        <div class="row mb-6 mb-md-8" data-aos="fade-up">
-          <div class="col-md-5"><img src="../assets/images/index-food-21.jpg" alt="串燒居酒屋" class="w-100"></div>
-          <div class="col-md-7">
-            <a href="#" class="item  h-100 py-4 py-md-0 link-secondary d-flex flex-column justify-content-between">
+      <section class=" bg-light-yellow group pt-md-10 pt-7">
+        <div class="container pb-10 pb-md-16">
+          <h2 class="fw-bold text-center fs-4 fs-md-3 fs-xl-2 mb-7 mb-md-10" data-aos="fade-up">各方推薦美食</h2>
+          <div class="row mb-6 mb-md-8" data-aos="fade-up">
+            <div class="col-md-5"><img src="../assets/images/index-food-21.jpg" alt="串燒居酒屋" class="w-100"></div>
+            <div class="col-md-7">
+              <a href="#" class="item  h-100 py-4 py-md-0 link-secondary d-flex flex-column justify-content-between">
                 <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">超道地串燒居酒屋，聚餐與聯絡感情好場所！</h3>
                 <hr class="d-md-none">
-                <div class="d-flex fs-md-8 px-4 px-md-0">在這家美味的深夜食堂，您將品嘗到職人料理的精湛技藝！絕妙的串燒和炭火燒烤令人垂涎欲滴。不僅美味可口，現場氛圍也相當熱鬧，是您夜晚放鬆享受美食的絕佳選擇！內有包廂，如想與朋友來場...</div>
+                <div class="d-flex fs-md-8 px-4 px-md-0">
+                  在這家美味的深夜食堂，您將品嘗到職人料理的精湛技藝！絕妙的串燒和炭火燒烤令人垂涎欲滴。不僅美味可口，現場氛圍也相當熱鬧，是您夜晚放鬆享受美食的絕佳選擇！內有包廂，如想與朋友來場...</div>
                 <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
                   <span>By 愛吃星球</span>
                   <span>2023/07/10</span>
                 </div>
               </a>
+            </div>
+
           </div>
-        
-        </div>
-        <div class="row mb-6 mb-md-8" data-aos="fade-up">
-          <div class="col-md-5"><img src="../assets/images/index-food-22.jpg" alt="客家熱炒" class="w-100"></div>
+          <div class="row mb-6 mb-md-8" data-aos="fade-up">
+            <div class="col-md-5"><img src="../assets/images/index-food-22.jpg" alt="客家熱炒" class="w-100"></div>
             <div class="col-md-7">
               <a href="#" class="item  h-100 py-4 py-md-0 d-flex link-secondary flex-column justify-content-between">
                 <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">好吃的客家熱炒桌菜，還有 KTV 包廂！</h3>
                 <hr class="d-md-none">
-                <div class="d-flex fs-md-8 px-4 px-md-0">在這家餐廳，您不僅可以品嘗到美味的客家熱炒桌菜，還可以在KTV包廂裡盡情歡唱！豐富的菜單提供各式各樣的熱炒料理，口味地道，讓您嚐盡客家美食的獨特風味。用餐後，和好友們一起互相...</div>
+                <div class="d-flex fs-md-8 px-4 px-md-0">
+                  在這家餐廳，您不僅可以品嘗到美味的客家熱炒桌菜，還可以在KTV包廂裡盡情歡唱！豐富的菜單提供各式各樣的熱炒料理，口味地道，讓您嚐盡客家美食的獨特風味。用餐後，和好友們一起互相...</div>
                 <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
                   <span>By peihsuan</span>
                   <span>2023/07/10</span>
                 </div>
               </a>
+            </div>
           </div>
-        </div>
-        <div class="d-md-flex row mb-11" data-aos="fade-up">
-          <div class="col-md-5"><img src="../assets/images/index-food-23.jpg" alt="青花驕" class="w-100"></div>
+          <div class="d-md-flex row mb-11" data-aos="fade-up">
+            <div class="col-md-5"><img src="../assets/images/index-food-23.jpg" alt="青花驕" class="w-100"></div>
             <div class="col-md-7">
               <a href="#" class="item  h-100 py-4 py-md-0 d-flex link-secondary flex-column justify-content-between">
                 <h3 class="fs-6 fs-xl-5 fw-bold mb-0 px-4 px-md-0">品味熱騰騰的鍋物美食之旅 at《青花驕》</h3>
                 <hr class="d-md-none">
-                <div class="d-flex fs-md-8 px-4 px-md-0">最近天氣濕冷，星期五下班約了大學同學，決定來吃收藏很久《青花驕》，今天用餐的是位於國父紀念館站1號出口附近的分店，整體裝潢很氣派、食材也很新鮮，冷冷的天配上暖暖的鍋，心滿意足。...</div>
+                <div class="d-flex fs-md-8 px-4 px-md-0">
+                  最近天氣濕冷，星期五下班約了大學同學，決定來吃收藏很久《青花驕》，今天用餐的是位於國父紀念館站1號出口附近的分店，整體裝潢很氣派、食材也很新鮮，冷冷的天配上暖暖的鍋，心滿意足。...</div>
                 <div class="d-flex justify-content-between fs-md-8 px-4 px-md-0">
                   <span>By 愛吃星球</span>
                   <span>2023/07/10</span>
                 </div>
               </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="blog.html"
+              class="btn btn-secondary text-primary btn-hover-yellow border-radius-lg py-lg-3 py-2 fs-lg-7 fs-9 d-grid gap-2 col-lg-6 mx-auto"
+              role="button">看更多好文分享</a>
           </div>
         </div>
-        <div class="text-center" >
-          <a href="blog.html" class="btn btn-secondary text-primary btn-hover-yellow border-radius-lg py-lg-3 py-2 fs-lg-7 fs-9 d-grid gap-2 col-lg-6 mx-auto" role="button">看更多好文分享</a>
-        </div>
-      </div>
-     
 
-    </section>
 
-    <section class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11">
-      <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">盡情大快朵頤</h2>
-      <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">發現無限滋味</h3>
-      <a href="search.html" class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary" role="button">探索美食</a>
-    </section>
+      </section>
 
-    
-    <%- include('./layout/footer'); -%>
+      <section
+        class="footer-banner d-flex flex-column justify-content-center align-items-center bg-primary py-md-16 py-11">
+        <h2 class="fw-bold fs-5 fs-sm-4 fs-md-3 fs-xl-2 mb-3 mb-md-5">盡情大快朵頤</h2>
+        <h3 class="fs-7 fs-sm-6 fs-md-5 fs-xl-4 mb-md-8 mb-6">發現無限滋味</h3>
+        <a href="search.html" class="fw-bold btn fs-md-7 py-1 px-3 py-md-2 px-md-4 btn-secondary text-primary"
+          role="button">探索美食</a>
+      </section>
+      <%- include('./layout/footer'); -%>
+  </div>
 
-      <script type="module" src="../main.js"></script>
+
+
+
+  <script type="module" src="../main.js"></script>
+
+
 </body>
 
 </html>
