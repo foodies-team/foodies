@@ -71,3 +71,20 @@
 .z-index-5{
   z-index: 5;
 }
+
+.rounded-up{
+  border-radius:.375rem 0 0 0;
+}
+
+.rounded-right{
+  border-radius:0 .375rem 0 0;
+}
+
+.rounded-left{
+  border-radius:0 0 0 .375rem ;
+}
+
+.rounded-down{
+  
+  border-radius:0 0 .375rem 0;
+}
