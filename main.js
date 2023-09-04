@@ -2,6 +2,47 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Swiper from "swiper/bundle";
 import AOS from 'aos';
+import $ from "jquery";
+window.jQuery = window.$ = $;
+
+//preloader start
+$(window).on('load', function () {
+  
+  setTimeout(function () {
+    setTimeout(function () {
+      $('.preloader').fadeOut(100, function () {
+       
+        $('.main-area').css('display', 'block');
+        AOS.init();
+        AOS.refresh();
+      });
+    }, 1500);
+  }); 
+});
+//preloader end
+
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 140, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
 
 //發表文章 tags 手機版用swiper
 const swiper = new Swiper(".tag-swiper", {
@@ -96,28 +137,6 @@ var likeSwiper = new Swiper(".like-swiper-container", {
   },
 });
 
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 140, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: true, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
 
 //header 判斷當前頁面
 let search = document.getElementById("nav-search");
@@ -126,14 +145,14 @@ let blog = document.getElementById("nav-blog");
 let explore = document.getElementById("nav-explore");
 
 window.addEventListener("load", () => {
-if (location.pathname == "/foodies/search.html"){
-  search.classList.add("nav-active")
-}else if (location.pathname == "/foodies/foodCollection.html"){
-  food.classList.add("nav-active")
-}else if (location.pathname == "/foodies/blog.html"){
-  blog.classList.add("nav-active")
-}else if (location.pathname == "/foodies/explore.html"){
-  explore.classList.add("nav-active")
-}
+  if (location.pathname == "/foodies/search.html") {
+    search.classList.add("nav-active")
+  } else if (location.pathname == "/foodies/foodCollection.html") {
+    food.classList.add("nav-active")
+  } else if (location.pathname == "/foodies/blog.html") {
+    blog.classList.add("nav-active")
+  } else if (location.pathname == "/foodies/explore.html") {
+    explore.classList.add("nav-active")
+  }
 })
 
