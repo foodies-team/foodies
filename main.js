@@ -10,7 +10,7 @@ $(window).on('load', function () {
   
   setTimeout(function () {
     setTimeout(function () {
-      $('.preloader').fadeOut(100, function () {
+      $('.preloader').fadeOut('slow', function () {
        
         $('.main-area').css('display', 'block');
         AOS.init();
