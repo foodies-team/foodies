@@ -2,22 +2,22 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Swiper from "swiper/bundle";
 import AOS from 'aos';
-import $ from "jquery";
-window.jQuery = window.$ = $;
+//import $ from "jquery";
+//window.jQuery = window.$ = $;
+import 'jquery';
 
 //preloader start
 $(window).on('load', function () {
   
-  setTimeout(function () {
     setTimeout(function () {
       $('.preloader').fadeOut('slow', function () {
        
         $('.main-area').css('display', 'block');
         AOS.init();
-        AOS.refresh();
+        
       });
     }, 1500);
-  }); 
+  
 });
 //preloader end
 
